@@ -1,0 +1,14 @@
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\NLog.config
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\ExchangeParsing.exe.config
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\ExchangeParsing.exe
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\ExchangeParsing.pdb
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\NLog.dll
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\NLog.xml
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.csprojAssemblyReference.cache
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.csproj.CoreCompileInputs.cache
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.csproj.CopyComplete
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.exe
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.pdb
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\HtmlAgilityPack.dll
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\HtmlAgilityPack.pdb
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\HtmlAgilityPack.xml

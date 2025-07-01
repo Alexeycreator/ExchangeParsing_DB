@@ -1,0 +1,30 @@
+2025-06-30 18:18:38.8884 INFO ye
+2025-06-30 19:09:56.8313 INFO Приложение запущено
+2025-06-30 19:09:56.9114 INFO Процесс получения курса валют запущен...
+2025-06-30 19:09:56.9114 INFO https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=30.06.2025
+2025-06-30 19:09:58.4405 INFO Приложение завершило работу
+2025-06-30 20:47:35.3901 INFO Приложение запущено
+2025-06-30 20:47:35.4831 INFO Процесс получения курса валют запущен...
+2025-06-30 20:47:35.4831 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=30.06.2025
+2025-06-30 20:47:35.9505 INFO Подключение прошло успешно. OK
+2025-06-30 20:47:35.9915 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Well_CentralBank\Well_30.06.2025.csv
+2025-06-30 20:47:36.2097 ERROR Не удалось найти часть пути "D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Well_CentralBank\Well_30.06.2025.csv".
+2025-06-30 20:47:37.8728 INFO Приложение завершило работу
+2025-06-30 20:52:50.9836 INFO Приложение запущено
+2025-06-30 20:52:51.0496 INFO Процесс получения курса валют запущен...
+2025-06-30 20:52:51.0496 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=30.06.2025
+2025-06-30 20:52:51.3679 INFO Подключение прошло успешно. OK
+2025-06-30 20:52:51.4029 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Bonds_30.06.2025.csv
+2025-06-30 20:52:51.4029 INFO Данные записаны в файл. Количество 0 из 0
+2025-06-30 20:54:54.9926 INFO Приложение запущено
+2025-06-30 20:54:55.0576 INFO Процесс получения курса валют запущен...
+2025-06-30 20:54:55.0576 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=30.06.2025
+2025-06-30 20:54:55.3979 INFO Подключение прошло успешно. OK
+2025-06-30 20:54:55.4339 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Well_CentralBank\Well_30.06.2025.csv
+2025-06-30 20:54:55.4649 ERROR Не удалось найти часть пути "D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Well_CentralBank\Well_30.06.2025.csv".
+2025-06-30 20:56:00.3789 INFO Приложение запущено
+2025-06-30 20:56:00.4440 INFO Процесс получения курса валют запущен...
+2025-06-30 20:56:00.4440 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=30.06.2025
+2025-06-30 20:56:00.7642 INFO Подключение прошло успешно. OK
+2025-06-30 20:56:00.7982 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Well_30.06.2025.csv
+2025-06-30 20:56:00.7982 INFO Данные записаны в файл. Количество 0 из 0
