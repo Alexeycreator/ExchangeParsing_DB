@@ -138,3 +138,736 @@
 2025-07-01 11:11:51.2839 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Well_01.07.2025.csv
 2025-07-01 11:11:51.2959 INFO Данные записаны в файл. Количество 43 из 43
 2025-07-01 11:11:53.0392 INFO Приложение завершило работу
+2025-07-01 11:39:25.8400 INFO Приложение запущено
+2025-07-01 11:39:25.9076 INFO Процесс получения курса валют запущен...
+2025-07-01 11:39:25.9076 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 11:39:26.2333 INFO Подключение прошло успешно. OK
+2025-07-01 11:39:26.2694 INFO Извлечение данных
+2025-07-01 11:39:26.2809 INFO Данные успешно получены. Количество: 43
+2025-07-01 11:39:26.2809 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 11:39:26.2909 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 13:52:37.7981 INFO Приложение запущено
+2025-07-01 13:52:37.9002 INFO Процесс получения курса валют запущен...
+2025-07-01 13:52:37.9002 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 13:52:38.3140 INFO Подключение прошло успешно. OK
+2025-07-01 13:52:38.3681 INFO Извлечение данных
+2025-07-01 13:52:38.3866 INFO Данные успешно получены. Количество: 43
+2025-07-01 13:52:38.3866 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 13:52:38.3866 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 13:52:38.4051 INFO Запущен процесс получения акций...
+2025-07-01 13:52:38.4051 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 13:52:39.0435 INFO Подключение прошло успешно. OK
+2025-07-01 13:53:29.2007 INFO Приложение запущено
+2025-07-01 13:53:29.2758 INFO Процесс получения курса валют запущен...
+2025-07-01 13:53:29.2758 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 13:53:29.7321 INFO Подключение прошло успешно. OK
+2025-07-01 13:53:29.7686 INFO Извлечение данных
+2025-07-01 13:53:29.7801 INFO Данные успешно получены. Количество: 43
+2025-07-01 13:53:29.7801 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 13:53:29.7801 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 13:53:29.7801 INFO Запущен процесс получения акций...
+2025-07-01 13:53:29.7801 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 13:53:30.3180 INFO Подключение прошло успешно. OK
+2025-07-01 13:53:30.3180 INFO Извлечение данных
+2025-07-01 13:53:37.2695 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 13:53:37.2725 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:01:28.8536 INFO Приложение запущено
+2025-07-01 14:01:28.9527 INFO Процесс получения курса валют запущен...
+2025-07-01 14:01:28.9527 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:01:29.2129 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:29.2484 INFO Извлечение данных
+2025-07-01 14:01:29.2599 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:01:29.2599 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:01:29.3069 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:01:29.3069 INFO Запущен процесс получения акций...
+2025-07-01 14:01:29.3069 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:01:29.9139 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:29.9554 ERROR Недопустимое число аргументов функции "contains" в ".//div[contains(@class='_marketHeatMapSection_ouwdi_217')]".
+2025-07-01 14:01:29.9554 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:01:29.9554 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:01:34.3505 INFO Приложение запущено
+2025-07-01 14:01:34.5116 INFO Процесс получения курса валют запущен...
+2025-07-01 14:01:34.5116 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:01:34.9309 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:34.9669 INFO Извлечение данных
+2025-07-01 14:01:34.9795 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:01:34.9795 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:01:34.9795 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:01:34.9795 INFO Запущен процесс получения акций...
+2025-07-01 14:01:34.9795 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:01:35.8776 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:35.9091 ERROR Недопустимое число аргументов функции "contains" в ".//div[contains(@class='_marketHeatMapSection_ouwdi_217')]".
+2025-07-01 14:01:35.9091 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:01:35.9091 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:01:50.3059 INFO Приложение запущено
+2025-07-01 14:01:50.3729 INFO Процесс получения курса валют запущен...
+2025-07-01 14:01:50.3729 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:01:50.7632 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:50.7992 INFO Извлечение данных
+2025-07-01 14:01:50.8107 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:01:50.8107 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:01:50.8107 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:01:50.8107 INFO Запущен процесс получения акций...
+2025-07-01 14:01:50.8107 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:01:51.3731 INFO Подключение прошло успешно. OK
+2025-07-01 14:01:51.4016 ERROR Недопустимое число аргументов функции "contains" в ".//div[contains(@class='_marketHeatMapSection_ouwdi_217')]".
+2025-07-01 14:01:51.4016 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:01:51.4016 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:02:33.3655 INFO Приложение запущено
+2025-07-01 14:02:33.4295 INFO Процесс получения курса валют запущен...
+2025-07-01 14:02:33.4295 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:02:33.7508 INFO Подключение прошло успешно. OK
+2025-07-01 14:02:33.7863 INFO Извлечение данных
+2025-07-01 14:02:33.7983 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:02:33.7983 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:02:33.7983 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:02:33.8033 INFO Запущен процесс получения акций...
+2025-07-01 14:02:33.8033 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:02:34.2831 INFO Подключение прошло успешно. OK
+2025-07-01 14:04:16.2927 INFO Приложение запущено
+2025-07-01 14:04:16.3743 INFO Процесс получения курса валют запущен...
+2025-07-01 14:04:16.3743 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:04:16.7255 INFO Подключение прошло успешно. OK
+2025-07-01 14:04:16.7631 INFO Извлечение данных
+2025-07-01 14:04:16.7756 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:04:16.7756 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:04:16.7756 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:04:16.7756 INFO Запущен процесс получения акций...
+2025-07-01 14:04:16.7756 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:04:17.3815 INFO Подключение прошло успешно. OK
+2025-07-01 14:11:10.0576 INFO Приложение запущено
+2025-07-01 14:11:10.1252 INFO Процесс получения курса валют запущен...
+2025-07-01 14:11:10.1252 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:11:10.4294 INFO Подключение прошло успешно. OK
+2025-07-01 14:11:10.4659 INFO Извлечение данных
+2025-07-01 14:11:10.4779 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:11:10.4779 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:11:10.4779 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:11:10.4779 INFO Запущен процесс получения акций...
+2025-07-01 14:11:10.4779 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:11:11.0727 INFO Подключение прошло успешно. OK
+2025-07-01 14:11:15.1051 ERROR Контент страницы пустой или не получилось корректно его получить
+2025-07-01 14:11:15.1051 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:11:15.1051 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:11:53.9883 INFO Приложение запущено
+2025-07-01 14:11:54.0543 INFO Процесс получения курса валют запущен...
+2025-07-01 14:11:54.0543 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:11:54.2735 INFO Подключение прошло успешно. OK
+2025-07-01 14:11:54.3090 INFO Извлечение данных
+2025-07-01 14:11:54.3205 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:11:54.3205 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:11:54.3205 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:11:54.3205 INFO Запущен процесс получения акций...
+2025-07-01 14:11:54.3205 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:11:54.7838 INFO Подключение прошло успешно. OK
+2025-07-01 14:11:54.8153 ERROR Является незавершенной строкой.
+2025-07-01 14:11:54.8153 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:11:54.8153 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:12:05.0656 INFO Приложение запущено
+2025-07-01 14:12:05.1457 INFO Процесс получения курса валют запущен...
+2025-07-01 14:12:05.1457 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:12:05.4934 INFO Подключение прошло успешно. OK
+2025-07-01 14:12:05.5285 INFO Извлечение данных
+2025-07-01 14:12:05.5410 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:12:05.5410 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:12:05.5410 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:12:05.5410 INFO Запущен процесс получения акций...
+2025-07-01 14:12:05.5410 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:12:06.3866 INFO Подключение прошло успешно. OK
+2025-07-01 14:12:06.4206 ERROR Является незавершенной строкой.
+2025-07-01 14:12:06.4206 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:12:06.4206 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:13:18.6606 INFO Приложение запущено
+2025-07-01 14:13:18.7436 INFO Процесс получения курса валют запущен...
+2025-07-01 14:13:18.7436 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:13:19.0764 INFO Подключение прошло успешно. OK
+2025-07-01 14:13:19.1114 INFO Извлечение данных
+2025-07-01 14:13:19.1234 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:13:19.1234 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:13:19.1234 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:13:19.1234 INFO Запущен процесс получения акций...
+2025-07-01 14:13:19.1234 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:13:19.6873 INFO Подключение прошло успешно. OK
+2025-07-01 14:24:23.7620 INFO Приложение запущено
+2025-07-01 14:24:23.8751 INFO Процесс получения курса валют запущен...
+2025-07-01 14:24:23.8751 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:24:24.2533 INFO Подключение прошло успешно. OK
+2025-07-01 14:24:24.2899 INFO Извлечение данных
+2025-07-01 14:24:24.2899 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:24:24.2899 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:24:24.3039 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:24:24.3039 INFO Запущен процесс получения акций...
+2025-07-01 14:24:24.3039 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:24:24.7737 INFO Подключение прошло успешно. OK
+2025-07-01 14:24:56.9846 INFO Приложение запущено
+2025-07-01 14:24:57.0477 INFO Процесс получения курса валют запущен...
+2025-07-01 14:24:57.0477 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:24:57.4565 INFO Подключение прошло успешно. OK
+2025-07-01 14:24:57.4945 INFO Извлечение данных
+2025-07-01 14:24:57.5070 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:24:57.5070 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:24:57.5070 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:24:57.5070 INFO Запущен процесс получения акций...
+2025-07-01 14:24:57.5070 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:24:58.0139 INFO Подключение прошло успешно. OK
+2025-07-01 14:25:25.5460 INFO Приложение запущено
+2025-07-01 14:25:25.6105 INFO Процесс получения курса валют запущен...
+2025-07-01 14:25:25.6105 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:25:25.9032 INFO Подключение прошло успешно. OK
+2025-07-01 14:25:25.9402 INFO Извлечение данных
+2025-07-01 14:25:25.9522 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:25:25.9522 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:25:25.9758 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:25:25.9758 INFO Запущен процесс получения акций...
+2025-07-01 14:25:25.9758 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:25:26.5271 INFO Подключение прошло успешно. OK
+2025-07-01 14:31:24.3107 INFO Приложение запущено
+2025-07-01 14:31:24.3992 INFO Процесс получения курса валют запущен...
+2025-07-01 14:31:24.3992 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:31:24.6374 INFO Подключение прошло успешно. OK
+2025-07-01 14:31:24.6729 INFO Извлечение данных
+2025-07-01 14:31:24.6859 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:31:24.6859 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:31:24.6859 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:31:24.6859 INFO Запущен процесс получения акций...
+2025-07-01 14:31:24.6859 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:31:28.6037 INFO Подключение прошло успешно. OK
+2025-07-01 14:32:12.4854 INFO Приложение запущено
+2025-07-01 14:32:12.5575 INFO Процесс получения курса валют запущен...
+2025-07-01 14:32:12.5575 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:32:12.8837 INFO Подключение прошло успешно. OK
+2025-07-01 14:32:12.9192 INFO Извлечение данных
+2025-07-01 14:32:12.9308 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:32:12.9308 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:32:12.9308 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:32:12.9308 INFO Запущен процесс получения акций...
+2025-07-01 14:32:12.9308 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:32:13.4566 INFO Подключение прошло успешно. OK
+2025-07-01 14:32:48.7468 INFO Приложение запущено
+2025-07-01 14:32:48.8213 INFO Процесс получения курса валют запущен...
+2025-07-01 14:32:48.8213 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:32:52.0902 INFO Подключение прошло успешно. OK
+2025-07-01 14:32:52.1257 INFO Извлечение данных
+2025-07-01 14:32:52.1367 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:32:52.1367 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:32:52.1367 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:32:52.1367 INFO Запущен процесс получения акций...
+2025-07-01 14:32:52.1367 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:32:52.7126 INFO Подключение прошло успешно. OK
+2025-07-01 14:33:22.6331 INFO Приложение запущено
+2025-07-01 14:33:22.6986 INFO Процесс получения курса валют запущен...
+2025-07-01 14:33:22.6986 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:33:23.0469 INFO Подключение прошло успешно. OK
+2025-07-01 14:33:23.0819 INFO Извлечение данных
+2025-07-01 14:33:23.0929 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:33:23.0929 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:33:23.0929 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:33:23.0929 INFO Запущен процесс получения акций...
+2025-07-01 14:33:23.0929 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:33:23.5142 INFO Подключение прошло успешно. OK
+2025-07-01 14:33:42.8395 INFO Приложение запущено
+2025-07-01 14:33:42.9290 INFO Процесс получения курса валют запущен...
+2025-07-01 14:33:42.9290 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:33:43.1822 INFO Подключение прошло успешно. OK
+2025-07-01 14:33:43.2182 INFO Извлечение данных
+2025-07-01 14:33:43.2308 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:33:43.2308 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:33:43.2308 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:33:43.2308 INFO Запущен процесс получения акций...
+2025-07-01 14:33:43.2308 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:33:43.6941 INFO Подключение прошло успешно. OK
+2025-07-01 14:34:33.4034 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 14:34:33.4034 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 14:34:37.0125 INFO Приложение запущено
+2025-07-01 14:34:37.0741 INFO Процесс получения курса валют запущен...
+2025-07-01 14:34:37.0741 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:34:37.3833 INFO Подключение прошло успешно. OK
+2025-07-01 14:34:37.4193 INFO Извлечение данных
+2025-07-01 14:34:37.4308 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:34:37.4308 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:34:37.4308 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:34:37.4308 INFO Запущен процесс получения акций...
+2025-07-01 14:34:37.4308 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:34:37.8746 INFO Подключение прошло успешно. OK
+2025-07-01 14:39:56.1374 INFO Приложение запущено
+2025-07-01 14:39:56.2310 INFO Процесс получения курса валют запущен...
+2025-07-01 14:39:56.2310 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:39:56.6543 INFO Подключение прошло успешно. OK
+2025-07-01 14:39:56.6893 INFO Извлечение данных
+2025-07-01 14:39:56.7003 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:39:56.7003 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:39:56.7003 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:39:56.7003 INFO Запущен процесс получения акций...
+2025-07-01 14:39:56.7003 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:39:57.2647 INFO Подключение прошло успешно. OK
+2025-07-01 14:41:14.5863 INFO Приложение запущено
+2025-07-01 14:41:14.6488 INFO Процесс получения курса валют запущен...
+2025-07-01 14:41:14.6488 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:41:14.9725 INFO Подключение прошло успешно. OK
+2025-07-01 14:41:15.0096 INFO Извлечение данных
+2025-07-01 14:41:15.0216 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:41:15.0216 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:41:15.0216 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:41:15.0216 INFO Запущен процесс получения акций...
+2025-07-01 14:41:15.0216 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:41:15.5775 INFO Подключение прошло успешно. OK
+2025-07-01 14:43:13.3093 INFO Приложение запущено
+2025-07-01 14:43:13.3778 INFO Процесс получения курса валют запущен...
+2025-07-01 14:43:13.3778 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:43:13.7876 INFO Подключение прошло успешно. OK
+2025-07-01 14:43:13.8237 INFO Извлечение данных
+2025-07-01 14:43:13.8352 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:43:13.8352 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:43:13.8352 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:43:13.8352 INFO Запущен процесс получения акций...
+2025-07-01 14:43:13.8352 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:43:14.3821 INFO Подключение прошло успешно. OK
+2025-07-01 14:43:59.1854 INFO Приложение запущено
+2025-07-01 14:43:59.2525 INFO Процесс получения курса валют запущен...
+2025-07-01 14:43:59.2525 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:43:59.5792 INFO Подключение прошло успешно. OK
+2025-07-01 14:43:59.6142 INFO Извлечение данных
+2025-07-01 14:43:59.6258 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:43:59.6258 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:43:59.6258 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:43:59.6313 INFO Запущен процесс получения акций...
+2025-07-01 14:43:59.6313 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:44:00.1601 INFO Подключение прошло успешно. OK
+2025-07-01 14:44:42.1285 INFO Приложение запущено
+2025-07-01 14:44:42.1940 INFO Процесс получения курса валют запущен...
+2025-07-01 14:44:42.1940 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:44:42.4412 INFO Подключение прошло успешно. OK
+2025-07-01 14:44:42.4767 INFO Извлечение данных
+2025-07-01 14:44:42.4767 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:44:42.4767 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:44:42.4922 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:44:42.4922 INFO Запущен процесс получения акций...
+2025-07-01 14:44:42.4922 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:44:42.9541 INFO Подключение прошло успешно. OK
+2025-07-01 14:44:58.9810 INFO Приложение запущено
+2025-07-01 14:44:59.0766 INFO Процесс получения курса валют запущен...
+2025-07-01 14:44:59.0766 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:44:59.4088 INFO Подключение прошло успешно. OK
+2025-07-01 14:44:59.4453 INFO Извлечение данных
+2025-07-01 14:44:59.4453 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:44:59.4453 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:44:59.4603 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:44:59.4603 INFO Запущен процесс получения акций...
+2025-07-01 14:44:59.4603 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:45:00.0528 INFO Подключение прошло успешно. OK
+2025-07-01 14:48:02.4785 INFO Приложение запущено
+2025-07-01 14:48:02.5381 INFO Процесс получения курса валют запущен...
+2025-07-01 14:48:02.5381 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:48:02.9429 INFO Подключение прошло успешно. OK
+2025-07-01 14:48:02.9789 INFO Извлечение данных
+2025-07-01 14:48:02.9909 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:48:02.9909 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:48:02.9909 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:48:02.9909 INFO Запущен процесс получения акций...
+2025-07-01 14:48:02.9909 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:48:06.2317 INFO Подключение прошло успешно. OK
+2025-07-01 14:53:26.0422 INFO Приложение запущено
+2025-07-01 14:53:26.1127 INFO Процесс получения курса валют запущен...
+2025-07-01 14:53:26.1127 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:53:26.4454 INFO Подключение прошло успешно. OK
+2025-07-01 14:53:26.4805 INFO Извлечение данных
+2025-07-01 14:53:26.4920 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:53:26.4920 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:53:26.5175 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:53:26.5175 INFO Запущен процесс получения акций...
+2025-07-01 14:53:26.5175 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:53:26.9523 INFO Подключение прошло успешно. OK
+2025-07-01 14:57:19.0667 INFO Приложение запущено
+2025-07-01 14:57:19.1313 INFO Процесс получения курса валют запущен...
+2025-07-01 14:57:19.1313 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 14:57:19.4740 INFO Подключение прошло успешно. OK
+2025-07-01 14:57:19.5106 INFO Извлечение данных
+2025-07-01 14:57:19.5226 INFO Данные успешно получены. Количество: 43
+2025-07-01 14:57:19.5226 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 14:57:19.5226 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 14:57:19.5226 INFO Запущен процесс получения акций...
+2025-07-01 14:57:19.5226 INFO Подключение к данным по адресу: https://www.moex.com/
+2025-07-01 14:57:20.2091 INFO Подключение прошло успешно. OK
+2025-07-01 15:36:24.2705 INFO Приложение запущено
+2025-07-01 15:36:24.3876 INFO Процесс получения курса валют запущен
+2025-07-01 15:36:24.3876 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 15:36:24.7719 INFO Подключение прошло успешно. OK
+2025-07-01 15:36:24.8069 INFO Извлечение данных
+2025-07-01 15:36:24.8189 INFO Данные успешно получены. Количество: 43
+2025-07-01 15:36:24.8189 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 15:36:24.8189 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 15:36:24.8189 INFO Запущен процесс получений акций
+2025-07-01 15:36:24.8189 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 15:36:24.9795 INFO Подключение прошло успешно. OK
+2025-07-01 15:36:24.9795 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 15:37:00.7558 INFO Приложение запущено
+2025-07-01 15:37:00.8504 INFO Процесс получения курса валют запущен
+2025-07-01 15:37:00.8504 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 15:37:01.2577 INFO Подключение прошло успешно. OK
+2025-07-01 15:37:01.2927 INFO Извлечение данных
+2025-07-01 15:37:01.3042 INFO Данные успешно получены. Количество: 43
+2025-07-01 15:37:01.3042 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 15:37:01.3042 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 15:37:01.3042 INFO Запущен процесс получений акций
+2025-07-01 15:37:01.3042 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 15:37:01.4723 INFO Подключение прошло успешно. OK
+2025-07-01 15:37:01.4723 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 15:37:01.4738 INFO Данные записаны в файл. Количество 0 из 0
+2025-07-01 15:53:27.4832 INFO Приложение запущено
+2025-07-01 15:53:27.5683 INFO Процесс получения курса валют запущен
+2025-07-01 15:53:27.5683 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 15:53:27.8935 INFO Подключение прошло успешно. OK
+2025-07-01 15:53:27.9290 INFO Извлечение данных
+2025-07-01 15:53:27.9290 INFO Данные успешно получены. Количество: 43
+2025-07-01 15:53:27.9290 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 15:53:27.9461 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 15:53:27.9996 INFO Запущен процесс получений акций
+2025-07-01 15:53:27.9996 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 15:53:28.1982 INFO Подключение прошло успешно. OK
+2025-07-01 15:53:28.1982 INFO Извлечение данных
+2025-07-01 15:53:28.3744 ERROR Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ExchangeParsing.MoscowExchange.StockModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+2025-07-01 16:01:58.4704 INFO Приложение запущено
+2025-07-01 16:01:58.5620 INFO Процесс получения курса валют запущен
+2025-07-01 16:01:58.5620 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:01:59.4927 INFO Подключение прошло успешно. OK
+2025-07-01 16:01:59.5287 INFO Извлечение данных
+2025-07-01 16:01:59.5402 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:01:59.5402 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:01:59.5402 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:01:59.5402 INFO Запущен процесс получений акций
+2025-07-01 16:01:59.5527 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:01:59.7158 INFO Подключение прошло успешно. OK
+2025-07-01 16:01:59.7158 INFO Извлечение данных
+2025-07-01 16:01:59.8434 ERROR Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ExchangeParsing.MoscowExchange.StockModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+2025-07-01 16:04:25.7653 INFO Приложение запущено
+2025-07-01 16:04:25.8229 INFO Процесс получения курса валют запущен
+2025-07-01 16:04:25.8229 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:04:26.0495 INFO Подключение прошло успешно. OK
+2025-07-01 16:04:26.0845 INFO Извлечение данных
+2025-07-01 16:04:26.0845 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:04:26.0845 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:04:26.0996 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:04:26.0996 INFO Запущен процесс получения акций
+2025-07-01 16:04:26.0996 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:04:26.2392 INFO Извлечение данных
+2025-07-01 16:04:26.4613 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:04:26.4613 INFO Данные записаны: 18 акций
+2025-07-01 16:13:52.8035 INFO Приложение запущено
+2025-07-01 16:13:52.9161 INFO Процесс получения курса валют запущен
+2025-07-01 16:13:52.9161 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:13:53.3209 INFO Подключение прошло успешно. OK
+2025-07-01 16:13:53.3599 INFO Извлечение данных
+2025-07-01 16:13:53.3724 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:13:53.3724 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:13:53.3724 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:13:53.4034 INFO Запущен процесс получения акций
+2025-07-01 16:13:53.4034 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:13:53.6046 INFO Извлечение данных
+2025-07-01 16:13:53.8122 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:13:53.8122 INFO Данные записаны: 18 акций
+2025-07-01 16:14:27.6328 INFO Приложение запущено
+2025-07-01 16:14:27.7108 INFO Процесс получения курса валют запущен
+2025-07-01 16:14:27.7108 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:14:28.1131 INFO Подключение прошло успешно. OK
+2025-07-01 16:14:28.1496 INFO Извлечение данных
+2025-07-01 16:14:28.1641 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:14:28.1641 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:14:28.1641 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:14:28.1792 INFO Запущен процесс получения акций
+2025-07-01 16:14:28.1792 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:14:28.3435 INFO Извлечение данных
+2025-07-01 16:14:28.5627 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:14:28.5627 INFO Данные записаны: 18 акций
+2025-07-01 16:32:08.7076 INFO Приложение запущено
+2025-07-01 16:32:08.8017 INFO Процесс получения курса валют запущен
+2025-07-01 16:32:08.8057 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:32:09.1159 INFO Подключение прошло успешно. OK
+2025-07-01 16:32:09.1509 INFO Извлечение данных
+2025-07-01 16:32:09.1624 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:32:09.1624 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:32:09.1844 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:32:09.1965 INFO Запущен процесс получения акций
+2025-07-01 16:32:09.1965 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:32:09.3456 INFO Извлечение данных
+2025-07-01 16:32:09.5377 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:32:09.5377 INFO Данные записаны: 18 акций
+2025-07-01 16:45:43.7895 INFO Приложение запущено
+2025-07-01 16:45:43.8686 INFO Процесс получения курса валют запущен
+2025-07-01 16:45:43.8686 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:45:44.0973 INFO Подключение прошло успешно. OK
+2025-07-01 16:45:44.1318 INFO Извлечение данных
+2025-07-01 16:45:44.1318 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:45:44.1318 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:45:44.1673 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:45:44.2314 INFO Запущен процесс получения акций
+2025-07-01 16:45:44.2314 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:45:44.4155 INFO Извлечение данных
+2025-07-01 16:45:44.6136 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:45:44.6151 INFO Данные записаны: 18 акций
+2025-07-01 16:45:44.6151 INFO Процесс получения курса валют запущен
+2025-07-01 16:45:44.6151 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:45:44.6346 ERROR Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Http.HttpClient".
+2025-07-01 16:46:02.2267 INFO Приложение запущено
+2025-07-01 16:46:02.2972 INFO Процесс получения курса валют запущен
+2025-07-01 16:46:02.2972 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:46:02.5964 INFO Подключение прошло успешно. OK
+2025-07-01 16:46:02.6319 INFO Извлечение данных
+2025-07-01 16:46:02.6319 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:46:02.6475 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:46:02.6475 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:46:02.6860 INFO Запущен процесс получения акций
+2025-07-01 16:46:02.6860 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:46:02.8526 INFO Извлечение данных
+2025-07-01 16:46:03.0613 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:46:03.0613 INFO Данные записаны: 18 акций
+2025-07-01 16:46:03.0703 INFO Процесс получения курса валют запущен
+2025-07-01 16:46:03.0703 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:46:03.0703 ERROR Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Http.HttpClient".
+2025-07-01 16:46:18.4927 INFO Приложение запущено
+2025-07-01 16:46:18.5578 INFO Процесс получения курса валют запущен
+2025-07-01 16:46:18.5578 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:46:18.8495 INFO Подключение прошло успешно. OK
+2025-07-01 16:46:18.8855 INFO Извлечение данных
+2025-07-01 16:46:18.8980 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:46:18.8980 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:46:18.8980 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:46:18.9175 INFO Запущен процесс получения акций
+2025-07-01 16:46:18.9175 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:46:19.0977 INFO Извлечение данных
+2025-07-01 16:46:19.2888 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:46:19.2888 INFO Данные записаны: 18 акций
+2025-07-01 16:46:19.2888 INFO Процесс получения облигаций запущен
+2025-07-01 16:46:19.2888 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:46:19.3058 ERROR Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Http.HttpClient".
+2025-07-01 16:47:56.1403 INFO Приложение запущено
+2025-07-01 16:47:56.2028 INFO Процесс получения курса валют запущен
+2025-07-01 16:47:56.2028 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:47:56.5581 INFO Подключение прошло успешно. OK
+2025-07-01 16:47:56.5936 INFO Извлечение данных
+2025-07-01 16:47:56.6061 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:47:56.6061 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:47:56.6061 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:47:56.6176 INFO Запущен процесс получения акций
+2025-07-01 16:47:56.6176 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:47:56.7847 INFO Извлечение данных
+2025-07-01 16:47:56.9758 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:47:56.9758 INFO Данные записаны: 18 акций
+2025-07-01 16:47:56.9758 INFO Процесс получения облигаций запущен
+2025-07-01 16:47:56.9758 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:47:57.0214 ERROR Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Http.HttpClient".
+2025-07-01 16:49:51.3867 INFO Приложение запущено
+2025-07-01 16:49:51.4553 INFO Процесс получения курса валют запущен
+2025-07-01 16:49:51.4553 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:49:51.8586 INFO Подключение прошло успешно. OK
+2025-07-01 16:49:51.8936 INFO Извлечение данных
+2025-07-01 16:49:51.9056 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:49:51.9056 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:49:51.9056 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:49:51.9186 INFO Запущен процесс получения акций
+2025-07-01 16:49:51.9186 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:49:52.0857 INFO Извлечение данных
+2025-07-01 16:49:52.2759 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:49:52.2759 INFO Данные записаны: 18 акций
+2025-07-01 16:49:52.2759 INFO Процесс получения облигаций запущен
+2025-07-01 16:49:52.2759 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:49:52.2929 ERROR Доступ к ликвидированному объекту невозможен.
+Имя объекта: "System.Net.Http.HttpClient".
+2025-07-01 16:51:14.3608 INFO Приложение запущено
+2025-07-01 16:51:14.4358 INFO Процесс получения курса валют запущен
+2025-07-01 16:51:14.4358 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:51:14.7391 INFO Подключение прошло успешно. OK
+2025-07-01 16:51:14.7751 INFO Извлечение данных
+2025-07-01 16:51:14.7866 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:51:14.7866 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:51:14.7866 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:51:14.7866 INFO Запущен процесс получения акций
+2025-07-01 16:51:14.8021 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:51:14.9617 INFO Извлечение данных
+2025-07-01 16:51:15.1598 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:51:15.1598 INFO Данные записаны: 18 акций
+2025-07-01 16:51:15.1673 INFO Процесс получения облигаций запущен
+2025-07-01 16:51:15.1673 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:51:23.2801 INFO Подключение прошло успешно. OK
+2025-07-01 16:51:49.6718 INFO Приложение запущено
+2025-07-01 16:51:49.7704 INFO Процесс получения курса валют запущен
+2025-07-01 16:51:49.7714 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:51:50.1487 INFO Подключение прошло успешно. OK
+2025-07-01 16:51:50.1832 INFO Извлечение данных
+2025-07-01 16:51:50.1957 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:51:50.1957 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:51:50.1957 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:51:50.2092 INFO Запущен процесс получения акций
+2025-07-01 16:51:50.2092 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:51:50.3643 INFO Извлечение данных
+2025-07-01 16:51:50.5525 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:51:50.5525 INFO Данные записаны: 18 акций
+2025-07-01 16:51:50.5525 INFO Процесс получения облигаций запущен
+2025-07-01 16:51:50.5525 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:51:51.0573 INFO Подключение прошло успешно. OK
+2025-07-01 16:55:43.2690 INFO Приложение запущено
+2025-07-01 16:55:43.3711 INFO Процесс получения курса валют запущен
+2025-07-01 16:55:43.3711 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:55:43.6428 INFO Подключение прошло успешно. OK
+2025-07-01 16:55:43.6793 INFO Извлечение данных
+2025-07-01 16:55:43.6793 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:55:43.6793 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:55:43.6948 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:55:43.6948 INFO Запущен процесс получения акций
+2025-07-01 16:55:43.6948 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:55:43.9130 INFO Извлечение данных
+2025-07-01 16:55:44.1016 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:55:44.1016 INFO Данные записаны: 18 акций
+2025-07-01 16:55:44.1016 INFO Процесс получения облигаций запущен
+2025-07-01 16:55:44.1016 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:55:44.5544 INFO Подключение прошло успешно. OK
+2025-07-01 16:58:31.2101 INFO Приложение запущено
+2025-07-01 16:58:31.2811 INFO Процесс получения курса валют запущен
+2025-07-01 16:58:31.2811 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 16:58:31.5418 INFO Подключение прошло успешно. OK
+2025-07-01 16:58:31.5783 INFO Извлечение данных
+2025-07-01 16:58:31.5903 INFO Данные успешно получены. Количество: 43
+2025-07-01 16:58:31.5903 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 16:58:31.5903 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 16:58:31.6023 INFO Запущен процесс получения акций
+2025-07-01 16:58:31.6023 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 16:58:31.7705 INFO Извлечение данных
+2025-07-01 16:58:31.9586 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 16:58:31.9586 INFO Данные записаны: 18 акций
+2025-07-01 16:58:31.9586 INFO Процесс получения облигаций запущен
+2025-07-01 16:58:31.9586 INFO Подключение к данным по адресу: https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-01 16:58:32.6976 INFO Подключение прошло успешно. OK
+2025-07-01 20:39:22.8613 INFO Приложение запущено
+2025-07-01 20:39:22.9334 INFO Процесс получения курса валют запущен
+2025-07-01 20:39:22.9334 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:39:23.2831 INFO Подключение прошло успешно. OK
+2025-07-01 20:39:23.3191 INFO Извлечение данных
+2025-07-01 20:39:23.3191 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:39:23.3191 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:39:23.3427 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:39:23.3542 INFO Запущен процесс получения акций
+2025-07-01 20:39:23.3542 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:39:23.5573 INFO Извлечение данных
+2025-07-01 20:39:23.7469 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:39:23.7469 INFO Данные записаны: 18 акций
+2025-07-01 20:39:23.7469 INFO Запущен процесс получения облигаций
+2025-07-01 20:39:23.7554 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:39:24.0115 INFO Извлечение данных
+2025-07-01 20:39:31.7570 ERROR Unexpected character encountered while parsing value: J. Path '', line 0, position 0.
+2025-07-01 20:47:25.2327 INFO Приложение запущено
+2025-07-01 20:47:25.2957 INFO Процесс получения курса валют запущен
+2025-07-01 20:47:25.2957 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:47:25.5504 INFO Подключение прошло успешно. OK
+2025-07-01 20:47:25.5869 INFO Извлечение данных
+2025-07-01 20:47:25.5989 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:47:25.5989 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:47:25.5989 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:47:25.6175 INFO Запущен процесс получения акций
+2025-07-01 20:47:25.6175 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:47:25.7871 INFO Извлечение данных
+2025-07-01 20:47:25.9862 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:47:25.9862 INFO Данные записаны: 18 акций
+2025-07-01 20:47:25.9947 INFO Запущен процесс получения облигаций
+2025-07-01 20:47:25.9947 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:47:26.2454 INFO Извлечение данных
+2025-07-01 20:49:18.3273 ERROR Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+2025-07-01 20:50:20.8693 INFO Приложение запущено
+2025-07-01 20:50:20.9324 INFO Процесс получения курса валют запущен
+2025-07-01 20:50:20.9324 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:50:21.4302 INFO Подключение прошло успешно. OK
+2025-07-01 20:50:21.4648 INFO Извлечение данных
+2025-07-01 20:50:21.4773 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:50:21.4773 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:50:21.4773 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:50:21.4898 INFO Запущен процесс получения акций
+2025-07-01 20:50:21.4898 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:50:21.6749 INFO Извлечение данных
+2025-07-01 20:50:21.8565 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:50:21.8565 INFO Данные записаны: 18 акций
+2025-07-01 20:50:21.8645 INFO Запущен процесс получения облигаций
+2025-07-01 20:50:21.8645 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:50:22.2328 INFO Извлечение данных
+2025-07-01 20:51:02.2853 ERROR Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ExchangeParsing.MoscowExchange.Models.BondModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path 'securities', line 2, position 17.
+2025-07-01 20:54:19.1209 INFO Приложение запущено
+2025-07-01 20:54:19.2059 INFO Процесс получения курса валют запущен
+2025-07-01 20:54:19.2059 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:54:19.5532 INFO Подключение прошло успешно. OK
+2025-07-01 20:54:19.5897 INFO Извлечение данных
+2025-07-01 20:54:19.6012 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:54:19.6012 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:54:19.6012 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:54:19.6192 INFO Запущен процесс получения акций
+2025-07-01 20:54:19.6192 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:54:19.7568 INFO Извлечение данных
+2025-07-01 20:54:19.9855 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:54:19.9855 INFO Данные записаны: 18 акций
+2025-07-01 20:54:19.9940 INFO Запущен процесс получения облигаций
+2025-07-01 20:54:19.9940 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:54:20.3868 INFO Извлечение данных
+2025-07-01 20:54:21.3034 ERROR Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'ExchangeParsing.MoscowExchange.Models.BondModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path 'securities', line 2, position 17.
+2025-07-01 20:55:18.0067 INFO Приложение запущено
+2025-07-01 20:55:18.0717 INFO Процесс получения курса валют запущен
+2025-07-01 20:55:18.0717 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:55:18.3970 INFO Подключение прошло успешно. OK
+2025-07-01 20:55:18.4345 INFO Извлечение данных
+2025-07-01 20:55:18.4460 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:55:18.4460 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:55:18.4460 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:55:18.4645 INFO Запущен процесс получения акций
+2025-07-01 20:55:18.4645 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:55:18.5976 INFO Извлечение данных
+2025-07-01 20:55:18.7862 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:55:18.7877 INFO Данные записаны: 18 акций
+2025-07-01 20:55:18.7877 INFO Запущен процесс получения облигаций
+2025-07-01 20:55:18.7877 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:55:19.5302 INFO Извлечение данных
+2025-07-01 20:55:24.4172 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_01.07.2025.csv
+2025-07-01 20:55:24.4357 INFO Данные записаны: 371 облигаций
+2025-07-01 20:57:51.3933 INFO Приложение запущено
+2025-07-01 20:57:51.5048 INFO Процесс получения курса валют запущен
+2025-07-01 20:57:51.5058 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:57:51.8171 INFO Подключение прошло успешно. OK
+2025-07-01 20:57:51.8511 INFO Извлечение данных
+2025-07-01 20:57:51.8511 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:57:51.8511 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:57:51.8661 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:57:51.8661 INFO Запущен процесс получения акций
+2025-07-01 20:57:51.8661 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:57:52.0035 INFO Извлечение данных
+2025-07-01 20:57:52.2486 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:57:52.2486 INFO Данные записаны: 18 акций
+2025-07-01 20:57:52.2571 INFO Запущен процесс получения облигаций
+2025-07-01 20:57:52.2571 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:57:52.6599 INFO Извлечение данных
+2025-07-01 20:57:52.6774 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_01.07.2025.csv
+2025-07-01 20:57:52.6774 INFO Данные записаны: 371 облигаций
+2025-07-01 20:58:58.6864 INFO Приложение запущено
+2025-07-01 20:58:58.8240 INFO Процесс получения курса валют запущен
+2025-07-01 20:58:58.8240 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=01.07.2025
+2025-07-01 20:58:59.1718 INFO Подключение прошло успешно. OK
+2025-07-01 20:58:59.2063 INFO Извлечение данных
+2025-07-01 20:58:59.2183 INFO Данные успешно получены. Количество: 43
+2025-07-01 20:58:59.2183 INFO Запись в файл по пути: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_01.07.2025.csv
+2025-07-01 20:58:59.2183 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-01 20:58:59.2678 INFO Запущен процесс получения акций
+2025-07-01 20:58:59.2678 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-01 20:58:59.4415 INFO Извлечение данных
+2025-07-01 20:58:59.6286 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_01.07.2025.csv
+2025-07-01 20:58:59.6301 INFO Данные записаны: 18 акций
+2025-07-01 20:58:59.6301 INFO Запущен процесс получения облигаций
+2025-07-01 20:58:59.6301 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-01 20:59:00.0314 INFO Извлечение данных
+2025-07-01 20:59:00.0489 INFO Запись в файл: D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_01.07.2025.csv
+2025-07-01 20:59:00.0489 INFO Данные записаны: 371 облигаций

@@ -11,7 +11,7 @@ namespace ExchangeParsing.CentralBank
   internal sealed class CurrencyCentralBank_Parser
   {
     private static Logger _logger = LogManager.GetCurrentClassLogger();
-    private static string dateGetWell = DateTime.Now.ToShortDateString();
+    private static string dateGetRate = DateTime.Now.ToShortDateString();
     private string _urlCentralBank;
     private readonly HttpClient _httpClient = new HttpClient();
     private CsvWriter csvWriter = new CsvWriter();
@@ -24,7 +24,7 @@ namespace ExchangeParsing.CentralBank
       {
         Directory.CreateDirectory(csvFilePath);
       }
-      string fileName = $"Well_{dateGetWell}.csv";
+      string fileName = $"Rate_{dateGetRate}.csv";
       csvFilePath = Path.Combine(csvFilePath, fileName);
       if (!File.Exists(csvFilePath))
       {
@@ -32,13 +32,13 @@ namespace ExchangeParsing.CentralBank
       }
     }
 
-    private List<CurrencyModel> GetWell()
+    private List<CurrencyModel> GetRate()
     {
-      _logger.Info("Процесс получения курса валют запущен...");
+      _logger.Info("Процесс получения курса валют запущен");
       List<CurrencyModel> currencyModels = new List<CurrencyModel>();
       try
       {
-        string urlCentralBank = $"https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To={dateGetWell}";
+        string urlCentralBank = $"https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To={dateGetRate}";
         _urlCentralBank = urlCentralBank;
         _logger.Info($"Подключение к данным по адресу: {_urlCentralBank}");
         var _httpResponseMessage = _httpClient.GetAsync(_urlCentralBank).Result;
@@ -63,14 +63,14 @@ namespace ExchangeParsing.CentralBank
                   var _cellLetterCode = tableRow.SelectSingleNode(".//td[2]").InnerText;
                   var _cellUnits = tableRow.SelectSingleNode(".//td[3]").InnerText;
                   var _cellCurrency = tableRow.SelectSingleNode(".//td[4]").InnerText;
-                  var _cellWell = tableRow.SelectSingleNode(".//td[5]").InnerText;
+                  var _cellRate = tableRow.SelectSingleNode(".//td[5]").InnerText;
                   currencyModels.Add(new CurrencyModel
                   {
                     NumberCode = _cellCurrency,
                     LetterCode = _cellLetterCode,
                     Units = _cellUnits,
                     Currency = _cellCurrency,
-                    Well = _cellWell
+                    Rate = _cellRate
                   });
                 }
                 if (currencyModels != null)
@@ -87,6 +87,14 @@ namespace ExchangeParsing.CentralBank
                 _logger.Error(ex.Message);
               }
             }
+            else
+            {
+              throw new FormatException($"Контент данных пустой или не получилось корректно его получить");
+            }
+          }
+          else
+          {
+            throw new FormatException($"Не удалось получить ответ от страницы");
           }
         }
         else
@@ -110,7 +118,7 @@ namespace ExchangeParsing.CentralBank
     {
       try
       {
-        _currencyModels = GetWell();
+        _currencyModels = GetRate();
         _logger.Info($"Запись в файл по пути: {csvFilePath}");
         csvWriter.Write(csvFilePath, _currencyModels);
         _logger.Info($"Данные записаны в файл. Количество {_currencyModels.Count} из {_currencyModels.Count}");
