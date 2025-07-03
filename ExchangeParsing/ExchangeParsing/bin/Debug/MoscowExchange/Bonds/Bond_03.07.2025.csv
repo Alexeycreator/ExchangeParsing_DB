@@ -33,9 +33,6 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10AYQ4;СберИОС685;СберИОС 001Р-685R 3Y1M ОФЗ;TQCB;1000;RUB;RU000A10AYQ4
 Биржевая облигация;exchange_bond;RU000A10B4M9;СберИОС694;СберИОС 001Р-694R 5Г AC LKOH;TQCB;1000;RUB;RU000A10B4M9
 Биржевая облигация;exchange_bond;RU000A100MZ6;СберИОС119;СберИОС 001Р-119R 12Y ЗПИФ;TQCB;1000;RUB;RU000A100MZ6
-Биржевая облигация;exchange_bond;RU000A101S32;СберИОС274;СберИОС 001Р-274R 5Г БОНД ИНД;TQCB;1000;RUB;RU000A101S32
-Биржевая облигация;exchange_bond;RU000A101T23;СберИОС279;СберИОС 001Р-279R 5Y ТЕХ;TQCB;1000;RUB;RU000A101T23
-Биржевая облигация;exchange_bond;RU000A101T31;СберИОС264;СберИОС 001Р-264R 5Y США-ШВЕЙЦ;TQCB;1000;RUB;RU000A101T31
 Биржевая облигация;exchange_bond;RU000A101TZ9;СберИОС280;СберИОС 001Р-280R 5Y США-ШВЕЙЦ;TQCB;1000;RUB;RU000A101TZ9
 Биржевая облигация;exchange_bond;RU000A101UZ7;СберИОС282;СберИОС 001Р-282R 5Г БТЕХ ИНД;TQCB;1000;RUB;RU000A101UZ7
 Биржевая облигация;exchange_bond;RU000A101V11;СберИОС283;СберИОС 001Р-283R 5Y ТЕХ;TQCB;1000;RUB;RU000A101V11
@@ -266,7 +263,6 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A107464;СберИОС590;СберИОС 001Р-590R 5Г AC MOEXFN;TQCB;1000;RUB;RU000A107464
 Биржевая облигация;exchange_bond;RU000A1074S7;СберИОС591;СберИОС 001Р-591R 5Г AC MOEXOG;TQCB;1000;RUB;RU000A1074S7
 Биржевая облигация;exchange_bond;RU000A107985;СберИОС595;СберИОС 001Р-595R 5Г AC MOEXFN;TQCB;1000;RUB;RU000A107985
-Биржевая облигация;exchange_bond;RU000A1079B2;СберИОС596;СберИОС 001Р-596R 18M SBER;QBND;1000;RUB;RU000A1079B2
 Биржевая облигация;exchange_bond;RU000A107DC9;СберИОС599;СберИОС 001Р-599R 5Г AC MOEXFN;TQCB;1000;RUB;RU000A107DC9
 Биржевая облигация;exchange_bond;RU000A107DB1;СберИОС598;СберИОС 001Р-598R 5Г AC TATN;TQCB;1000;RUB;RU000A107DB1
 Биржевая облигация;exchange_bond;RU000A107Q04;СберИОС604;СберИОС 001Р-604R 5Г AC IMOEX;TQCB;1000;RUB;RU000A107Q04
@@ -372,7 +368,6 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10BSV4;ВТБ Б1-376;Банк ВТБ (ПАО) Б-1-376;TQCB;1000;RUB;RU000A10BSV4
 Биржевая облигация;exchange_bond;RU000A1094R7;ВТБ Б1-356;Банк ВТБ (ПАО) Б-1-356;TQCB;1000;RUB;RU000A1094R7
 Биржевая облигация;exchange_bond;RU000A109KL1;ВТБ Б1-359;Банк ВТБ (ПАО) Б-1-359;TQCB;1000;RUB;RU000A109KL1
-Биржевая облигация;exchange_bond;RU000A10BY78;ВТБКС4-988;Банк ВТБ ПАО КС-4-988;PSAU;1000;RUB;RU000A10BY78
 Биржевая облигация;exchange_bond;RU000A109KJ5;ВТБ Б1-362;Банк ВТБ (ПАО) Б-1-362;TQCB;1000;RUB;RU000A109KJ5
 Биржевая облигация;exchange_bond;RU000A1055Z1;ВТБ Б1-314;Банк ВТБ (ПАО) Б-1-314;TQCB;1000;RUB;RU000A1055Z1
 Биржевая облигация;exchange_bond;RU000A1057Q6;ВТБ Б1-315;Банк ВТБ (ПАО) Б-1-315;TQCB;1000;RUB;RU000A1057Q6

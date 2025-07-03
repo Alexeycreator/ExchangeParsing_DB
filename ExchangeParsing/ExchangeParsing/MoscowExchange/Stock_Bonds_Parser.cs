@@ -197,7 +197,7 @@ namespace ExchangeParsing.MoscowExchange
                       allBonds.AddRange(filteredBonds);
                       string nameBonds = _bonds.First().ShortName;
                       _logger.Info($"Добавлено {filteredBonds.Count} биржевых облигаций {nameBonds} из {totalBonds} других облигаций");
-                      countDataBonds += Convert.ToInt32(totalBonds);
+                      countDataBonds = allBonds.Count;
                       _totalBonds += Convert.ToInt32(totalBonds);
                     }
                     else
@@ -216,7 +216,7 @@ namespace ExchangeParsing.MoscowExchange
                 }
               }
             }
-            _logger.Info($"Все данные успешно считаны. {countDataBonds} из {_totalBonds}");
+            _logger.Info($"Все данные успешно считаны. {countDataBonds} биржевых облигаций из {_totalBonds} разных типов облигаций");
             _logger.Info($"Запись в файл: {csvFilePathBonds}");
             csvWriter.Write(csvFilePathBonds, allBonds);
             _logger.Info($"Данные записаны.");
