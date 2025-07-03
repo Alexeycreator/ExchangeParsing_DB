@@ -11,7 +11,7 @@ namespace ExchangeParsing
     public void Write(string CSVFilePath, List<CurrencyModel> rates)
     {
       StringBuilder csvBuilder = new StringBuilder();
-      csvBuilder.AppendLine("Цифр. код;Букв. код;Единиц;Валюта;Курс");
+      csvBuilder.AppendLine("DigitalCode;LetterCode;Units;Currency;Rate");
       foreach (var rate in rates)
       {
         csvBuilder.AppendLine($"{rate.NumberCode};{rate.LetterCode};{rate.Units};{rate.Currency};{rate.Rate}");
@@ -22,7 +22,7 @@ namespace ExchangeParsing
     public void Write(string CSVFilePath, List<Stock> stocks)
     {
       StringBuilder csvBuilder = new StringBuilder();
-      csvBuilder.AppendLine("Название;Цена;Процент");
+      csvBuilder.AppendLine("NameStock;LastPrice;LastParcent");
       foreach (var stock in stocks)
       {
         csvBuilder.AppendLine($"{stock.Name};{stock.Price};{stock.Parcent}");

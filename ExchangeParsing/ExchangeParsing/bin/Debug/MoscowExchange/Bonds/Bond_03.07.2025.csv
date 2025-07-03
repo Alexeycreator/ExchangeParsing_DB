@@ -1,4 +1,6 @@
 SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACEUNIT;ISIN
+Акция обыкновенная;common_share;SBER;Сбербанк;Сбербанк России ПАО ао;TQBR;3;RUB;RU0009029540
+Акция привилегированная ;preferred_share;SBERP;Сбербанк-п;Сбербанк России ПАО ап;TQBR;3;RUB;RU0009029557
 Биржевая облигация;exchange_bond;RU000A10B0E4;Сбер SbD5R;Сбербанк ПАО 001Р-SBERD5;TQCB;1000;RUB;RU000A10B0E4
 Биржевая облигация;exchange_bond;RU000A10BL99;Сбер SbD6R;Сбербанк ПАО 001Р-SBERD6;TQCB;1000;RUB;RU000A10BL99
 Биржевая облигация;exchange_bond;RU000A1069P3;Сбер Sb44R;Сбербанк ПАО 002Р-SBER44;TQCB;1000;RUB;RU000A1069P3
@@ -358,6 +360,8 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10BW05;СберИОС732;СберИОС 001Р-732R 5Г AC TATN;PSAU;1000;RUB;RU000A10BW05
 Биржевая облигация;exchange_bond;RU000A10BXN1;СберИОС735;СберИОС 001Р-735R 3Y1M ОФЗ;PSAU;1000;RUB;RU000A10BXN1
 Биржевая облигация;exchange_bond;RU000A10BXP6;СберИОС736;СберИОС 001Р-736R 5Г BSKRUS;PSAU;1000;RUB;RU000A10BXP6
+Биржевая облигация;exchange_bond;RU000A10BYC2;СберИОС743;СберИОС 001Р-743R 5Г BSKRUS;PSAU;1000;RUB;RU000A10BYC2
+Акция обыкновенная;common_share;VTBR;ВТБ ао;ао ПАО Банк ВТБ;TQBR;50;RUB;RU000A0JP5V6
 Биржевая облигация;exchange_bond;RU000A106TM6;ВТБ Б1-343;Банк ВТБ (ПАО) Б-1-343;TQCB;1000;RUB;RU000A106TM6
 Биржевая облигация;exchange_bond;RU000A10AY61;ВТБ Б1-371;Банк ВТБ (ПАО) Б-1-371;TQCB;1000;RUB;RU000A10AY61
 Биржевая облигация;exchange_bond;RU000A10BJH2;ВТБ Б1-372;Банк ВТБ (ПАО) Б-1-372;TQCB;1000;RUB;RU000A10BJH2
@@ -415,17 +419,24 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10ABH1;ВТБ Б1-373;Банк ВТБ (ПАО) Б-1-373;TQCB;1000;RUB;RU000A10ABH1
 Биржевая облигация;exchange_bond;RU000A10B271;ВТБ Б1-374;Банк ВТБ (ПАО) Б-1-374;TQCB;1000;RUB;RU000A10B271
 Биржевая облигация;exchange_bond;RU000A10B8L2;ВТБ Б1-375;Банк ВТБ (ПАО) Б-1-375;TQCB;1000;RUB;RU000A10B8L2
+Биржевая облигация;exchange_bond;RU000A10BYQ2;ВТБКС4-989;Банк ВТБ ПАО КС-4-989;PSAU;1000;RUB;RU000A10BYQ2
+Акция обыкновенная;common_share;UGLD;ЮГК;ЮГК;TQBR;0.001;RUB;RU000A0JPP37
 Биржевая облигация;exchange_bond;RU000A10B008;ЮГК 1P4;Южуралзолото 001P-04;TQCB;100;USD;RU000A10B008
 Биржевая облигация;exchange_bond;RU000A106656;ЮГК 1P3;Южуралзолото 001P-03;TQCB;1000;RUB;RU000A106656
+Акция обыкновенная;common_share;GAZP;ГАЗПРОМ ао;"Газпром" (ПАО) ао;TQBR;5;RUB;RU0007661625
 Биржевая облигация;exchange_bond;RU000A0ZZES2;ГазпромБ22;Газпром ПАО БО-22;TQCB;1000;RUB;RU000A0ZZES2
 Биржевая облигация;exchange_bond;RU000A0ZZET0;ГазпромБ23;Газпром ПАО БО-23;TQCB;1000;RUB;RU000A0ZZET0
 Биржевая облигация;exchange_bond;RU000A0JUAN6;ГазпромБ19;"Газпром" ПАО БО-19;TQCB;1000;RUB;RU000A0JUAN6
 Биржевая облигация;exchange_bond;RU000A0JUAP1;ГазпромБ20;"Газпром" ПАО БО-20;TQCB;1000;RUB;RU000A0JUAP1
 Биржевая облигация;exchange_bond;RU000A0ZZER4;ГазпромБО7;Газпром ПАО БО-07;TQCB;1000;RUB;RU000A0ZZER4
+Акция обыкновенная;common_share;T;Т-Техно ао;Т-Технологии МКПАО ао;TQBR;3.63938;RUB;RU000A107UL4
+Акция обыкновенная;common_share;LKOH;ЛУКОЙЛ;НК ЛУКОЙЛ (ПАО) - ао;TQBR;0.025;RUB;RU0009024277
+Акция обыкновенная;common_share;NVTK;Новатэк ао;ПАО "НОВАТЭК" ао;TQBR;0.1;RUB;RU000A0DKVS5
 Биржевая облигация;exchange_bond;RU000A108G70;НОВАТЭК1Р2;НОВАТЭК 001P-02;TQCB;100;USD;RU000A108G70
 Биржевая облигация;exchange_bond;RU000A10AUX8;НОВАТЭК1Р3;НОВАТЭК 001Р-03;TQCB;100;USD;RU000A10AUX8
 Биржевая облигация;exchange_bond;RU000A106938;НОВАТЭК1Р1;НОВАТЭК 001P-01;TQCB;1000;RUB;RU000A106938
 Биржевая облигация;exchange_bond;RU000A10BV55;НОВАТЭК1Р4;НОВАТЭК 001Р-04;TQCB;1000;USD;RU000A10BV55
+Акция обыкновенная;common_share;SMLT;Самолет ао;ГК Самолет ао;TQBR;25;RUB;RU000A0ZZG02
 Биржевая облигация;exchange_bond;RU000A10BW96;СамолетP18;ГК Самолет БО-П18;TQCB;1000;RUB;RU000A10BW96
 Биржевая облигация;exchange_bond;RU000A107RZ0;СамолетP13;ГК Самолет БО-П13;TQCB;1000;RUB;RU000A107RZ0
 Биржевая облигация;exchange_bond;RU000A10BFX7;СамолетP16;ГК Самолет БО-П16;TQCB;1000;RUB;RU000A10BFX7
@@ -436,7 +447,10 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A100QA0;Самолет1P6;ГК Самолет БО-П06;TQCB;1000;RUB;RU000A100QA0
 Биржевая облигация;exchange_bond;RU000A100Q50;Самолет1P5;ГК Самолет БО-П05;TQCB;1000;RUB;RU000A100Q50
 Биржевая облигация;exchange_bond;RU000A0ZZZZ2;Самолет1P4;ГК Самолет БО-П04;TQCB;1000;RUB;RU000A0ZZZZ2
+Акция обыкновенная;common_share;PIKK;ПИК ао;ПИК СЗ (ПАО) ао;TQBR;62.5;RUB;RU000A0JP7J7
 Биржевая облигация;exchange_bond;RU000A0ZZ1M2;ПИК БО-П04;ПИК СЗ (ПАО) БО-П04;TQCB;1000;RUB;RU000A0ZZ1M2
+Акция обыкновенная;common_share;X5;КЦ ИКС 5;Корпоративный центр ИКС 5;TQBR;1164.26;RUB;RU000A108X38
+Акция обыкновенная;common_share;GMKN;ГМКНорНик;ГМК "Нор.Никель" ПАО ао;TQBR;0.01;RUB;RU0007288411
 Биржевая облигация;exchange_bond;RU000A1083A6;НорНикБ1P7;ГМК Нор.никель БО-001Р-07;TQCB;1000;RUB;RU000A1083A6
 Биржевая облигация;exchange_bond;RU000A10B4K3;НорНикБ1P8;ГМК Нор.никель БО-001Р-08;TQCB;100;USD;RU000A10B4K3
 Биржевая облигация;exchange_bond;RU000A10BU23;НорНик1P11;ГМК Нор.никель БО-001Р-11-CNY;TQCB;1000;CNY;RU000A10BU23
@@ -448,14 +462,18 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10BQU0;НорНик1P10;ГМК Нор.никель БО-001Р-10;TQCB;100;USD;RU000A10BQU0
 Биржевая облигация;exchange_bond;RU000A10BTU4;НорНик1P12;ГМК Нор.никель БО-001Р-12;TQCB;100;USD;RU000A10BTU4
 Биржевая облигация;exchange_bond;RU000A105ML5;НорНикБ1P5;ГМК Нор.никель БО-001Р-05;TQCB;1000;CNY;RU000A105ML5
+Акция обыкновенная;common_share;YDEX;ЯНДЕКС;МКПАО ЯНДЕКС;TQBR;0.4;RUB;RU000A107T19
 Биржевая облигация;exchange_bond;RU000A10BF48;ЯНДЕКС1Р1;МКПАО ЯНДЕКС 001Р-01;TQCB;1000;RUB;RU000A10BF48
+Акция обыкновенная;common_share;POSI;iПозитив;Группа Позитив ао;TQBR;0.5;RUB;RU000A103X66
 Биржевая облигация;exchange_bond;RU000A10BWC6;iПозитивР3;Группа Позитив 001Р-03;TQCB;1000;RUB;RU000A10BWC6
 Биржевая облигация;exchange_bond;RU000A10AHJ4;iПозитивР2;Группа Позитив 001Р-02;TQCB;1000;RUB;RU000A10AHJ4
 Биржевая облигация;exchange_bond;RU000A109098;iПозитивР1;Группа Позитив 001Р-01;TQCB;1000;RUB;RU000A109098
+Акция обыкновенная;common_share;PLZL;Полюс;Полюс ПАО ао;TQBR;0.1;RUB;RU000A0JNAA8
 Биржевая облигация;exchange_bond;RU000A108L81;Полюс Б1P4;Полюс ПБО-04;TQCB;100;USD;RU000A108L81
 Биржевая облигация;exchange_bond;RU000A1054W1;Полюс Б1P2;Полюс ПБО-02;TQCB;1000;CNY;RU000A1054W1
 Биржевая облигация;exchange_bond;RU000A105VC5;Полюс Б1P3;Полюс ПБО-03;TQCB;1000;RUB;RU000A105VC5
 Биржевая облигация;exchange_bond;RU000A100XC2;Полюс Б1P1;Полюс ПБО-01;TQCB;1000;RUB;RU000A100XC2
+Акция обыкновенная;common_share;MGNT;Магнит ао;"Магнит" ПАО ао;TQBR;0.01;RUB;RU000A0JKQU8
 Биржевая облигация;exchange_bond;RU000A10A9Z1;Магнит4P05;Магнит ПАО БО-004Р-05;TQCB;1000;RUB;RU000A10A9Z1
 Биржевая облигация;exchange_bond;RU000A10ANZ8;Магнит5P01;Магнит ПАО БО-005Р-01;TQCB;1000;RUB;RU000A10ANZ8
 Биржевая облигация;exchange_bond;RU000A10B0A2;Магнит5P03;Магнит ПАО БО-005Р-03;TQCB;1000;RUB;RU000A10B0A2
@@ -464,6 +482,7 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A10AXH5;Магнит5P02;Магнит ПАО БО-005Р-02;TQCB;1000;RUB;RU000A10AXH5
 Биржевая облигация;exchange_bond;RU000A105TP1;Магнит4P03;Магнит ПАО БО-004Р-03;TQCB;1000;RUB;RU000A105TP1
 Биржевая облигация;exchange_bond;RU000A10AAT8;Магнит4P07;Магнит ПАО БО-004Р-07;TQCB;1000;RUB;RU000A10AAT8
+Акция обыкновенная;common_share;ROSN;Роснефть;ПАО НК Роснефть;TQBR;0.01;RUB;RU000A0J2Q06
 Биржевая облигация;exchange_bond;RU000A0JX132;Роснфт1P1;ПАО НК Роснефть 001P-01;TQCB;1000;RUB;RU000A0JX132
 Биржевая облигация;exchange_bond;RU000A102EE4;Роснфт3P02;ПАО НК Роснефть 003P-02;TQCB;1000;RUB;RU000A102EE4
 Биржевая облигация;exchange_bond;RU000A0JXXE1;Роснфт1P7;ПАО НК Роснефть 001P-07;TQCB;1000;RUB;RU000A0JXXE1
@@ -489,5 +508,7 @@ SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACE
 Биржевая облигация;exchange_bond;RU000A1008Q9;Роснфт2P7;ПАО НК Роснефть 002P-07;TQCB;1000;RUB;RU000A1008Q9
 Биржевая облигация;exchange_bond;RU000A103FC3;Роснфт2P11;ПАО НК Роснефть 002P-11;TQCB;1000;USD;RU000A103FC3
 Биржевая облигация;exchange_bond;RU000A0JX413;Роснфт1P3;ПАО НК Роснефть 001P-03;TQCB;1000;RUB;RU000A0JX413
+Акция обыкновенная;common_share;VKCO;МКПАО "ВК";Международная компания ПАО ВК;TQBR;0.00045;RUB;RU000A106YF0
+Акция обыкновенная;common_share;AFLT;Аэрофлот;Аэрофлот-росс.авиалин(ПАО)ао;TQBR;1;RUB;RU0009062285
 Биржевая облигация;exchange_bond;RU000A10BGJ4;Аэрофл2Б01;Аэрофлот П02-БО-01;TQCB;1000;RUB;RU000A10BGJ4
 Биржевая облигация;exchange_bond;RU000A103943;Аэрофл БО1;Аэрофлот-росс.авиалин.ПАО БО-1;TQCB;1000;RUB;RU000A103943
