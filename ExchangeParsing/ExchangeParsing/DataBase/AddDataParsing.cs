@@ -54,7 +54,7 @@ namespace ExchangeParsing.DataBase
                   }
                 }
                 int savedCountStocks = _dbContext.SaveChanges();
-                _logger.Info($"Успешно добавлено {savedCountStocks} акций");
+                _logger.Info($"Добавлено {savedCountStocks} акций");
               }
               else
               {
@@ -75,7 +75,7 @@ namespace ExchangeParsing.DataBase
                   }
                 }
                 int savedCountBonds = _dbContext.SaveChanges();
-                _logger.Info($"Успешно добавлено {savedCountBonds} облигаций");
+                _logger.Info($"Добавлено {savedCountBonds} облигаций");
               }
               else
               {
@@ -107,23 +107,5 @@ namespace ExchangeParsing.DataBase
         _logger.Error(ex.Message);
       }
     }
-
-    //private void CheckFillingTables(string _typeExchange)
-    //{
-    //  switch (_typeExchange)
-    //  {
-    //    case "sb":
-    //      _dbContext.Database.ExecuteSqlCommand("DELETE FROM Bonds");
-    //      _dbContext.Database.ExecuteSqlCommand("DELETE FROM Stocks");
-    //      _dbContext.Database.ExecuteSqlCommand("DBCC CHECKIDENT ('Bonds', RESEED, 0)");
-    //      _dbContext.Database.ExecuteSqlCommand("DBCC CHECKIDENT ('Stocks', RESEED, 0)");
-    //      break;
-    //    case "cb":
-    //      _dbContext.Database.ExecuteSqlCommand("DELETE FROM Currency");
-    //      _dbContext.Database.ExecuteSqlCommand("DBCC CHECKIDENT ('Currency', RESEED, 0)");
-    //      break;
-    //    default: break;
-    //  }
-    //}
   }
 }
