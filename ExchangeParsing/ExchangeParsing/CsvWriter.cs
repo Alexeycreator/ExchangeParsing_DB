@@ -14,7 +14,7 @@ namespace ExchangeParsing
       csvBuilder.AppendLine("DigitalCode;LetterCode;Units;Currency;Rate");
       foreach (var rate in rates)
       {
-        csvBuilder.AppendLine($"{rate.NumberCode};{rate.LetterCode};{rate.Units};{rate.Currency};{rate.Rate}");
+        csvBuilder.AppendLine($"{rate.DigitalCode};{rate.LetterCode};{rate.Units};{rate.Currency};{rate.Rate}");
       }
       File.WriteAllText(CSVFilePath, csvBuilder.ToString());
     }
@@ -22,10 +22,10 @@ namespace ExchangeParsing
     public void Write(string CSVFilePath, List<Stock> stocks)
     {
       StringBuilder csvBuilder = new StringBuilder();
-      csvBuilder.AppendLine("NameStock;LastPrice;LastParcent");
+      csvBuilder.AppendLine("NameStock;LastPrice;LastPriceChangePercent;SecuritiePortfolio_Id");
       foreach (var stock in stocks)
       {
-        csvBuilder.AppendLine($"{stock.Name};{stock.Price};{stock.Parcent}");
+        csvBuilder.AppendLine($"{stock.Name};{stock.Price};{stock.Percent};{stock.SecuritiePortfolio_Id}");
       }
       File.WriteAllText(CSVFilePath, csvBuilder.ToString());
     }
@@ -33,10 +33,10 @@ namespace ExchangeParsing
     public void Write(string CSVFilePath, List<Bond> bonds)
     {
       StringBuilder csvBuilder = new StringBuilder();
-      csvBuilder.AppendLine("SECURITY_TYPE;TYPE;SECID;SHORTNAME;NAME;REGNUMBER;PRIMARY_BOARDID;FACEVALUE;FACEUNIT;ISIN");
+      csvBuilder.AppendLine("SecurityType;Type;SecID;ShortName;FullName;RegNumber;PrimaryBoardID;FaceValue;FaceUnit;Isin;SecuritiePortfolio_Id");
       foreach (var bond in bonds)
       {
-        csvBuilder.AppendLine($"{bond.Security_type};{bond.Type};{bond.SecID};{bond.ShortName};{bond.FullName};{bond.Primary_boardID};{bond.FaceValue};{bond.FaceUnit};{bond.Isin}");
+        csvBuilder.AppendLine($"{bond.Security_type};{bond.Type};{bond.SecID};{bond.ShortName};{bond.FullName};{bond.Primary_boardID};{bond.FaceValue};{bond.FaceUnit};{bond.Isin};{bond.SecuritiePortfolio_Id}");
       }
       File.WriteAllText(CSVFilePath, csvBuilder.ToString());
     }

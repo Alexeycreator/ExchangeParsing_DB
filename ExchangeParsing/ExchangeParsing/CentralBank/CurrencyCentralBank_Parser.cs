@@ -5,6 +5,7 @@ using System.Net.Http;
 using NLog;
 using System.IO;
 using HtmlAgilityPack;
+using ExchangeParsing.DataBase;
 
 namespace ExchangeParsing.CentralBank
 {
@@ -17,6 +18,7 @@ namespace ExchangeParsing.CentralBank
     private CsvWriter csvWriter = new CsvWriter();
     private readonly string csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "CentralBank");
     private List<CurrencyModel> _currencyModels;
+    private string typeExchange = "cb";
 
     public CurrencyCentralBank_Parser()
     {
@@ -66,11 +68,11 @@ namespace ExchangeParsing.CentralBank
                   var _cellRate = tableRow.SelectSingleNode(".//td[5]").InnerText;
                   currencyModels.Add(new CurrencyModel
                   {
-                    NumberCode = _cellCurrency,
+                    DigitalCode = _cellCurrency,
                     LetterCode = _cellLetterCode,
-                    Units = _cellUnits,
+                    Units = Convert.ToInt32(_cellUnits),
                     Currency = _cellCurrency,
-                    Rate = _cellRate
+                    Rate = Convert.ToDouble(_cellRate)
                   });
                 }
                 if (currencyModels != null)
@@ -118,10 +120,17 @@ namespace ExchangeParsing.CentralBank
     {
       try
       {
+        _logger.Info("Отправка данных на сервер");
+        InsertDataTables insertData = new InsertDataTables();
+        insertData.Push(typeExchange);
+        _logger.Info("Данные успешно отправлены на сервер");
         _currencyModels = GetRate();
         _logger.Info($"Запись в файл по пути: {csvFilePath}");
         csvWriter.Write(csvFilePath, _currencyModels);
         _logger.Info($"Данные записаны в файл. Количество {_currencyModels.Count} из {_currencyModels.Count}");
+        AddDataParsing addData = new AddDataParsing(_currencyModels);
+        addData.Push(typeExchange);
+        _logger.Info("Данные успешно отправлены на сервер");
       }
       catch (Exception ex)
       {

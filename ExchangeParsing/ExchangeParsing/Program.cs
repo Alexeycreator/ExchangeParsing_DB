@@ -1,5 +1,6 @@
 ﻿using System;
 using ExchangeParsing.CentralBank;
+using ExchangeParsing.DataBase;
 using ExchangeParsing.MoscowExchange;
 using NLog;
 
@@ -16,8 +17,6 @@ namespace ExchangeParsing
       centralBank_Parser.CentralBankParser();
       Stock_Bonds_Parser moscowExchange_Parser = new Stock_Bonds_Parser();
       moscowExchange_Parser.MoscowExchangeParser();
-      Console.WriteLine("Приложение завершило работу");
-      Console.ReadKey();
       _logger.Info("Приложение завершило работу");
     }
   }

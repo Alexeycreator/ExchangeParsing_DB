@@ -13,4 +13,8 @@ D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\
 D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\HtmlAgilityPack.xml
 D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Newtonsoft.Json.dll
 D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\Newtonsoft.Json.xml
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\EntityFramework.dll
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\EntityFramework.SqlServer.dll
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\EntityFramework.xml
+D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\EntityFramework.SqlServer.xml
 D:\Алексей\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\obj\Debug\ExchangeParsing.csprojAssemblyReference.cache

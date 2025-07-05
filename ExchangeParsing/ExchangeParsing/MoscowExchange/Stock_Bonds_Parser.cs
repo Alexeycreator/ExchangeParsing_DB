@@ -6,6 +6,7 @@ using System.IO;
 using System.Net.Http;
 using Newtonsoft.Json;
 using ExchangeParsing.MoscowExchange.Models;
+using ExchangeParsing.DataBase;
 
 namespace ExchangeParsing.MoscowExchange
 {
@@ -16,6 +17,8 @@ namespace ExchangeParsing.MoscowExchange
     private string dateGetParsing = DateTime.Now.ToShortDateString();
     private Logger _logger = LogManager.GetCurrentClassLogger();
     private CsvWriter csvWriter = new CsvWriter();
+    private string typeExchange = "sb";
+    private int _c = 1;
     private readonly string _urlStock = $@"https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18";
     private string[] _urlBonds = {
       $@"https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
@@ -98,8 +101,9 @@ namespace ExchangeParsing.MoscowExchange
                   var stocks = stockData.StateStock.Select(s => new Stock
                   {
                     Name = s.Name,
-                    Price = s.Price.ToString(),
-                    Parcent = s.Parcent.ToString()
+                    Price = s.Price,
+                    Percent = s.Percent,
+                    SecuritiePortfolio_Id = ++_c
                   }).ToList();
                   csvWriter.Write(csvFilePathStocks, stocks);
                   _logger.Info($"Данные записаны: {stocks.Count} акций");
@@ -190,11 +194,12 @@ namespace ExchangeParsing.MoscowExchange
                         Primary_boardID = b.Primary_boardID,
                         FaceValue = b.FaceValue,
                         FaceUnit = b.FaceUnit,
-                        Isin = b.Isin
+                        Isin = b.Isin,
+                        SecuritiePortfolio_Id = ++_c
                       }).ToList();
                       var totalBonds = securitiesBonds.SecuritiesCursorBonds[0].Total;
-                      var filteredBonds = _bonds.Where(b => b.Security_type == "Биржевая облигация" || b.Security_type == "Акция привилегированная" 
-                      || b.Security_type == "Акция обыкновенная" || b.Security_type == "Акция привилегированная ").ToList();
+                      var filteredBonds = _bonds.Where(b => b.Security_type == "Биржевая облигация" /*|| b.Security_type == "Акция привилегированная"*/
+                                        /*|| b.Security_type == "Акция обыкновенная" || b.Security_type == "Акция привилегированная "*/).ToList();
                       allBonds.AddRange(filteredBonds);
                       string nameBonds = _bonds.First().ShortName;
                       _logger.Info($"Добавлено {filteredBonds.Count} биржевых облигаций и акций {nameBonds} из {totalBonds} других облигаций");
@@ -241,18 +246,14 @@ namespace ExchangeParsing.MoscowExchange
       return allBonds;
     }
 
-    private void GetInfoBonds()
-    {
-      //получение всех облигаций
-      List<Stock> stocks = GetStock();
-      List<Bond> bonds = GetBonds();
-      int sberBondCount = bonds.Count();
-      Console.WriteLine($"{sberBondCount}");
-    }
-
     public void MoscowExchangeParser()
     {
-      GetInfoBonds();
+      InsertDataTables insertData = new InsertDataTables();
+      insertData.Push(typeExchange);
+      List<Stock> stocks = GetStock();
+      List<Bond> bonds = GetBonds();
+      AddDataParsing addData = new AddDataParsing(stocks, bonds);
+      addData.Push(typeExchange);
     }
   }
 }
