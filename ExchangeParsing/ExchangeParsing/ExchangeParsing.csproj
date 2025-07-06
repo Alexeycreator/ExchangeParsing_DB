@@ -74,6 +74,7 @@
     <Compile Include="CsvWriter.cs" />
     <Compile Include="DataBase\AddDataParsing.cs" />
     <Compile Include="DataBase\DB_Connect.cs" />
+    <Compile Include="DataBase\ExecProcSQL.cs" />
     <Compile Include="DataBase\InsertDataTables.cs" />
     <Compile Include="DataBase\Tables\Address.cs" />
     <Compile Include="DataBase\Tables\Client.cs" />

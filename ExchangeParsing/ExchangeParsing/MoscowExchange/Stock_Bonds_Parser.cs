@@ -256,6 +256,8 @@ namespace ExchangeParsing.MoscowExchange
       List<Bond> bonds = GetBonds();
       AddDataParsing addData = new AddDataParsing(stocks, bonds);
       addData.Push(typeExchange);
+      ExecProcSQL execProcSQL = new ExecProcSQL();
+      execProcSQL.ExecProc();
     }
   }
 }
