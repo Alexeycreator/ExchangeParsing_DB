@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NLog;
 using System.Configuration;
+using System.Data.Entity;
 
 namespace ExchangeParsing.DataBase
 {
@@ -41,41 +42,69 @@ namespace ExchangeParsing.DataBase
             case "sb":
               if (stocks != null && stocks.Any())
               {
+                int updatedCountStocks = 0;
+                int addedCountStocks = 0;
                 foreach (var stock in stocks)
                 {
-                  var existingStocks = _dbContext.Stocks.FirstOrDefault(s => s.Name == stock.Name && s.Percent == stock.Percent);
-                  if (existingStocks != null)
+                  var existingStock = _dbContext.Stocks.FirstOrDefault(s => s.Name == stock.Name);
+                  if (existingStock != null)
                   {
-                    continue;
+                    if (existingStock.Percent != stock.Percent || existingStock.Price != stock.Price || existingStock.SecuritiePortfolio_Id != stock.SecuritiePortfolio_Id)
+                    {
+                      existingStock.Percent = stock.Percent;
+                      existingStock.Price = stock.Price;
+                      existingStock.SecuritiePortfolio_Id = stock.SecuritiePortfolio_Id;
+                      _dbContext.Entry(existingStock).State = EntityState.Modified;
+                      updatedCountStocks++;
+                    }
                   }
                   else
                   {
                     _dbContext.Stocks.Add(stock);
+                    addedCountStocks++;
                   }
                 }
                 int savedCountStocks = _dbContext.SaveChanges();
-                _logger.Info($"Добавлено {savedCountStocks} акций");
+                _logger.Info($"Обработано акций: {savedCountStocks} (добавлено: {addedCountStocks}, обновлено: {updatedCountStocks})");
               }
+
               else
               {
                 throw new FormatException($"Данные об акциях пустые и не могут быть добавлены в таблицу 'Stocks'.");
               }
               if (bonds != null && bonds.Any())
               {
+                int updatedCountBonds = 0;
+                int addedCountBonds = 0;
                 foreach (var bond in bonds)
                 {
                   var existingBonds = _dbContext.Bonds.FirstOrDefault(b => b.SecID == bond.SecID && b.Isin == bond.Isin);
                   if (existingBonds != null)
                   {
-                    continue;
+                    if (existingBonds.ShortName != bond.ShortName || existingBonds.FullName != bond.FullName || existingBonds.RegNumber != bond.RegNumber || existingBonds.FaceUnit != bond.FaceUnit || existingBonds.SecuritiePortfolio_Id != bond.SecuritiePortfolio_Id ||
+                        existingBonds.Primary_boardID != bond.Primary_boardID || existingBonds.Security_type != bond.Security_type || existingBonds.Type != bond.Type || existingBonds.FaceValue != bond.FaceValue)
+                    {
+                      existingBonds.Security_type = bond.Security_type;
+                      existingBonds.Type = bond.Type;
+                      existingBonds.ShortName = bond.ShortName;
+                      existingBonds.FullName = bond.FullName;
+                      existingBonds.RegNumber = bond.RegNumber;
+                      existingBonds.Primary_boardID = bond.Primary_boardID;
+                      existingBonds.FaceValue = bond.FaceValue;
+                      existingBonds.FaceUnit = bond.FaceUnit;
+                      existingBonds.SecuritiePortfolio_Id = bond.SecuritiePortfolio_Id;
+                      _dbContext.Entry(existingBonds).State = EntityState.Modified;
+                      updatedCountBonds++;
+                    }
                   }
                   else
                   {
                     _dbContext.Bonds.Add(bond);
+                    addedCountBonds++;
                   }
                 }
                 int savedCountBonds = _dbContext.SaveChanges();
-                _logger.Info($"Добавлено {savedCountBonds} облигаций");
+                _logger.Info($"Обработано облигаций: {savedCountBonds} (добавлено: {addedCountBonds}, обновлено: {updatedCountBonds})");
               }
               else
               {
@@ -85,9 +114,27 @@ namespace ExchangeParsing.DataBase
             case "cb":
               if (currency != null && currency.Any())
               {
-                _dbContext.Currencies.AddRange(currency);
+                int updatedCountCurrency = 0;
+                int addedCountCurrency = 0;
+                foreach (var rate in currency)
+                {
+                  var existingCurrency = _dbContext.Currencies.FirstOrDefault(c => c.DigitalCode == rate.DigitalCode);
+                  if (existingCurrency != null)
+                  {
+                    if (existingCurrency.Rate != rate.Rate)
+                    {
+                      existingCurrency.Rate = rate.Rate;
+                      updatedCountCurrency++;
+                    }
+                  }
+                  else
+                  {
+                    _dbContext.Currencies.Add(rate);
+                    addedCountCurrency++;
+                  }
+                }
                 int savedCountCurrency = _dbContext.SaveChanges();
-                _logger.Info($"Успешно добавлено {savedCountCurrency} валют");
+                _logger.Info($"Обработано валют: {savedCountCurrency} (добавлено: {addedCountCurrency}, обновлено: {updatedCountCurrency})");
               }
               else
               {

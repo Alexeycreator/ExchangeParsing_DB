@@ -72,7 +72,7 @@ namespace ExchangeParsing.CentralBank
                     LetterCode = _cellLetterCode,
                     Units = Convert.ToInt32(_cellUnits),
                     Currency = _cellCurrency,
-                    Rate = Convert.ToDouble(_cellRate)
+                    Rate = Convert.ToDecimal(_cellRate)
                   });
                 }
                 if (currencyModels != null)

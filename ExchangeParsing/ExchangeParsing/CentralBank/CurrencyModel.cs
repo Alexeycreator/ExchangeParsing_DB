@@ -28,7 +28,7 @@ namespace ExchangeParsing.CentralBank
     public string Currency { get; set; }
 
     [Column("Rate")]
-    public double Rate { get; set; }
+    public decimal Rate { get; set; }
 
     [JsonIgnore]
     public virtual ICollection<Portfolio_Currency> Portfolio_Currencies { get; set; }

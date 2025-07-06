@@ -18,7 +18,7 @@ namespace ExchangeParsing.MoscowExchange
     private Logger _logger = LogManager.GetCurrentClassLogger();
     private CsvWriter csvWriter = new CsvWriter();
     private string typeExchange = "sb";
-    private int _c = 1;
+    private Random rnd = new Random();
     private readonly string _urlStock = $@"https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18";
     private string[] _urlBonds = {
       $@"https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
@@ -43,6 +43,7 @@ namespace ExchangeParsing.MoscowExchange
     private string urlMoscowExchange = $@"https://www.moex.com/";
     private string urlCentralBank = $@"https://www.cbr.ru/";
     private int countStocks = 0;
+    private InsertDataTables insertData = new InsertDataTables();
 
     public Stock_Bonds_Parser()
     {
@@ -80,7 +81,7 @@ namespace ExchangeParsing.MoscowExchange
           var response = httpClient.GetStringAsync(_urlStock).GetAwaiter().GetResult();
           if (response == null)
           {
-
+            throw new HttpRequestException($"Json файл не получен по адресу {_urlStock}.");
           }
           else
           {
@@ -103,7 +104,7 @@ namespace ExchangeParsing.MoscowExchange
                     Name = s.Name,
                     Price = s.Price,
                     Percent = s.Percent,
-                    SecuritiePortfolio_Id = ++_c
+                    SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio())
                   }).ToList();
                   csvWriter.Write(csvFilePathStocks, stocks);
                   _logger.Info($"Данные записаны: {stocks.Count} акций");
@@ -159,9 +160,7 @@ namespace ExchangeParsing.MoscowExchange
               var response = httpClient.GetStringAsync(_url).GetAwaiter().GetResult();
               if (response == null)
               {
-                var _response = httpClient.GetAsync(_url).GetAwaiter().GetResult();
-                string content = _response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-                throw new FormatException($"Ошибка подключения. {content}");
+                throw new HttpRequestException($"Json файл не получен по адресу {_urlBonds}.");
               }
               else
               {
@@ -195,7 +194,7 @@ namespace ExchangeParsing.MoscowExchange
                         FaceValue = b.FaceValue,
                         FaceUnit = b.FaceUnit,
                         Isin = b.Isin,
-                        SecuritiePortfolio_Id = ++_c
+                        SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio())
                       }).ToList();
                       var totalBonds = securitiesBonds.SecuritiesCursorBonds[0].Total;
                       var filteredBonds = _bonds.Where(b => b.Security_type == "Биржевая облигация" /*|| b.Security_type == "Акция привилегированная"*/
@@ -234,6 +233,10 @@ namespace ExchangeParsing.MoscowExchange
         }
 
       }
+      catch (HttpRequestException ex)
+      {
+        _logger.Error(ex.Message);
+      }
       catch (FormatException ex)
       {
         _logger.Error(ex.Message);
@@ -248,7 +251,6 @@ namespace ExchangeParsing.MoscowExchange
 
     public void MoscowExchangeParser()
     {
-      InsertDataTables insertData = new InsertDataTables();
       insertData.Push(typeExchange);
       List<Stock> stocks = GetStock();
       List<Bond> bonds = GetBonds();
