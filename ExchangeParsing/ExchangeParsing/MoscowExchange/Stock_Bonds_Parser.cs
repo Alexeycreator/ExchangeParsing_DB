@@ -208,16 +208,26 @@ namespace ExchangeParsing.MoscowExchange
                                       /*|| b.Security_type == "Акция обыкновенная" || b.Security_type == "Акция привилегированная "*/).ToList();
                     string nameBonds = _bonds.First().ShortName;
                     string secidBonds = _bonds.First().SecID;
-                    foreach (var item in _bonds)
+                    try
                     {
-                      if (Enum.TryParse(secidBonds, ignoreCase: true, out StocksEnum.StockEnum stockName))
+                      foreach (var item in _bonds)
                       {
-                        item.SecuritiePortfolio_Id = GetSecPortfolioID(stockName);
+                        if (Enum.TryParse(secidBonds, ignoreCase: true, out StocksEnum.StockEnum stockName))
+                        {
+                          item.SecuritiePortfolio_Id = GetSecPortfolioID(stockName);
+                        }
+                        else
+                        {
+                          _logger.Error($"Акция {secidBonds} не найдена в enum StocksName");
+                          continue;
+                          //throw new Exception($"Акция {secidBonds} не найдена в enum Test");
+                        }
                       }
-                      else
-                      {
-                        throw new Exception($"Акция {secidBonds} не найдена в enum Test");
-                      }
+                    }
+                    catch (Exception ex)
+                    {
+                      _logger.Error($"Ошибка при получении SecPortfolioId для {secidBonds}: {ex.Message}");
+                      continue;
                     }
                     allBonds.AddRange(filteredBonds);
                     _logger.Info($"Добавлено {filteredBonds.Count} биржевых облигаций и акций {nameBonds} из {totalBonds} других облигаций");
