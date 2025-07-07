@@ -220,7 +220,6 @@ namespace ExchangeParsing.MoscowExchange
                         {
                           _logger.Error($"Акция {secidBonds} не найдена в enum StocksName");
                           continue;
-                          //throw new Exception($"Акция {secidBonds} не найдена в enum Test");
                         }
                       }
                     }
