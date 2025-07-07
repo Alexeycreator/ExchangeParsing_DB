@@ -1,6 +1,5 @@
 ﻿using System;
 using ExchangeParsing.CentralBank;
-using ExchangeParsing.DataBase;
 using ExchangeParsing.MoscowExchange;
 using NLog;
 

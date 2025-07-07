@@ -30,20 +30,5 @@ namespace ExchangeParsing.DataBase
       string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
       this.Database.Connection.ConnectionString = connectionString ?? throw new InvalidOperationException($"Строка подключения не найдена в App.config");
     }
-
-    //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-    //{
-    //  base.OnModelCreating(modelBuilder);
-    //  modelBuilder.Entity<Portfolio_Currency>().HasKey(pc => new { pc.Portfolio_Id, pc.Currency_Id });
-    //  modelBuilder.Entity<Portfolio_Currency>()
-    //    .HasRequired(pc => pc.SecurityPortfolio)
-    //    .WithMany()
-    //    .HasForeignKey(pc => pc.Portfolio_Id);
-
-    //  modelBuilder.Entity<Portfolio_Currency>()
-    //      .HasRequired(pc => pc.CurrencyModel)
-    //      .WithMany()
-    //      .HasForeignKey(pc => pc.Currency_Id);
-    //}
   }
 }

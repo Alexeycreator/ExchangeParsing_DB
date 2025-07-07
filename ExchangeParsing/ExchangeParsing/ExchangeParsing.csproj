@@ -76,6 +76,7 @@
     <Compile Include="DataBase\DB_Connect.cs" />
     <Compile Include="DataBase\ExecProcSQL.cs" />
     <Compile Include="DataBase\InsertDataTables.cs" />
+    <Compile Include="DataBase\StocksEnum.cs" />
     <Compile Include="DataBase\Tables\Address.cs" />
     <Compile Include="DataBase\Tables\Client.cs" />
     <Compile Include="DataBase\Tables\HistoryPortfolio.cs" />

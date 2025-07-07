@@ -13,14 +13,12 @@ namespace ExchangeParsing.DataBase
     private readonly string csvFilePath_Address = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "Address.csv");
     private readonly string csvFilePath_SecurityPortfolio = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "SecurityPortfolio.csv");
     private readonly string csvFilePath_PortfolioCurrency = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "Portfolio_Currency.csv");
-    //private readonly string csvFilePath_HistoryPortfolio = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "HistoryPortfolio.csv");s
     private DB_Connect _dbContext = new DB_Connect();
     private Logger _logger = LogManager.GetCurrentClassLogger();
     private List<Client> clients = new List<Client>();
     private List<Address> addresses = new List<Address>();
     private List<SecurityPortfolio> securityPortfolios = new List<SecurityPortfolio>();
     private List<Portfolio_Currency> portfolio_Currencies = new List<Portfolio_Currency>();
-    //private List<HistoryPortfolio> historyPortfolios = new List<HistoryPortfolio>();
     private int countPortfolio = 0;
 
     private void CheckInsert(string _typeExchange)
@@ -99,22 +97,6 @@ namespace ExchangeParsing.DataBase
           }
           _dbContext.SaveChanges();
           _logger.Info("Данные о связях между портфелями и валютами добавлены");
-
-          //foreach(var histPort in historyPortfolios)
-          //{
-          //  var existingHistPortfolio = _dbContext.HistoryPortfolios.FirstOrDefault(hp => hp.Client_Id == histPort.Client_Id && hp.DateSavePortfolioClient == histPort.DateSavePortfolioClient && hp.SecuritiePortfolio_Id == histPort.SecuritiePortfolio_Id);
-          //  if (existingHistPortfolio != null)
-          //  {
-          //    continue;
-          //  }
-          //  else
-          //  {
-          //    _dbContext.HistoryPortfolios.Add(histPort);
-          //  }
-          //}
-          //_dbContext.SaveChanges();
-          //_logger.Info("Данный о позиция добавлены");
-
           break;
         default: break;
       }
@@ -241,34 +223,6 @@ namespace ExchangeParsing.DataBase
 
           #endregion
 
-          #region StreamReader_HistoryPortfolio
-
-          //StreamReader readerHistoryPortfolio = new StreamReader(csvFilePath_HistoryPortfolio);
-          //readerHistoryPortfolio.ReadLine();
-          //_logger.Info($"Получение данных из файла {Path.GetFileName(csvFilePath_HistoryPortfolio)}");
-          //while (!readerHistoryPortfolio.EndOfStream)
-          //{
-          //  var line = readerHistoryPortfolio.ReadLine();
-          //  var values = line.Split(';');
-          //  try
-          //  {
-          //    HistoryPortfolio historyPortfolio = new HistoryPortfolio
-          //    {
-          //      DateSavePortfolioClient = Convert.ToDateTime(values[0]),
-          //      Client_Id = Convert.ToInt32(values[1]),
-          //      SecuritiePortfolio_Id = Convert.ToInt32(values[2]),
-          //      Details = values[3]
-          //    };
-          //    historyPortfolios.Add(historyPortfolio);
-          //  }
-          //  catch (Exception ex)
-          //  {
-          //    _logger.Error($"Ошибка при обработке строки: {line}. {ex.Message}");
-          //  }
-          //}
-
-          #endregion
-
           break;
         default: break;
       }
@@ -304,10 +258,6 @@ namespace ExchangeParsing.DataBase
             {
               throw new FormatException("Данные связи между портфелем и валютой пустые");
             }
-            //else if (historyPortfolios == null)
-            //{
-            //  throw new FormatException("Данные пересчета позиций пустые");
-            //}
             else
             {
               CheckInsert(_typeExchange);

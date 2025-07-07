@@ -18,6 +18,8 @@ namespace ExchangeParsing.MoscowExchange
     private Logger _logger = LogManager.GetCurrentClassLogger();
     private CsvWriter csvWriter = new CsvWriter();
     private string typeExchange = "sb";
+    private string typeExchangeStocks = "stc";
+    private string typeExchangeBonds = "bnd";
     private Random rnd = new Random();
     private readonly string _urlStock = $@"https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18";
     private string[] _urlBonds = {
@@ -38,12 +40,19 @@ namespace ExchangeParsing.MoscowExchange
       $@"https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
       $@"https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
       $@"https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
-      $@"https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru"
+      $@"https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru",
+      $@"https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru"
     };
     private string urlMoscowExchange = $@"https://www.moex.com/";
     private string urlCentralBank = $@"https://www.cbr.ru/";
-    private int countStocks = 0;
     private InsertDataTables insertData = new InsertDataTables();
+    private StocksEnum.StockEnum stockEnum = new StocksEnum.StockEnum();
+    private DB_Connect _dbContext = new DB_Connect();
 
     public Stock_Bonds_Parser()
     {
@@ -104,11 +113,10 @@ namespace ExchangeParsing.MoscowExchange
                     Name = s.Name,
                     Price = s.Price,
                     Percent = s.Percent,
-                    SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio())
+                    SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio() + 1)
                   }).ToList();
                   csvWriter.Write(csvFilePathStocks, stocks);
                   _logger.Info($"Данные записаны: {stocks.Count} акций");
-                  countStocks = stocks.Count;
                   allStocks.AddRange(stocks);
                 }
                 else
@@ -149,89 +157,94 @@ namespace ExchangeParsing.MoscowExchange
         int countUrlBonds = _urlBonds.Count();
         int countDataBonds = 0;
         int _totalBonds = 0;
-        if (countStocks == countUrlBonds)
-        {
-          using (HttpClient httpClient = new HttpClient())
-          {
 
-            foreach (var _url in _urlBonds)
+        using (HttpClient httpClient = new HttpClient())
+        {
+
+          foreach (var _url in _urlBonds)
+          {
+            _logger.Info($"Подключение к данным по адресу: {_url}");
+            var response = httpClient.GetStringAsync(_url).GetAwaiter().GetResult();
+            if (response == null)
             {
-              _logger.Info($"Подключение к данным по адресу: {_url}");
-              var response = httpClient.GetStringAsync(_url).GetAwaiter().GetResult();
-              if (response == null)
+              throw new HttpRequestException($"Json файл не получен по адресу {_urlBonds}.");
+            }
+            else
+            {
+              _logger.Info($"Подключение прошло успешно.");
+              if (response.StartsWith("JSON_CALLBACK(") && response.EndsWith(")"))
               {
-                throw new HttpRequestException($"Json файл не получен по адресу {_urlBonds}.");
+                response = response.Substring("JSON_CALLBACK(".Length, response.Length - "JSON_CALLBACK(".Length - 1);
               }
-              else
+              _logger.Info("Извлечение данных");
+              var jsonArrayBonds = JsonConvert.DeserializeObject<List<object>>(response);
+              if (jsonArrayBonds != null)
               {
-                _logger.Info($"Подключение прошло успешно.");
-                if (response.StartsWith("JSON_CALLBACK(") && response.EndsWith(")"))
+                _logger.Info("Данные получены");
+                var securitiesDataBonds = jsonArrayBonds[1].ToString();
+                if (securitiesDataBonds != null)
                 {
-                  response = response.Substring("JSON_CALLBACK(".Length, response.Length - "JSON_CALLBACK(".Length - 1);
-                }
-                _logger.Info("Извлечение данных");
-                var jsonArrayBonds = JsonConvert.DeserializeObject<List<object>>(response);
-                if (jsonArrayBonds != null)
-                {
-                  _logger.Info("Данные получены");
-                  var securitiesDataBonds = jsonArrayBonds[1].ToString();
-                  if (securitiesDataBonds != null)
+                  _logger.Info("Корректные данные для считывания");
+                  var securitiesBonds = JsonConvert.DeserializeObject<BondModel>(securitiesDataBonds);
+                  if (securitiesBonds != null)
                   {
-                    _logger.Info("Корректные данные для считывания");
-                    var securitiesBonds = JsonConvert.DeserializeObject<BondModel>(securitiesDataBonds);
-                    if (securitiesBonds != null)
+                    _logger.Info("Успешная десериализация данных");
+                    var _bonds = securitiesBonds.StateBonds.Select(b => new Bond
                     {
-                      _logger.Info("Успешная десериализация данных");
-                      var _bonds = securitiesBonds.StateBonds.Select(b => new Bond
+                      Security_type = b.Security_type,
+                      Type = b.Type,
+                      SecID = b.SecID,
+                      ShortName = b.ShortName,
+                      FullName = b.FullName,
+                      RegNumber = b.RegNumber,
+                      Primary_boardID = b.Primary_boardID,
+                      FaceValue = b.FaceValue,
+                      FaceUnit = b.FaceUnit,
+                      Isin = b.Isin,
+                      SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio() + 1)
+                    }).ToList();
+                    var totalBonds = securitiesBonds.SecuritiesCursorBonds[0].Total;
+                    var filteredBonds = _bonds.Where(b => b.Security_type == "Биржевая облигация" /*|| b.Security_type == "Акция привилегированная"*/
+                                      /*|| b.Security_type == "Акция обыкновенная" || b.Security_type == "Акция привилегированная "*/).ToList();
+                    string nameBonds = _bonds.First().ShortName;
+                    string secidBonds = _bonds.First().SecID;
+                    foreach (var item in _bonds)
+                    {
+                      if (Enum.TryParse(secidBonds, ignoreCase: true, out StocksEnum.StockEnum stockName))
                       {
-                        Security_type = b.Security_type,
-                        Type = b.Type,
-                        SecID = b.SecID,
-                        ShortName = b.ShortName,
-                        FullName = b.FullName,
-                        RegNumber = b.RegNumber,
-                        Primary_boardID = b.Primary_boardID,
-                        FaceValue = b.FaceValue,
-                        FaceUnit = b.FaceUnit,
-                        Isin = b.Isin,
-                        SecuritiePortfolio_Id = rnd.Next(1, insertData.CountPortfolio())
-                      }).ToList();
-                      var totalBonds = securitiesBonds.SecuritiesCursorBonds[0].Total;
-                      var filteredBonds = _bonds.Where(b => b.Security_type == "Биржевая облигация" /*|| b.Security_type == "Акция привилегированная"*/
-                                        /*|| b.Security_type == "Акция обыкновенная" || b.Security_type == "Акция привилегированная "*/).ToList();
-                      allBonds.AddRange(filteredBonds);
-                      string nameBonds = _bonds.First().ShortName;
-                      _logger.Info($"Добавлено {filteredBonds.Count} биржевых облигаций и акций {nameBonds} из {totalBonds} других облигаций");
-                      countDataBonds = allBonds.Count;
-                      _totalBonds += Convert.ToInt32(totalBonds);
+                        item.SecuritiePortfolio_Id = GetSecPortfolioID(stockName);
+                      }
+                      else
+                      {
+                        throw new Exception($"Акция {secidBonds} не найдена в enum Test");
+                      }
                     }
-                    else
-                    {
-                      throw new FormatException($"Данные {securitiesBonds} не удалось десериализовать");
-                    }
+                    allBonds.AddRange(filteredBonds);
+                    _logger.Info($"Добавлено {filteredBonds.Count} биржевых облигаций и акций {nameBonds} из {totalBonds} других облигаций");
+                    countDataBonds = allBonds.Count;
+                    _totalBonds += Convert.ToInt32(totalBonds);
                   }
                   else
                   {
-                    throw new FormatException($"Выбраны неверные данные json-файла. {securitiesDataBonds}");
+                    throw new FormatException($"Данные {securitiesBonds} не удалось десериализовать");
                   }
                 }
                 else
                 {
-                  throw new FormatException($"Данные пустые: {jsonArrayBonds}");
+                  throw new FormatException($"Выбраны неверные данные json-файла. {securitiesDataBonds}");
                 }
               }
+              else
+              {
+                throw new FormatException($"Данные пустые: {jsonArrayBonds}");
+              }
             }
-            _logger.Info($"Все данные успешно считаны. {countDataBonds} биржевых облигаций и акций из {_totalBonds} разных типов облигаций");
-            _logger.Info($"Запись в файл: {csvFilePathBonds}");
-            csvWriter.Write(csvFilePathBonds, allBonds);
-            _logger.Info($"Данные записаны.");
           }
+          _logger.Info($"Все данные успешно считаны. {countDataBonds} биржевых облигаций и акций из {_totalBonds} разных типов облигаций");
+          _logger.Info($"Запись в файл: {csvFilePathBonds}");
+          csvWriter.Write(csvFilePathBonds, allBonds);
+          _logger.Info($"Данные записаны.");
         }
-        else
-        {
-          throw new FormatException($"Количество акций изменилось ({countStocks}). Можно получить облигации лишь {countUrlBonds} акций.");
-        }
-
       }
       catch (HttpRequestException ex)
       {
@@ -253,11 +266,23 @@ namespace ExchangeParsing.MoscowExchange
     {
       insertData.Push(typeExchange);
       List<Stock> stocks = GetStock();
+      AddDataParsing addData = new AddDataParsing(stocks);
+      addData.Push(typeExchangeStocks);
       List<Bond> bonds = GetBonds();
-      AddDataParsing addData = new AddDataParsing(stocks, bonds);
-      addData.Push(typeExchange);
+      addData = new AddDataParsing(bonds);
+      addData.Push(typeExchangeBonds);
       ExecProcSQL execProcSQL = new ExecProcSQL();
       execProcSQL.ExecProc();
+    }
+
+    private int GetSecPortfolioID(StocksEnum.StockEnum _stockName)
+    {
+      var stock = _dbContext.Stocks.FirstOrDefault(s => s.Name == _stockName.ToString());
+      if (stock == null)
+      {
+        throw new Exception($"Акция {stock} не найдена в таблице Stocks");
+      }
+      return stock.SecuritiePortfolio_Id;
     }
   }
 }

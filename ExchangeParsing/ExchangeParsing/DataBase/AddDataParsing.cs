@@ -22,9 +22,13 @@ namespace ExchangeParsing.DataBase
       currency = _currency;
     }
 
-    public AddDataParsing(List<Stock> _stocks, List<Bond> _bonds)
+    public AddDataParsing(List<Stock> _stocks)
     {
       stocks = _stocks;
+    }
+
+    public AddDataParsing(List<Bond> _bonds)
+    {
       bonds = _bonds;
     }
 
@@ -39,13 +43,15 @@ namespace ExchangeParsing.DataBase
           _logger.Info($"Подключение к БД прошло успешно");
           switch (_typeExchange)
           {
-            case "sb":
+            case "stc":
               if (stocks != null && stocks.Any())
               {
                 int updatedCountStocks = 0;
                 int addedCountStocks = 0;
                 foreach (var stock in stocks)
                 {
+                  Convert.ToDecimal(stock.Price);
+                  Convert.ToDecimal(stock.Percent);
                   var existingStock = _dbContext.Stocks.FirstOrDefault(s => s.Name == stock.Name);
                   if (existingStock != null)
                   {
@@ -67,11 +73,42 @@ namespace ExchangeParsing.DataBase
                 int savedCountStocks = _dbContext.SaveChanges();
                 _logger.Info($"Обработано акций: {savedCountStocks} (добавлено: {addedCountStocks}, обновлено: {updatedCountStocks})");
               }
-
               else
               {
                 throw new FormatException($"Данные об акциях пустые и не могут быть добавлены в таблицу 'Stocks'.");
               }
+              break;
+            case "cb":
+              if (currency != null && currency.Any())
+              {
+                int updatedCountCurrency = 0;
+                int addedCountCurrency = 0;
+                foreach (var rate in currency)
+                {
+                  var existingCurrency = _dbContext.Currencies.FirstOrDefault(c => c.DigitalCode == rate.DigitalCode);
+                  if (existingCurrency != null)
+                  {
+                    if (existingCurrency.Rate != rate.Rate)
+                    {
+                      existingCurrency.Rate = rate.Rate;
+                      updatedCountCurrency++;
+                    }
+                  }
+                  else
+                  {
+                    _dbContext.Currencies.Add(rate);
+                    addedCountCurrency++;
+                  }
+                }
+                int savedCountCurrency = _dbContext.SaveChanges();
+                _logger.Info($"Обработано валют: {savedCountCurrency} (добавлено: {addedCountCurrency}, обновлено: {updatedCountCurrency})");
+              }
+              else
+              {
+                throw new FormatException($"Данные о валютах пустые и не могут быть добавлены в таблицу 'Currency'.");
+              }
+              break;
+            case "bnd":
               if (bonds != null && bonds.Any())
               {
                 int updatedCountBonds = 0;
@@ -109,36 +146,6 @@ namespace ExchangeParsing.DataBase
               else
               {
                 throw new FormatException($"Данные об облигациях пустые и не могут быть добавлены в таблицу 'Bonds'.");
-              }
-              break;
-            case "cb":
-              if (currency != null && currency.Any())
-              {
-                int updatedCountCurrency = 0;
-                int addedCountCurrency = 0;
-                foreach (var rate in currency)
-                {
-                  var existingCurrency = _dbContext.Currencies.FirstOrDefault(c => c.DigitalCode == rate.DigitalCode);
-                  if (existingCurrency != null)
-                  {
-                    if (existingCurrency.Rate != rate.Rate)
-                    {
-                      existingCurrency.Rate = rate.Rate;
-                      updatedCountCurrency++;
-                    }
-                  }
-                  else
-                  {
-                    _dbContext.Currencies.Add(rate);
-                    addedCountCurrency++;
-                  }
-                }
-                int savedCountCurrency = _dbContext.SaveChanges();
-                _logger.Info($"Обработано валют: {savedCountCurrency} (добавлено: {addedCountCurrency}, обновлено: {updatedCountCurrency})");
-              }
-              else
-              {
-                throw new FormatException($"Данные о валютах пустые и не могут быть добавлены в таблицу 'Currency'.");
               }
               break;
             default: break;
