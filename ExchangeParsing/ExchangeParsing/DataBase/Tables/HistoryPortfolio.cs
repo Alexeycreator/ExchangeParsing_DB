@@ -16,17 +16,20 @@ namespace ExchangeParsing.DataBase.Tables
     [Column("DateSavePortfolioClient")]
     public DateTime DateSavePortfolioClient { get; set; }
 
-    [Column("Client_Id")]
-    public int Client_Id { get; set; }
+    //[Column("Client_Id")]
+    //public int Client_Id { get; set; }
 
     [Column("SecuritiePortfolio_Id")]
     public int SecuritiePortfolio_Id { get; set; }
 
-    [Column("Details")]
-    public string Details { get; set; }
+    [Column("Price")]
+    public decimal Price { get; set; }
 
-    [ForeignKey("Client_Id")]
-    public virtual Client Client { get; set; }
+    //[Column("Details")]
+    //public string Details { get; set; }
+
+    //[ForeignKey("Client_Id")]
+    //public virtual Client Client { get; set; }
 
     [ForeignKey("SecuritiePortfolio_Id")]
     [JsonIgnore]

@@ -79,6 +79,7 @@
     <Compile Include="DataBase\StocksEnum.cs" />
     <Compile Include="DataBase\Tables\Address.cs" />
     <Compile Include="DataBase\Tables\Client.cs" />
+    <Compile Include="DataBase\Tables\ClientPortfolioShares.cs" />
     <Compile Include="DataBase\Tables\HistoryPortfolio.cs" />
     <Compile Include="DataBase\Tables\Portfolio_Currency.cs" />
     <Compile Include="DataBase\Tables\SecurityPortfolio.cs" />
@@ -96,6 +97,7 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ClassDiagrammExchange.cd" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -1,0 +1,2146 @@
+2025-07-09 18:48:13.9095 INFO Приложение запущено
+2025-07-09 18:48:14.0162 INFO Отправка данных на сервер
+2025-07-09 18:48:14.4712 INFO Получение данных из файла Address.csv
+2025-07-09 18:48:14.4712 INFO Получение данных из файла Client.csv
+2025-07-09 18:48:15.2514 ERROR The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:15.2514 INFO Данные успешно отправлены на сервер
+2025-07-09 18:48:15.8466 INFO Процесс получения курса валют запущен
+2025-07-09 18:48:15.8466 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 18:48:16.3054 INFO Подключение прошло успешно. OK
+2025-07-09 18:48:16.4025 INFO Извлечение данных
+2025-07-09 18:48:16.4267 INFO Данные успешно получены. Количество: 43
+2025-07-09 18:48:16.4267 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 18:48:16.4267 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 18:48:16.4486 INFO Добавление полученных данных в БД
+2025-07-09 18:48:16.5449 INFO Подключение к БД прошло успешно
+2025-07-09 18:48:16.5821 ERROR The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:16.5821 INFO Данные успешно отправлены на сервер
+2025-07-09 18:48:16.5821 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 18:48:16.5821 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 18:48:16.5821 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 18:48:16.6202 ERROR The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:16.6202 INFO Запущен процесс получения акций
+2025-07-09 18:48:16.6202 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 18:48:16.8575 INFO Извлечение данных
+2025-07-09 18:48:16.8655 INFO Данные получены
+2025-07-09 18:48:16.8655 INFO Корректные данные для считывания
+2025-07-09 18:48:16.8816 INFO Успешная десериализация данных
+2025-07-09 18:48:16.8816 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 18:48:16.8816 INFO Данные записаны: 18 акций
+2025-07-09 18:48:16.8952 INFO Добавление полученных данных в БД
+2025-07-09 18:48:16.8952 INFO Подключение к БД прошло успешно
+2025-07-09 18:48:16.9131 ERROR The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:16.9131 INFO Запущен процесс получения облигаций
+2025-07-09 18:48:16.9131 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.3002 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.3002 INFO Извлечение данных
+2025-07-09 18:48:17.3156 INFO Данные получены
+2025-07-09 18:48:17.3156 INFO Корректные данные для считывания
+2025-07-09 18:48:17.3531 INFO Успешная десериализация данных
+2025-07-09 18:48:17.3870 ERROR Ошибка при получении SecPortfolioId для SBER: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.3870 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.5907 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.5969 INFO Извлечение данных
+2025-07-09 18:48:17.6170 INFO Данные получены
+2025-07-09 18:48:17.6170 INFO Корректные данные для считывания
+2025-07-09 18:48:17.6307 INFO Успешная десериализация данных
+2025-07-09 18:48:17.6486 ERROR Ошибка при получении SecPortfolioId для VTBR: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.6486 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.6964 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.6964 INFO Извлечение данных
+2025-07-09 18:48:17.6964 INFO Данные получены
+2025-07-09 18:48:17.6964 INFO Корректные данные для считывания
+2025-07-09 18:48:17.6964 INFO Успешная десериализация данных
+2025-07-09 18:48:17.7154 ERROR Ошибка при получении SecPortfolioId для UGLD: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.7154 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.7655 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.7655 INFO Извлечение данных
+2025-07-09 18:48:17.7685 INFO Данные получены
+2025-07-09 18:48:17.7685 INFO Корректные данные для считывания
+2025-07-09 18:48:17.7685 INFO Успешная десериализация данных
+2025-07-09 18:48:17.7895 ERROR Ошибка при получении SecPortfolioId для GAZP: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.7895 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.8386 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.8386 INFO Извлечение данных
+2025-07-09 18:48:17.8386 INFO Данные получены
+2025-07-09 18:48:17.8386 INFO Корректные данные для считывания
+2025-07-09 18:48:17.8386 INFO Успешная десериализация данных
+2025-07-09 18:48:17.8585 ERROR Ошибка при получении SecPortfolioId для T: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.8585 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.9040 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.9040 INFO Извлечение данных
+2025-07-09 18:48:17.9040 INFO Данные получены
+2025-07-09 18:48:17.9040 INFO Корректные данные для считывания
+2025-07-09 18:48:17.9040 INFO Успешная десериализация данных
+2025-07-09 18:48:17.9241 ERROR Ошибка при получении SecPortfolioId для LKOH: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.9241 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:17.9712 INFO Подключение прошло успешно.
+2025-07-09 18:48:17.9712 INFO Извлечение данных
+2025-07-09 18:48:17.9712 INFO Данные получены
+2025-07-09 18:48:17.9712 INFO Корректные данные для считывания
+2025-07-09 18:48:17.9712 INFO Успешная десериализация данных
+2025-07-09 18:48:17.9930 ERROR Ошибка при получении SecPortfolioId для NVTK: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:17.9930 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.0493 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.0493 INFO Извлечение данных
+2025-07-09 18:48:18.0493 INFO Данные получены
+2025-07-09 18:48:18.0493 INFO Корректные данные для считывания
+2025-07-09 18:48:18.0493 INFO Успешная десериализация данных
+2025-07-09 18:48:18.0706 ERROR Ошибка при получении SecPortfolioId для SMLT: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.0706 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.1170 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.1170 INFO Извлечение данных
+2025-07-09 18:48:18.1170 INFO Данные получены
+2025-07-09 18:48:18.1170 INFO Корректные данные для считывания
+2025-07-09 18:48:18.1170 INFO Успешная десериализация данных
+2025-07-09 18:48:18.1419 ERROR Ошибка при получении SecPortfolioId для PIKK: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.1419 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.1854 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.1854 INFO Извлечение данных
+2025-07-09 18:48:18.1854 INFO Данные получены
+2025-07-09 18:48:18.1895 INFO Корректные данные для считывания
+2025-07-09 18:48:18.1895 INFO Успешная десериализация данных
+2025-07-09 18:48:18.1895 ERROR Ошибка при получении SecPortfolioId для X5: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.2087 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.2529 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.2529 INFO Извлечение данных
+2025-07-09 18:48:18.2529 INFO Данные получены
+2025-07-09 18:48:18.2529 INFO Корректные данные для считывания
+2025-07-09 18:48:18.2529 INFO Успешная десериализация данных
+2025-07-09 18:48:18.2772 ERROR Ошибка при получении SecPortfolioId для GMKN: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.2772 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.3155 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.3155 INFO Извлечение данных
+2025-07-09 18:48:18.3155 INFO Данные получены
+2025-07-09 18:48:18.3155 INFO Корректные данные для считывания
+2025-07-09 18:48:18.3155 INFO Успешная десериализация данных
+2025-07-09 18:48:18.3477 ERROR Ошибка при получении SecPortfolioId для YDEX: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.3477 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.3898 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.3898 INFO Извлечение данных
+2025-07-09 18:48:18.3898 INFO Данные получены
+2025-07-09 18:48:18.3898 INFO Корректные данные для считывания
+2025-07-09 18:48:18.3898 INFO Успешная десериализация данных
+2025-07-09 18:48:18.4085 ERROR Ошибка при получении SecPortfolioId для POSI: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.4085 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.4588 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.4588 INFO Извлечение данных
+2025-07-09 18:48:18.4588 INFO Данные получены
+2025-07-09 18:48:18.4588 INFO Корректные данные для считывания
+2025-07-09 18:48:18.4588 INFO Успешная десериализация данных
+2025-07-09 18:48:18.4756 ERROR Ошибка при получении SecPortfolioId для PLZL: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.4756 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.5297 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.5297 INFO Извлечение данных
+2025-07-09 18:48:18.5297 INFO Данные получены
+2025-07-09 18:48:18.5338 INFO Корректные данные для считывания
+2025-07-09 18:48:18.5338 INFO Успешная десериализация данных
+2025-07-09 18:48:18.5504 ERROR Ошибка при получении SecPortfolioId для MGNT: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.5504 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.6170 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.6170 INFO Извлечение данных
+2025-07-09 18:48:18.6170 INFO Данные получены
+2025-07-09 18:48:18.6170 INFO Корректные данные для считывания
+2025-07-09 18:48:18.6170 INFO Успешная десериализация данных
+2025-07-09 18:48:18.6421 ERROR Ошибка при получении SecPortfolioId для ROSN: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.6431 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.6858 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.6858 INFO Извлечение данных
+2025-07-09 18:48:18.6858 INFO Данные получены
+2025-07-09 18:48:18.6898 INFO Корректные данные для считывания
+2025-07-09 18:48:18.6898 INFO Успешная десериализация данных
+2025-07-09 18:48:18.7086 ERROR Ошибка при получении SecPortfolioId для VKCO: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.7086 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.7600 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.7600 INFO Извлечение данных
+2025-07-09 18:48:18.7600 INFO Данные получены
+2025-07-09 18:48:18.7600 INFO Корректные данные для считывания
+2025-07-09 18:48:18.7600 INFO Успешная десериализация данных
+2025-07-09 18:48:18.7812 ERROR Ошибка при получении SecPortfolioId для AFLT: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.7812 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.8181 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.8181 INFO Извлечение данных
+2025-07-09 18:48:18.8181 INFO Данные получены
+2025-07-09 18:48:18.8328 INFO Корректные данные для считывания
+2025-07-09 18:48:18.8328 INFO Успешная десериализация данных
+2025-07-09 18:48:18.8490 ERROR Ошибка при получении SecPortfolioId для SPBE: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.8490 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:18.8867 INFO Подключение прошло успешно.
+2025-07-09 18:48:18.8867 INFO Извлечение данных
+2025-07-09 18:48:18.8867 INFO Данные получены
+2025-07-09 18:48:18.8867 INFO Корректные данные для считывания
+2025-07-09 18:48:18.8867 INFO Успешная десериализация данных
+2025-07-09 18:48:18.9090 ERROR Ошибка при получении SecPortfolioId для OZPH: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:18.9090 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:19.0517 INFO Подключение прошло успешно.
+2025-07-09 18:48:19.0517 INFO Извлечение данных
+2025-07-09 18:48:19.0517 INFO Данные получены
+2025-07-09 18:48:19.0517 INFO Корректные данные для считывания
+2025-07-09 18:48:19.0517 INFO Успешная десериализация данных
+2025-07-09 18:48:19.0707 ERROR Ошибка при получении SecPortfolioId для RNFT: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:19.0707 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:19.1121 INFO Подключение прошло успешно.
+2025-07-09 18:48:19.1121 INFO Извлечение данных
+2025-07-09 18:48:19.1121 INFO Данные получены
+2025-07-09 18:48:19.1121 INFO Корректные данные для считывания
+2025-07-09 18:48:19.1121 INFO Успешная десериализация данных
+2025-07-09 18:48:19.1351 ERROR Ошибка при получении SecPortfolioId для MTLR: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:19.1351 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:19.1764 INFO Подключение прошло успешно.
+2025-07-09 18:48:19.1764 INFO Извлечение данных
+2025-07-09 18:48:19.1764 INFO Данные получены
+2025-07-09 18:48:19.1764 INFO Корректные данные для считывания
+2025-07-09 18:48:19.1764 INFO Успешная десериализация данных
+2025-07-09 18:48:19.1976 ERROR Ошибка при получении SecPortfolioId для RAGR: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:19.1976 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:48:19.2423 INFO Подключение прошло успешно.
+2025-07-09 18:48:19.2423 INFO Извлечение данных
+2025-07-09 18:48:19.2423 INFO Данные получены
+2025-07-09 18:48:19.2423 INFO Корректные данные для считывания
+2025-07-09 18:48:19.2423 INFO Успешная десериализация данных
+2025-07-09 18:48:19.2647 ERROR Ошибка при получении SecPortfolioId для MOEX: The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:19.2647 INFO Все данные успешно считаны. 0 биржевых облигаций и акций из 0 разных типов облигаций
+2025-07-09 18:48:19.2647 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 18:48:19.2647 INFO Данные записаны.
+2025-07-09 18:48:19.2703 INFO Добавление полученных данных в БД
+2025-07-09 18:48:19.2703 INFO Подключение к БД прошло успешно
+2025-07-09 18:48:19.2703 ERROR Данные об облигациях пустые и не могут быть добавлены в таблицу 'Bonds'.
+2025-07-09 18:48:19.2703 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 18:48:19.3021 ERROR The property 'Client_Id' cannot be configured as a navigation property. The property must be a valid entity type and the property should have a non-abstract getter and setter. For collection properties the type must implement ICollection<T> where T is a valid entity type.
+2025-07-09 18:48:19.3021 INFO Приложение завершило работу
+2025-07-09 18:50:46.8887 INFO Приложение запущено
+2025-07-09 18:50:47.0197 INFO Отправка данных на сервер
+2025-07-09 18:50:47.4830 INFO Получение данных из файла Address.csv
+2025-07-09 18:50:47.4830 INFO Получение данных из файла Client.csv
+2025-07-09 18:50:52.4722 INFO Данные адресов добавлены в БД
+2025-07-09 18:50:52.7149 INFO Данные клиентов добавлены в БД
+2025-07-09 18:50:52.7149 INFO Данные успешно отправлены на сервер
+2025-07-09 18:50:52.7350 INFO Процесс получения курса валют запущен
+2025-07-09 18:50:52.7367 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 18:50:53.1069 INFO Подключение прошло успешно. OK
+2025-07-09 18:50:53.1758 INFO Извлечение данных
+2025-07-09 18:50:53.1904 INFO Данные успешно получены. Количество: 43
+2025-07-09 18:50:53.1904 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 18:50:53.1904 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 18:50:53.2065 INFO Добавление полученных данных в БД
+2025-07-09 18:50:53.2444 INFO Подключение к БД прошло успешно
+2025-07-09 18:50:53.4338 ERROR An error occurred while updating the entries. See the inner exception for details.
+2025-07-09 18:50:53.4338 INFO Данные успешно отправлены на сервер
+2025-07-09 18:50:53.4419 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 18:50:53.4419 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 18:50:53.4419 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 18:50:53.4922 INFO Данные о портфелях добавлены
+2025-07-09 18:50:53.5989 ERROR An error occurred while updating the entries. See the inner exception for details.
+2025-07-09 18:50:53.5989 INFO Запущен процесс получения акций
+2025-07-09 18:50:53.5989 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 18:50:53.7389 INFO Извлечение данных
+2025-07-09 18:50:53.7528 INFO Данные получены
+2025-07-09 18:50:53.7528 INFO Корректные данные для считывания
+2025-07-09 18:50:53.7528 INFO Успешная десериализация данных
+2025-07-09 18:50:53.7528 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 18:50:53.7705 INFO Данные записаны: 18 акций
+2025-07-09 18:50:53.7705 INFO Добавление полученных данных в БД
+2025-07-09 18:50:53.7705 INFO Подключение к БД прошло успешно
+2025-07-09 18:50:53.8998 INFO Обработано акций: 18 (добавлено: 18, обновлено: 0)
+2025-07-09 18:50:53.8998 INFO Запущен процесс получения облигаций
+2025-07-09 18:50:53.8998 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:54.2685 INFO Подключение прошло успешно.
+2025-07-09 18:50:54.2847 INFO Извлечение данных
+2025-07-09 18:50:54.2847 INFO Данные получены
+2025-07-09 18:50:54.2997 INFO Корректные данные для считывания
+2025-07-09 18:50:54.3197 INFO Успешная десериализация данных
+2025-07-09 18:50:55.6412 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 18:50:55.6412 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:55.9571 INFO Подключение прошло успешно.
+2025-07-09 18:50:55.9571 INFO Извлечение данных
+2025-07-09 18:50:55.9571 INFO Данные получены
+2025-07-09 18:50:55.9835 INFO Корректные данные для считывания
+2025-07-09 18:50:55.9865 INFO Успешная десериализация данных
+2025-07-09 18:50:57.6687 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 18:50:57.6687 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:57.7104 INFO Подключение прошло успешно.
+2025-07-09 18:50:57.7104 INFO Извлечение данных
+2025-07-09 18:50:57.7104 INFO Данные получены
+2025-07-09 18:50:57.7104 INFO Корректные данные для считывания
+2025-07-09 18:50:57.7104 INFO Успешная десериализация данных
+2025-07-09 18:50:57.7415 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:57.7415 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:57.7820 INFO Подключение прошло успешно.
+2025-07-09 18:50:57.7820 INFO Извлечение данных
+2025-07-09 18:50:57.7890 INFO Данные получены
+2025-07-09 18:50:57.7890 INFO Корректные данные для считывания
+2025-07-09 18:50:57.7890 INFO Успешная десериализация данных
+2025-07-09 18:50:57.8190 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 18:50:57.8190 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:57.8564 INFO Подключение прошло успешно.
+2025-07-09 18:50:57.8645 INFO Извлечение данных
+2025-07-09 18:50:57.8645 INFO Данные получены
+2025-07-09 18:50:57.8645 INFO Корректные данные для считывания
+2025-07-09 18:50:57.8645 INFO Успешная десериализация данных
+2025-07-09 18:50:57.8645 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 18:50:57.8645 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:57.9197 INFO Подключение прошло успешно.
+2025-07-09 18:50:57.9197 INFO Извлечение данных
+2025-07-09 18:50:57.9197 INFO Данные получены
+2025-07-09 18:50:57.9197 INFO Корректные данные для считывания
+2025-07-09 18:50:57.9257 INFO Успешная десериализация данных
+2025-07-09 18:50:57.9513 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 18:50:57.9513 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:57.9983 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.0055 INFO Извлечение данных
+2025-07-09 18:50:58.0055 INFO Данные получены
+2025-07-09 18:50:58.0055 INFO Корректные данные для считывания
+2025-07-09 18:50:58.0055 INFO Успешная десериализация данных
+2025-07-09 18:50:58.0321 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 18:50:58.0321 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.0764 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.0764 INFO Извлечение данных
+2025-07-09 18:50:58.0764 INFO Данные получены
+2025-07-09 18:50:58.0764 INFO Корректные данные для считывания
+2025-07-09 18:50:58.0764 INFO Успешная десериализация данных
+2025-07-09 18:50:58.1244 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 18:50:58.1244 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.2605 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.2605 INFO Извлечение данных
+2025-07-09 18:50:58.2605 INFO Данные получены
+2025-07-09 18:50:58.2734 INFO Корректные данные для считывания
+2025-07-09 18:50:58.2734 INFO Успешная десериализация данных
+2025-07-09 18:50:58.2873 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 18:50:58.2873 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.3255 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.3337 INFO Извлечение данных
+2025-07-09 18:50:58.3337 INFO Данные получены
+2025-07-09 18:50:58.3337 INFO Корректные данные для считывания
+2025-07-09 18:50:58.3337 INFO Успешная десериализация данных
+2025-07-09 18:50:58.3337 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 18:50:58.3337 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.3915 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.3915 INFO Извлечение данных
+2025-07-09 18:50:58.3947 INFO Данные получены
+2025-07-09 18:50:58.3947 INFO Корректные данные для считывания
+2025-07-09 18:50:58.3947 INFO Успешная десериализация данных
+2025-07-09 18:50:58.4443 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 18:50:58.4443 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.4865 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.4865 INFO Извлечение данных
+2025-07-09 18:50:58.4865 INFO Данные получены
+2025-07-09 18:50:58.4865 INFO Корректные данные для считывания
+2025-07-09 18:50:58.4865 INFO Успешная десериализация данных
+2025-07-09 18:50:58.5036 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 18:50:58.5036 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.5806 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.5806 INFO Извлечение данных
+2025-07-09 18:50:58.5806 INFO Данные получены
+2025-07-09 18:50:58.5806 INFO Корректные данные для считывания
+2025-07-09 18:50:58.5806 INFO Успешная десериализация данных
+2025-07-09 18:50:58.6114 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 18:50:58.6114 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.8397 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.8397 INFO Извлечение данных
+2025-07-09 18:50:58.8397 INFO Данные получены
+2025-07-09 18:50:58.8397 INFO Корректные данные для считывания
+2025-07-09 18:50:58.8397 INFO Успешная десериализация данных
+2025-07-09 18:50:58.8770 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 18:50:58.8770 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.9214 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.9214 INFO Извлечение данных
+2025-07-09 18:50:58.9214 INFO Данные получены
+2025-07-09 18:50:58.9275 INFO Корректные данные для считывания
+2025-07-09 18:50:58.9275 INFO Успешная десериализация данных
+2025-07-09 18:50:58.9442 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:58.9442 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:58.9913 INFO Подключение прошло успешно.
+2025-07-09 18:50:58.9913 INFO Извлечение данных
+2025-07-09 18:50:58.9913 INFO Данные получены
+2025-07-09 18:50:58.9913 INFO Корректные данные для считывания
+2025-07-09 18:50:58.9913 INFO Успешная десериализация данных
+2025-07-09 18:50:59.1128 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 18:50:59.1128 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.1658 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.1658 INFO Извлечение данных
+2025-07-09 18:50:59.1658 INFO Данные получены
+2025-07-09 18:50:59.1658 INFO Корректные данные для считывания
+2025-07-09 18:50:59.1658 INFO Успешная десериализация данных
+2025-07-09 18:50:59.1789 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 18:50:59.1789 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.2522 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.2522 INFO Извлечение данных
+2025-07-09 18:50:59.2522 INFO Данные получены
+2025-07-09 18:50:59.2522 INFO Корректные данные для считывания
+2025-07-09 18:50:59.2522 INFO Успешная десериализация данных
+2025-07-09 18:50:59.2787 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.2787 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.3314 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.3475 INFO Извлечение данных
+2025-07-09 18:50:59.3475 INFO Данные получены
+2025-07-09 18:50:59.3475 INFO Корректные данные для считывания
+2025-07-09 18:50:59.3475 INFO Успешная десериализация данных
+2025-07-09 18:50:59.3674 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.3674 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.4108 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.4108 INFO Извлечение данных
+2025-07-09 18:50:59.4108 INFO Данные получены
+2025-07-09 18:50:59.4108 INFO Корректные данные для считывания
+2025-07-09 18:50:59.4108 INFO Успешная десериализация данных
+2025-07-09 18:50:59.4340 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.4340 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.4744 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.4744 INFO Извлечение данных
+2025-07-09 18:50:59.4744 INFO Данные получены
+2025-07-09 18:50:59.4744 INFO Корректные данные для считывания
+2025-07-09 18:50:59.4744 INFO Успешная десериализация данных
+2025-07-09 18:50:59.4977 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.4977 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.5547 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.5547 INFO Извлечение данных
+2025-07-09 18:50:59.5547 INFO Данные получены
+2025-07-09 18:50:59.5547 INFO Корректные данные для считывания
+2025-07-09 18:50:59.5547 INFO Успешная десериализация данных
+2025-07-09 18:50:59.5786 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.5806 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.6270 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.6270 INFO Извлечение данных
+2025-07-09 18:50:59.6270 INFO Данные получены
+2025-07-09 18:50:59.6270 INFO Корректные данные для считывания
+2025-07-09 18:50:59.6270 INFO Успешная десериализация данных
+2025-07-09 18:50:59.6499 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 18:50:59.6499 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:50:59.6936 INFO Подключение прошло успешно.
+2025-07-09 18:50:59.6936 INFO Извлечение данных
+2025-07-09 18:50:59.6936 INFO Данные получены
+2025-07-09 18:50:59.6936 INFO Корректные данные для считывания
+2025-07-09 18:50:59.6936 INFO Успешная десериализация данных
+2025-07-09 18:50:59.7087 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 18:50:59.7087 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 18:50:59.7087 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 18:50:59.7087 INFO Данные записаны.
+2025-07-09 18:50:59.7087 INFO Добавление полученных данных в БД
+2025-07-09 18:50:59.7087 INFO Подключение к БД прошло успешно
+2025-07-09 18:51:02.2808 INFO Обработано облигаций: 484 (добавлено: 484, обновлено: 0)
+2025-07-09 18:51:02.2808 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 18:51:02.3079 ERROR Не удалось найти хранимую процедуру "proc_HistoryPortfolioExchange".
+2025-07-09 18:51:02.3079 INFO Приложение завершило работу
+2025-07-09 18:55:25.3419 INFO Приложение запущено
+2025-07-09 18:55:25.4454 INFO Отправка данных на сервер
+2025-07-09 18:55:25.8414 INFO Получение данных из файла Address.csv
+2025-07-09 18:55:25.8414 INFO Получение данных из файла Client.csv
+2025-07-09 18:55:30.0471 INFO Данные адресов добавлены в БД
+2025-07-09 18:55:30.1902 INFO Данные клиентов добавлены в БД
+2025-07-09 18:55:30.1902 INFO Данные успешно отправлены на сервер
+2025-07-09 18:55:30.2053 INFO Процесс получения курса валют запущен
+2025-07-09 18:55:30.2053 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 18:55:30.5755 INFO Подключение прошло успешно. OK
+2025-07-09 18:55:30.6443 INFO Извлечение данных
+2025-07-09 18:55:30.6443 INFO Данные успешно получены. Количество: 43
+2025-07-09 18:55:30.6443 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 18:55:30.6595 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 18:55:30.6595 INFO Добавление полученных данных в БД
+2025-07-09 18:55:30.6595 INFO Подключение к БД прошло успешно
+2025-07-09 18:55:31.0443 ERROR An error occurred while updating the entries. See the inner exception for details.
+2025-07-09 18:55:31.0443 INFO Данные успешно отправлены на сервер
+2025-07-09 18:55:31.0495 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 18:55:31.0495 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 18:55:31.0495 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 18:55:31.1338 INFO Данные о портфелях добавлены
+2025-07-09 18:55:31.2282 ERROR An error occurred while updating the entries. See the inner exception for details.
+2025-07-09 18:55:31.2282 INFO Запущен процесс получения акций
+2025-07-09 18:55:31.2282 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 18:55:31.3705 INFO Извлечение данных
+2025-07-09 18:55:31.3796 INFO Данные получены
+2025-07-09 18:55:31.3796 INFO Корректные данные для считывания
+2025-07-09 18:55:31.3941 INFO Успешная десериализация данных
+2025-07-09 18:55:31.3941 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 18:55:31.3941 INFO Данные записаны: 18 акций
+2025-07-09 18:55:31.4084 INFO Добавление полученных данных в БД
+2025-07-09 18:55:31.4084 INFO Подключение к БД прошло успешно
+2025-07-09 18:55:31.5478 INFO Обработано акций: 18 (добавлено: 0, обновлено: 18)
+2025-07-09 18:55:31.5520 INFO Запущен процесс получения облигаций
+2025-07-09 18:55:31.5520 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:32.3958 INFO Подключение прошло успешно.
+2025-07-09 18:55:32.3958 INFO Извлечение данных
+2025-07-09 18:55:32.4089 INFO Данные получены
+2025-07-09 18:55:32.4089 INFO Корректные данные для считывания
+2025-07-09 18:55:32.4448 INFO Успешная десериализация данных
+2025-07-09 18:55:33.6692 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 18:55:33.6692 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:33.8865 INFO Подключение прошло успешно.
+2025-07-09 18:55:33.8865 INFO Извлечение данных
+2025-07-09 18:55:33.9095 INFO Данные получены
+2025-07-09 18:55:33.9095 INFO Корректные данные для считывания
+2025-07-09 18:55:33.9275 INFO Успешная десериализация данных
+2025-07-09 18:55:35.6017 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 18:55:35.6017 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:35.6439 INFO Подключение прошло успешно.
+2025-07-09 18:55:35.6439 INFO Извлечение данных
+2025-07-09 18:55:35.6439 INFO Данные получены
+2025-07-09 18:55:35.6439 INFO Корректные данные для считывания
+2025-07-09 18:55:35.6439 INFO Успешная десериализация данных
+2025-07-09 18:55:35.6737 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:35.6737 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:35.7193 INFO Подключение прошло успешно.
+2025-07-09 18:55:35.7193 INFO Извлечение данных
+2025-07-09 18:55:35.7220 INFO Данные получены
+2025-07-09 18:55:35.7220 INFO Корректные данные для считывания
+2025-07-09 18:55:35.7220 INFO Успешная десериализация данных
+2025-07-09 18:55:35.7506 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 18:55:35.7532 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:35.7937 INFO Подключение прошло успешно.
+2025-07-09 18:55:35.7937 INFO Извлечение данных
+2025-07-09 18:55:35.7937 INFO Данные получены
+2025-07-09 18:55:35.7937 INFO Корректные данные для считывания
+2025-07-09 18:55:35.8007 INFO Успешная десериализация данных
+2025-07-09 18:55:35.8007 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 18:55:35.8007 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:35.8571 INFO Подключение прошло успешно.
+2025-07-09 18:55:35.8571 INFO Извлечение данных
+2025-07-09 18:55:35.8571 INFO Данные получены
+2025-07-09 18:55:35.8571 INFO Корректные данные для считывания
+2025-07-09 18:55:35.8571 INFO Успешная десериализация данных
+2025-07-09 18:55:35.8894 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 18:55:35.8894 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:35.9363 INFO Подключение прошло успешно.
+2025-07-09 18:55:35.9363 INFO Извлечение данных
+2025-07-09 18:55:35.9363 INFO Данные получены
+2025-07-09 18:55:35.9363 INFO Корректные данные для считывания
+2025-07-09 18:55:35.9363 INFO Успешная десериализация данных
+2025-07-09 18:55:35.9620 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 18:55:35.9620 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.0073 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.0073 INFO Извлечение данных
+2025-07-09 18:55:36.0073 INFO Данные получены
+2025-07-09 18:55:36.0073 INFO Корректные данные для считывания
+2025-07-09 18:55:36.0073 INFO Успешная десериализация данных
+2025-07-09 18:55:36.0518 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 18:55:36.0518 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.0957 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.0957 INFO Извлечение данных
+2025-07-09 18:55:36.0957 INFO Данные получены
+2025-07-09 18:55:36.0957 INFO Корректные данные для считывания
+2025-07-09 18:55:36.0957 INFO Успешная десериализация данных
+2025-07-09 18:55:36.1179 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 18:55:36.1179 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.1514 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.1622 INFO Извлечение данных
+2025-07-09 18:55:36.1622 INFO Данные получены
+2025-07-09 18:55:36.1622 INFO Корректные данные для считывания
+2025-07-09 18:55:36.1622 INFO Успешная десериализация данных
+2025-07-09 18:55:36.1738 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 18:55:36.1738 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.2173 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.2173 INFO Извлечение данных
+2025-07-09 18:55:36.2173 INFO Данные получены
+2025-07-09 18:55:36.2173 INFO Корректные данные для считывания
+2025-07-09 18:55:36.2214 INFO Успешная десериализация данных
+2025-07-09 18:55:36.2670 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 18:55:36.2698 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.3122 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.3122 INFO Извлечение данных
+2025-07-09 18:55:36.3155 INFO Данные получены
+2025-07-09 18:55:36.3155 INFO Корректные данные для считывания
+2025-07-09 18:55:36.3155 INFO Успешная десериализация данных
+2025-07-09 18:55:36.3333 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 18:55:36.3333 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.3828 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.3828 INFO Извлечение данных
+2025-07-09 18:55:36.3828 INFO Данные получены
+2025-07-09 18:55:36.3828 INFO Корректные данные для считывания
+2025-07-09 18:55:36.3828 INFO Успешная десериализация данных
+2025-07-09 18:55:36.4029 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 18:55:36.4029 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.4501 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.4501 INFO Извлечение данных
+2025-07-09 18:55:36.4501 INFO Данные получены
+2025-07-09 18:55:36.4501 INFO Корректные данные для считывания
+2025-07-09 18:55:36.4501 INFO Успешная десериализация данных
+2025-07-09 18:55:36.4797 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 18:55:36.4797 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.5238 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.5238 INFO Извлечение данных
+2025-07-09 18:55:36.5238 INFO Данные получены
+2025-07-09 18:55:36.5238 INFO Корректные данные для считывания
+2025-07-09 18:55:36.5238 INFO Успешная десериализация данных
+2025-07-09 18:55:36.5450 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:36.5450 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.5933 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.5933 INFO Извлечение данных
+2025-07-09 18:55:36.5959 INFO Данные получены
+2025-07-09 18:55:36.5959 INFO Корректные данные для считывания
+2025-07-09 18:55:36.5959 INFO Успешная десериализация данных
+2025-07-09 18:55:36.6900 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 18:55:36.6900 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.7363 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.7385 INFO Извлечение данных
+2025-07-09 18:55:36.7385 INFO Данные получены
+2025-07-09 18:55:36.7385 INFO Корректные данные для считывания
+2025-07-09 18:55:36.7385 INFO Успешная десериализация данных
+2025-07-09 18:55:36.7563 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 18:55:36.7563 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.8015 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.8015 INFO Извлечение данных
+2025-07-09 18:55:36.8015 INFO Данные получены
+2025-07-09 18:55:36.8015 INFO Корректные данные для считывания
+2025-07-09 18:55:36.8015 INFO Успешная десериализация данных
+2025-07-09 18:55:36.8193 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:36.8193 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.8668 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.8668 INFO Извлечение данных
+2025-07-09 18:55:36.8668 INFO Данные получены
+2025-07-09 18:55:36.8668 INFO Корректные данные для считывания
+2025-07-09 18:55:36.8668 INFO Успешная десериализация данных
+2025-07-09 18:55:36.8822 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:36.8822 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.9197 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.9197 INFO Извлечение данных
+2025-07-09 18:55:36.9197 INFO Данные получены
+2025-07-09 18:55:36.9288 INFO Корректные данные для считывания
+2025-07-09 18:55:36.9288 INFO Успешная десериализация данных
+2025-07-09 18:55:36.9432 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:36.9432 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:36.9820 INFO Подключение прошло успешно.
+2025-07-09 18:55:36.9820 INFO Извлечение данных
+2025-07-09 18:55:36.9820 INFO Данные получены
+2025-07-09 18:55:36.9820 INFO Корректные данные для считывания
+2025-07-09 18:55:36.9820 INFO Успешная десериализация данных
+2025-07-09 18:55:36.9981 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:36.9981 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:37.0308 INFO Подключение прошло успешно.
+2025-07-09 18:55:37.0457 INFO Извлечение данных
+2025-07-09 18:55:37.0457 INFO Данные получены
+2025-07-09 18:55:37.0457 INFO Корректные данные для считывания
+2025-07-09 18:55:37.0492 INFO Успешная десериализация данных
+2025-07-09 18:55:37.0492 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:37.0492 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:37.0952 INFO Подключение прошло успешно.
+2025-07-09 18:55:37.1002 INFO Извлечение данных
+2025-07-09 18:55:37.1002 INFO Данные получены
+2025-07-09 18:55:37.1002 INFO Корректные данные для считывания
+2025-07-09 18:55:37.1002 INFO Успешная десериализация данных
+2025-07-09 18:55:37.1167 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 18:55:37.1167 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 18:55:37.1612 INFO Подключение прошло успешно.
+2025-07-09 18:55:37.1612 INFO Извлечение данных
+2025-07-09 18:55:37.1612 INFO Данные получены
+2025-07-09 18:55:37.1612 INFO Корректные данные для считывания
+2025-07-09 18:55:37.1612 INFO Успешная десериализация данных
+2025-07-09 18:55:37.1789 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 18:55:37.1789 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 18:55:37.1789 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 18:55:37.1789 INFO Данные записаны.
+2025-07-09 18:55:37.1908 INFO Добавление полученных данных в БД
+2025-07-09 18:55:37.1908 INFO Подключение к БД прошло успешно
+2025-07-09 18:55:37.2655 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 18:55:37.2655 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 18:55:37.2872 ERROR Не удалось найти хранимую процедуру "proc_HistoryPortfolioExchange".
+2025-07-09 18:55:37.2872 INFO Приложение завершило работу
+2025-07-09 19:01:07.6004 INFO Приложение запущено
+2025-07-09 19:01:07.7617 INFO Отправка данных на сервер
+2025-07-09 19:01:08.2291 INFO Получение данных из файла Address.csv
+2025-07-09 19:01:08.2291 INFO Получение данных из файла Client.csv
+2025-07-09 19:01:12.9275 INFO Данные адресов добавлены в БД
+2025-07-09 19:01:13.1170 INFO Данные клиентов добавлены в БД
+2025-07-09 19:01:13.1170 INFO Данные успешно отправлены на сервер
+2025-07-09 19:01:13.1309 INFO Процесс получения курса валют запущен
+2025-07-09 19:01:13.1309 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:01:13.5019 INFO Подключение прошло успешно. OK
+2025-07-09 19:01:13.5608 INFO Извлечение данных
+2025-07-09 19:01:13.5689 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:01:13.5689 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:01:13.5689 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:01:13.5831 INFO Добавление полученных данных в БД
+2025-07-09 19:01:13.5831 INFO Подключение к БД прошло успешно
+2025-07-09 19:01:13.7651 INFO Обработано валют: 43 (добавлено: 43, обновлено: 0)
+2025-07-09 19:01:13.7651 INFO Данные успешно отправлены на сервер
+2025-07-09 19:01:13.7702 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:01:13.7702 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:01:13.7702 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:01:13.8217 INFO Данные о портфелях добавлены
+2025-07-09 19:01:13.9022 ERROR An error occurred while updating the entries. See the inner exception for details.
+2025-07-09 19:01:13.9022 INFO Запущен процесс получения акций
+2025-07-09 19:01:13.9087 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:01:14.0938 INFO Извлечение данных
+2025-07-09 19:01:14.1051 INFO Данные получены
+2025-07-09 19:01:14.1051 INFO Корректные данные для считывания
+2025-07-09 19:01:14.1205 INFO Успешная десериализация данных
+2025-07-09 19:01:14.1205 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:01:14.1205 INFO Данные записаны: 18 акций
+2025-07-09 19:01:14.1358 INFO Добавление полученных данных в БД
+2025-07-09 19:01:14.1358 INFO Подключение к БД прошло успешно
+2025-07-09 19:01:14.2248 INFO Обработано акций: 18 (добавлено: 18, обновлено: 0)
+2025-07-09 19:01:14.2248 INFO Запущен процесс получения облигаций
+2025-07-09 19:01:14.2248 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:15.4154 INFO Подключение прошло успешно.
+2025-07-09 19:01:15.4154 INFO Извлечение данных
+2025-07-09 19:01:15.4350 INFO Данные получены
+2025-07-09 19:01:15.4406 INFO Корректные данные для считывания
+2025-07-09 19:01:15.4581 INFO Успешная десериализация данных
+2025-07-09 19:01:16.7590 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:01:16.7590 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:17.0583 INFO Подключение прошло успешно.
+2025-07-09 19:01:17.0583 INFO Извлечение данных
+2025-07-09 19:01:17.0809 INFO Данные получены
+2025-07-09 19:01:17.0809 INFO Корректные данные для считывания
+2025-07-09 19:01:17.0809 INFO Успешная десериализация данных
+2025-07-09 19:01:18.8341 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:01:18.8341 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:18.8750 INFO Подключение прошло успешно.
+2025-07-09 19:01:18.8750 INFO Извлечение данных
+2025-07-09 19:01:18.8750 INFO Данные получены
+2025-07-09 19:01:18.8750 INFO Корректные данные для считывания
+2025-07-09 19:01:18.8811 INFO Успешная десериализация данных
+2025-07-09 19:01:18.9039 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:18.9039 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:18.9457 INFO Подключение прошло успешно.
+2025-07-09 19:01:18.9457 INFO Извлечение данных
+2025-07-09 19:01:18.9457 INFO Данные получены
+2025-07-09 19:01:18.9457 INFO Корректные данные для считывания
+2025-07-09 19:01:18.9457 INFO Успешная десериализация данных
+2025-07-09 19:01:18.9888 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:01:18.9888 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.0355 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.0355 INFO Извлечение данных
+2025-07-09 19:01:19.0355 INFO Данные получены
+2025-07-09 19:01:19.0355 INFO Корректные данные для считывания
+2025-07-09 19:01:19.0355 INFO Успешная десериализация данных
+2025-07-09 19:01:19.0355 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:01:19.0355 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.0969 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.0969 INFO Извлечение данных
+2025-07-09 19:01:19.0969 INFO Данные получены
+2025-07-09 19:01:19.0969 INFO Корректные данные для считывания
+2025-07-09 19:01:19.0969 INFO Успешная десериализация данных
+2025-07-09 19:01:19.1280 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:01:19.1280 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.1633 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.1633 INFO Извлечение данных
+2025-07-09 19:01:19.1633 INFO Данные получены
+2025-07-09 19:01:19.1633 INFO Корректные данные для считывания
+2025-07-09 19:01:19.1750 INFO Успешная десериализация данных
+2025-07-09 19:01:19.1996 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:01:19.1996 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.2447 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.2447 INFO Извлечение данных
+2025-07-09 19:01:19.2447 INFO Данные получены
+2025-07-09 19:01:19.2447 INFO Корректные данные для считывания
+2025-07-09 19:01:19.2447 INFO Успешная десериализация данных
+2025-07-09 19:01:19.3024 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:01:19.3024 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.3457 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.3457 INFO Извлечение данных
+2025-07-09 19:01:19.3457 INFO Данные получены
+2025-07-09 19:01:19.3536 INFO Корректные данные для считывания
+2025-07-09 19:01:19.3536 INFO Успешная десериализация данных
+2025-07-09 19:01:19.3707 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:01:19.3707 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.4071 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.4071 INFO Извлечение данных
+2025-07-09 19:01:19.4071 INFO Данные получены
+2025-07-09 19:01:19.4071 INFO Корректные данные для считывания
+2025-07-09 19:01:19.4071 INFO Успешная десериализация данных
+2025-07-09 19:01:19.4230 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:01:19.4230 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.4688 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.4688 INFO Извлечение данных
+2025-07-09 19:01:19.4714 INFO Данные получены
+2025-07-09 19:01:19.4714 INFO Корректные данные для считывания
+2025-07-09 19:01:19.4714 INFO Успешная десериализация данных
+2025-07-09 19:01:19.5270 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:01:19.5270 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.5915 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.5915 INFO Извлечение данных
+2025-07-09 19:01:19.5915 INFO Данные получены
+2025-07-09 19:01:19.5915 INFO Корректные данные для считывания
+2025-07-09 19:01:19.5915 INFO Успешная десериализация данных
+2025-07-09 19:01:19.6106 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:01:19.6154 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.6670 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.6670 INFO Извлечение данных
+2025-07-09 19:01:19.6670 INFO Данные получены
+2025-07-09 19:01:19.6670 INFO Корректные данные для считывания
+2025-07-09 19:01:19.6670 INFO Успешная десериализация данных
+2025-07-09 19:01:19.6873 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:01:19.6873 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.7363 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.7375 INFO Извлечение данных
+2025-07-09 19:01:19.7375 INFO Данные получены
+2025-07-09 19:01:19.7375 INFO Корректные данные для считывания
+2025-07-09 19:01:19.7375 INFO Успешная десериализация данных
+2025-07-09 19:01:19.7753 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:01:19.7753 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.8171 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.8171 INFO Извлечение данных
+2025-07-09 19:01:19.8171 INFO Данные получены
+2025-07-09 19:01:19.8171 INFO Корректные данные для считывания
+2025-07-09 19:01:19.8171 INFO Успешная десериализация данных
+2025-07-09 19:01:19.8358 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:19.8358 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:19.8817 INFO Подключение прошло успешно.
+2025-07-09 19:01:19.8817 INFO Извлечение данных
+2025-07-09 19:01:19.8817 INFO Данные получены
+2025-07-09 19:01:19.8817 INFO Корректные данные для считывания
+2025-07-09 19:01:19.8817 INFO Успешная десериализация данных
+2025-07-09 19:01:19.9731 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:01:19.9731 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.0204 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.0204 INFO Извлечение данных
+2025-07-09 19:01:20.0204 INFO Данные получены
+2025-07-09 19:01:20.0204 INFO Корректные данные для считывания
+2025-07-09 19:01:20.0204 INFO Успешная десериализация данных
+2025-07-09 19:01:20.0337 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:01:20.0337 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.0767 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.0767 INFO Извлечение данных
+2025-07-09 19:01:20.0767 INFO Данные получены
+2025-07-09 19:01:20.0767 INFO Корректные данные для считывания
+2025-07-09 19:01:20.0767 INFO Успешная десериализация данных
+2025-07-09 19:01:20.0943 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.0943 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.1336 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.1336 INFO Извлечение данных
+2025-07-09 19:01:20.1336 INFO Данные получены
+2025-07-09 19:01:20.1448 INFO Корректные данные для считывания
+2025-07-09 19:01:20.1448 INFO Успешная десериализация данных
+2025-07-09 19:01:20.1587 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.1587 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.1947 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.1947 INFO Извлечение данных
+2025-07-09 19:01:20.1947 INFO Данные получены
+2025-07-09 19:01:20.1947 INFO Корректные данные для считывания
+2025-07-09 19:01:20.1947 INFO Успешная десериализация данных
+2025-07-09 19:01:20.2148 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.2148 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.2588 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.2588 INFO Извлечение данных
+2025-07-09 19:01:20.2588 INFO Данные получены
+2025-07-09 19:01:20.2588 INFO Корректные данные для считывания
+2025-07-09 19:01:20.2588 INFO Успешная десериализация данных
+2025-07-09 19:01:20.2770 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.2770 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.3227 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.3227 INFO Извлечение данных
+2025-07-09 19:01:20.3227 INFO Данные получены
+2025-07-09 19:01:20.3227 INFO Корректные данные для считывания
+2025-07-09 19:01:20.3227 INFO Успешная десериализация данных
+2025-07-09 19:01:20.3422 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.3422 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.3718 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.3718 INFO Извлечение данных
+2025-07-09 19:01:20.3718 INFO Данные получены
+2025-07-09 19:01:20.3859 INFO Корректные данные для считывания
+2025-07-09 19:01:20.3859 INFO Успешная десериализация данных
+2025-07-09 19:01:20.4002 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:01:20.4002 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:01:20.4335 INFO Подключение прошло успешно.
+2025-07-09 19:01:20.4335 INFO Извлечение данных
+2025-07-09 19:01:20.4494 INFO Данные получены
+2025-07-09 19:01:20.4494 INFO Корректные данные для считывания
+2025-07-09 19:01:20.4494 INFO Успешная десериализация данных
+2025-07-09 19:01:20.4610 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:01:20.4610 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:01:20.4610 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:01:20.4610 INFO Данные записаны.
+2025-07-09 19:01:20.4610 INFO Добавление полученных данных в БД
+2025-07-09 19:01:20.5186 INFO Подключение к БД прошло успешно
+2025-07-09 19:01:23.1326 INFO Обработано облигаций: 484 (добавлено: 484, обновлено: 0)
+2025-07-09 19:01:23.1326 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:01:23.1643 ERROR Не удалось найти хранимую процедуру "proc_HistoryPortfolioExchange".
+2025-07-09 19:01:23.1643 INFO Приложение завершило работу
+2025-07-09 19:06:16.2362 INFO Приложение запущено
+2025-07-09 19:06:16.3336 INFO Отправка данных на сервер
+2025-07-09 19:06:16.9169 INFO Получение данных из файла Address.csv
+2025-07-09 19:06:16.9169 INFO Получение данных из файла Client.csv
+2025-07-09 19:06:21.0682 INFO Данные адресов добавлены в БД
+2025-07-09 19:06:21.2036 INFO Данные клиентов добавлены в БД
+2025-07-09 19:06:21.2064 INFO Данные успешно отправлены на сервер
+2025-07-09 19:06:21.2064 INFO Процесс получения курса валют запущен
+2025-07-09 19:06:21.2064 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:06:21.5948 INFO Подключение прошло успешно. OK
+2025-07-09 19:06:21.6713 INFO Извлечение данных
+2025-07-09 19:06:21.6813 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:06:21.6813 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:06:21.6813 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:06:21.6917 INFO Добавление полученных данных в БД
+2025-07-09 19:06:21.6917 INFO Подключение к БД прошло успешно
+2025-07-09 19:06:22.0253 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:06:22.0253 INFO Данные успешно отправлены на сервер
+2025-07-09 19:06:22.0395 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:06:22.0395 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:06:22.0395 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:06:22.1013 INFO Данные о портфелях добавлены
+2025-07-09 19:07:39.4502 INFO Приложение запущено
+2025-07-09 19:07:39.5626 INFO Отправка данных на сервер
+2025-07-09 19:07:40.0821 INFO Получение данных из файла Address.csv
+2025-07-09 19:07:40.0821 INFO Получение данных из файла Client.csv
+2025-07-09 19:07:44.4006 INFO Данные адресов добавлены в БД
+2025-07-09 19:07:44.5067 INFO Данные клиентов добавлены в БД
+2025-07-09 19:07:44.5067 INFO Данные успешно отправлены на сервер
+2025-07-09 19:07:44.5222 INFO Процесс получения курса валют запущен
+2025-07-09 19:07:44.5222 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:07:44.9726 INFO Подключение прошло успешно. OK
+2025-07-09 19:07:45.0414 INFO Извлечение данных
+2025-07-09 19:07:45.0510 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:07:45.0510 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:07:45.0510 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:07:45.0510 INFO Добавление полученных данных в БД
+2025-07-09 19:07:45.0510 INFO Подключение к БД прошло успешно
+2025-07-09 19:07:45.3914 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:07:45.3977 INFO Данные успешно отправлены на сервер
+2025-07-09 19:07:45.3977 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:07:45.3977 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:07:45.3977 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:07:45.4632 INFO Данные о портфелях добавлены
+2025-07-09 19:07:45.5642 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 19:07:45.6120 INFO Данные о долях клиентов добавлены
+2025-07-09 19:07:45.6120 INFO Запущен процесс получения акций
+2025-07-09 19:07:45.6120 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:07:45.7952 INFO Извлечение данных
+2025-07-09 19:07:45.8088 INFO Данные получены
+2025-07-09 19:07:45.8088 INFO Корректные данные для считывания
+2025-07-09 19:07:45.8247 INFO Успешная десериализация данных
+2025-07-09 19:07:45.8247 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:07:45.8247 INFO Данные записаны: 18 акций
+2025-07-09 19:07:45.8384 INFO Добавление полученных данных в БД
+2025-07-09 19:07:45.8384 INFO Подключение к БД прошло успешно
+2025-07-09 19:07:45.9505 INFO Обработано акций: 13 (добавлено: 0, обновлено: 13)
+2025-07-09 19:07:45.9505 INFO Запущен процесс получения облигаций
+2025-07-09 19:07:45.9505 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:46.3075 INFO Подключение прошло успешно.
+2025-07-09 19:07:46.3221 INFO Извлечение данных
+2025-07-09 19:07:46.3311 INFO Данные получены
+2025-07-09 19:07:46.3311 INFO Корректные данные для считывания
+2025-07-09 19:07:46.3652 INFO Успешная десериализация данных
+2025-07-09 19:07:47.6353 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:07:47.6353 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:47.9804 INFO Подключение прошло успешно.
+2025-07-09 19:07:47.9897 INFO Извлечение данных
+2025-07-09 19:07:47.9897 INFO Данные получены
+2025-07-09 19:07:48.0092 INFO Корректные данные для считывания
+2025-07-09 19:07:48.0092 INFO Успешная десериализация данных
+2025-07-09 19:07:49.7382 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:07:49.7382 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:49.7795 INFO Подключение прошло успешно.
+2025-07-09 19:07:49.7837 INFO Извлечение данных
+2025-07-09 19:07:49.7837 INFO Данные получены
+2025-07-09 19:07:49.7837 INFO Корректные данные для считывания
+2025-07-09 19:07:49.7837 INFO Успешная десериализация данных
+2025-07-09 19:07:49.8097 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:49.8097 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:49.8641 INFO Подключение прошло успешно.
+2025-07-09 19:07:49.8641 INFO Извлечение данных
+2025-07-09 19:07:49.8641 INFO Данные получены
+2025-07-09 19:07:49.8641 INFO Корректные данные для считывания
+2025-07-09 19:07:49.8641 INFO Успешная десериализация данных
+2025-07-09 19:07:49.9089 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:07:49.9089 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:49.9534 INFO Подключение прошло успешно.
+2025-07-09 19:07:49.9534 INFO Извлечение данных
+2025-07-09 19:07:49.9593 INFO Данные получены
+2025-07-09 19:07:49.9593 INFO Корректные данные для считывания
+2025-07-09 19:07:49.9593 INFO Успешная десериализация данных
+2025-07-09 19:07:49.9720 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:07:49.9720 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.0312 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.0312 INFO Извлечение данных
+2025-07-09 19:07:50.0312 INFO Данные получены
+2025-07-09 19:07:50.0356 INFO Корректные данные для считывания
+2025-07-09 19:07:50.0356 INFO Успешная десериализация данных
+2025-07-09 19:07:50.0623 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:07:50.0623 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.1135 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.1135 INFO Извлечение данных
+2025-07-09 19:07:50.1135 INFO Данные получены
+2025-07-09 19:07:50.1135 INFO Корректные данные для считывания
+2025-07-09 19:07:50.1135 INFO Успешная десериализация данных
+2025-07-09 19:07:50.1551 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:07:50.1551 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.1897 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.1897 INFO Извлечение данных
+2025-07-09 19:07:50.1897 INFO Данные получены
+2025-07-09 19:07:50.2051 INFO Корректные данные для считывания
+2025-07-09 19:07:50.2051 INFO Успешная десериализация данных
+2025-07-09 19:07:50.2604 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:07:50.2604 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.3034 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.3034 INFO Извлечение данных
+2025-07-09 19:07:50.3034 INFO Данные получены
+2025-07-09 19:07:50.3034 INFO Корректные данные для считывания
+2025-07-09 19:07:50.3034 INFO Успешная десериализация данных
+2025-07-09 19:07:50.3240 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:07:50.3240 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.3644 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.3644 INFO Извлечение данных
+2025-07-09 19:07:50.3644 INFO Данные получены
+2025-07-09 19:07:50.3644 INFO Корректные данные для считывания
+2025-07-09 19:07:50.3644 INFO Успешная десериализация данных
+2025-07-09 19:07:50.3865 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:07:50.3865 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.4341 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.4341 INFO Извлечение данных
+2025-07-09 19:07:50.4341 INFO Данные получены
+2025-07-09 19:07:50.4341 INFO Корректные данные для считывания
+2025-07-09 19:07:50.4341 INFO Успешная десериализация данных
+2025-07-09 19:07:50.5082 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:07:50.5082 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.5595 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.5595 INFO Извлечение данных
+2025-07-09 19:07:50.5595 INFO Данные получены
+2025-07-09 19:07:50.5595 INFO Корректные данные для считывания
+2025-07-09 19:07:50.5652 INFO Успешная десериализация данных
+2025-07-09 19:07:50.5652 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:07:50.5652 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.6241 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.6241 INFO Извлечение данных
+2025-07-09 19:07:50.6241 INFO Данные получены
+2025-07-09 19:07:50.6337 INFO Корректные данные для считывания
+2025-07-09 19:07:50.6337 INFO Успешная десериализация данных
+2025-07-09 19:07:50.6568 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:07:50.6568 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.7016 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.7016 INFO Извлечение данных
+2025-07-09 19:07:50.7016 INFO Данные получены
+2025-07-09 19:07:50.7016 INFO Корректные данные для считывания
+2025-07-09 19:07:50.7174 INFO Успешная десериализация данных
+2025-07-09 19:07:50.7491 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:07:50.7491 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.8125 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.8125 INFO Извлечение данных
+2025-07-09 19:07:50.8125 INFO Данные получены
+2025-07-09 19:07:50.8125 INFO Корректные данные для считывания
+2025-07-09 19:07:50.8125 INFO Успешная десериализация данных
+2025-07-09 19:07:50.8285 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:50.8285 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:50.8936 INFO Подключение прошло успешно.
+2025-07-09 19:07:50.8936 INFO Извлечение данных
+2025-07-09 19:07:50.8936 INFO Данные получены
+2025-07-09 19:07:50.8936 INFO Корректные данные для считывания
+2025-07-09 19:07:50.8936 INFO Успешная десериализация данных
+2025-07-09 19:07:51.0198 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:07:51.0198 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.0834 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.0834 INFO Извлечение данных
+2025-07-09 19:07:51.0834 INFO Данные получены
+2025-07-09 19:07:51.0834 INFO Корректные данные для считывания
+2025-07-09 19:07:51.0834 INFO Успешная десериализация данных
+2025-07-09 19:07:51.0994 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:07:51.0994 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.1397 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.1397 INFO Извлечение данных
+2025-07-09 19:07:51.1397 INFO Данные получены
+2025-07-09 19:07:51.1397 INFO Корректные данные для считывания
+2025-07-09 19:07:51.1397 INFO Успешная десериализация данных
+2025-07-09 19:07:51.1556 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.1556 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.2030 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.2030 INFO Извлечение данных
+2025-07-09 19:07:51.2030 INFO Данные получены
+2025-07-09 19:07:51.2030 INFO Корректные данные для считывания
+2025-07-09 19:07:51.2030 INFO Успешная десериализация данных
+2025-07-09 19:07:51.2188 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.2188 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.2776 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.2776 INFO Извлечение данных
+2025-07-09 19:07:51.2776 INFO Данные получены
+2025-07-09 19:07:51.2776 INFO Корректные данные для считывания
+2025-07-09 19:07:51.2776 INFO Успешная десериализация данных
+2025-07-09 19:07:51.2947 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.2947 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.3288 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.3448 INFO Извлечение данных
+2025-07-09 19:07:51.3448 INFO Данные получены
+2025-07-09 19:07:51.3448 INFO Корректные данные для считывания
+2025-07-09 19:07:51.3474 INFO Успешная десериализация данных
+2025-07-09 19:07:51.3619 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.3619 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.3952 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.4083 INFO Извлечение данных
+2025-07-09 19:07:51.4083 INFO Данные получены
+2025-07-09 19:07:51.4083 INFO Корректные данные для считывания
+2025-07-09 19:07:51.4083 INFO Успешная десериализация данных
+2025-07-09 19:07:51.4309 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.4309 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.4739 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.4739 INFO Извлечение данных
+2025-07-09 19:07:51.4739 INFO Данные получены
+2025-07-09 19:07:51.4739 INFO Корректные данные для считывания
+2025-07-09 19:07:51.4739 INFO Успешная десериализация данных
+2025-07-09 19:07:51.4917 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:07:51.4917 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:07:51.5211 INFO Подключение прошло успешно.
+2025-07-09 19:07:51.5351 INFO Извлечение данных
+2025-07-09 19:07:51.5351 INFO Данные получены
+2025-07-09 19:07:51.5351 INFO Корректные данные для считывания
+2025-07-09 19:07:51.5351 INFO Успешная десериализация данных
+2025-07-09 19:07:51.5508 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:07:51.5508 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:07:51.5508 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:07:51.5508 INFO Данные записаны.
+2025-07-09 19:07:51.5508 INFO Добавление полученных данных в БД
+2025-07-09 19:07:51.5956 INFO Подключение к БД прошло успешно
+2025-07-09 19:07:51.6952 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 19:07:51.6952 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:07:51.7222 ERROR Не удалось найти хранимую процедуру "proc_HistoryPortfolioExchange".
+2025-07-09 19:07:51.7222 INFO Приложение завершило работу
+2025-07-09 19:23:02.0871 INFO Приложение запущено
+2025-07-09 19:23:02.2209 INFO Отправка данных на сервер
+2025-07-09 19:23:02.7211 INFO Получение данных из файла Address.csv
+2025-07-09 19:23:02.7211 INFO Получение данных из файла Client.csv
+2025-07-09 19:23:06.9122 INFO Данные адресов добавлены в БД
+2025-07-09 19:23:07.0133 INFO Данные клиентов добавлены в БД
+2025-07-09 19:23:07.0133 INFO Данные успешно отправлены на сервер
+2025-07-09 19:23:07.0311 INFO Процесс получения курса валют запущен
+2025-07-09 19:23:07.0311 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:23:07.3816 INFO Подключение прошло успешно. OK
+2025-07-09 19:23:07.4635 INFO Извлечение данных
+2025-07-09 19:23:07.4725 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:23:07.4725 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:23:07.4725 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:23:07.4916 INFO Добавление полученных данных в БД
+2025-07-09 19:23:07.4916 INFO Подключение к БД прошло успешно
+2025-07-09 19:23:07.8287 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:23:07.8307 INFO Данные успешно отправлены на сервер
+2025-07-09 19:23:07.8307 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:23:07.8307 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:23:07.8307 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:23:07.8797 INFO Данные о портфелях добавлены
+2025-07-09 19:23:07.9120 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 19:23:07.9407 INFO Данные о долях клиентов добавлены
+2025-07-09 19:23:07.9407 INFO Запущен процесс получения акций
+2025-07-09 19:23:07.9407 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:23:08.1140 INFO Извлечение данных
+2025-07-09 19:23:08.1140 INFO Данные получены
+2025-07-09 19:23:08.1140 INFO Корректные данные для считывания
+2025-07-09 19:23:08.1401 INFO Успешная десериализация данных
+2025-07-09 19:23:08.1401 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:23:08.1442 INFO Данные записаны: 18 акций
+2025-07-09 19:23:08.1442 INFO Добавление полученных данных в БД
+2025-07-09 19:23:08.1442 INFO Подключение к БД прошло успешно
+2025-07-09 19:23:08.2522 INFO Обработано акций: 17 (добавлено: 0, обновлено: 17)
+2025-07-09 19:23:08.2522 INFO Запущен процесс получения облигаций
+2025-07-09 19:23:08.2522 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:08.6560 INFO Подключение прошло успешно.
+2025-07-09 19:23:08.6560 INFO Извлечение данных
+2025-07-09 19:23:08.6718 INFO Данные получены
+2025-07-09 19:23:08.6760 INFO Корректные данные для считывания
+2025-07-09 19:23:08.6976 INFO Успешная десериализация данных
+2025-07-09 19:23:09.9995 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:23:09.9995 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:10.2928 INFO Подключение прошло успешно.
+2025-07-09 19:23:10.2928 INFO Извлечение данных
+2025-07-09 19:23:10.3111 INFO Данные получены
+2025-07-09 19:23:10.3163 INFO Корректные данные для считывания
+2025-07-09 19:23:10.3163 INFO Успешная десериализация данных
+2025-07-09 19:23:12.0614 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:23:12.0614 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.0955 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.0955 INFO Извлечение данных
+2025-07-09 19:23:12.0955 INFO Данные получены
+2025-07-09 19:23:12.0955 INFO Корректные данные для считывания
+2025-07-09 19:23:12.0955 INFO Успешная десериализация данных
+2025-07-09 19:23:12.1326 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:12.1326 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.1777 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.1777 INFO Извлечение данных
+2025-07-09 19:23:12.1777 INFO Данные получены
+2025-07-09 19:23:12.1777 INFO Корректные данные для считывания
+2025-07-09 19:23:12.1777 INFO Успешная десериализация данных
+2025-07-09 19:23:12.2124 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:23:12.2124 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.2619 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.2619 INFO Извлечение данных
+2025-07-09 19:23:12.2619 INFO Данные получены
+2025-07-09 19:23:12.2619 INFO Корректные данные для считывания
+2025-07-09 19:23:12.2619 INFO Успешная десериализация данных
+2025-07-09 19:23:12.2738 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:23:12.2738 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.3132 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.3198 INFO Извлечение данных
+2025-07-09 19:23:12.3198 INFO Данные получены
+2025-07-09 19:23:12.3198 INFO Корректные данные для считывания
+2025-07-09 19:23:12.3198 INFO Успешная десериализация данных
+2025-07-09 19:23:12.3469 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:23:12.3469 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.3982 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.3982 INFO Извлечение данных
+2025-07-09 19:23:12.3982 INFO Данные получены
+2025-07-09 19:23:12.3982 INFO Корректные данные для считывания
+2025-07-09 19:23:12.3982 INFO Успешная десериализация данных
+2025-07-09 19:23:12.4269 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:23:12.4269 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.4708 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.4708 INFO Извлечение данных
+2025-07-09 19:23:12.4708 INFO Данные получены
+2025-07-09 19:23:12.4708 INFO Корректные данные для считывания
+2025-07-09 19:23:12.4708 INFO Успешная десериализация данных
+2025-07-09 19:23:12.5199 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:23:12.5199 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.5627 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.5655 INFO Извлечение данных
+2025-07-09 19:23:12.5655 INFO Данные получены
+2025-07-09 19:23:12.5655 INFO Корректные данные для считывания
+2025-07-09 19:23:12.5655 INFO Успешная десериализация данных
+2025-07-09 19:23:12.5826 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:23:12.5826 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.6286 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.6286 INFO Извлечение данных
+2025-07-09 19:23:12.6286 INFO Данные получены
+2025-07-09 19:23:12.6286 INFO Корректные данные для считывания
+2025-07-09 19:23:12.6286 INFO Успешная десериализация данных
+2025-07-09 19:23:12.6286 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:23:12.6286 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.6884 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.6900 INFO Извлечение данных
+2025-07-09 19:23:12.6900 INFO Данные получены
+2025-07-09 19:23:12.6900 INFO Корректные данные для считывания
+2025-07-09 19:23:12.6900 INFO Успешная десериализация данных
+2025-07-09 19:23:12.7420 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:23:12.7420 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.7724 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.7724 INFO Извлечение данных
+2025-07-09 19:23:12.7724 INFO Данные получены
+2025-07-09 19:23:12.7724 INFO Корректные данные для считывания
+2025-07-09 19:23:12.7867 INFO Успешная десериализация данных
+2025-07-09 19:23:12.8028 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:23:12.8028 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.8358 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.8358 INFO Извлечение данных
+2025-07-09 19:23:12.8358 INFO Данные получены
+2025-07-09 19:23:12.8358 INFO Корректные данные для считывания
+2025-07-09 19:23:12.8358 INFO Успешная десериализация данных
+2025-07-09 19:23:12.8661 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:23:12.8661 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.8981 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.9127 INFO Извлечение данных
+2025-07-09 19:23:12.9127 INFO Данные получены
+2025-07-09 19:23:12.9127 INFO Корректные данные для считывания
+2025-07-09 19:23:12.9127 INFO Успешная десериализация данных
+2025-07-09 19:23:12.9433 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:23:12.9433 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:12.9778 INFO Подключение прошло успешно.
+2025-07-09 19:23:12.9778 INFO Извлечение данных
+2025-07-09 19:23:12.9778 INFO Данные получены
+2025-07-09 19:23:12.9925 INFO Корректные данные для считывания
+2025-07-09 19:23:12.9925 INFO Успешная десериализация данных
+2025-07-09 19:23:13.0062 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.0062 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.0626 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.0657 INFO Извлечение данных
+2025-07-09 19:23:13.0657 INFO Данные получены
+2025-07-09 19:23:13.0657 INFO Корректные данные для считывания
+2025-07-09 19:23:13.0657 INFO Успешная десериализация данных
+2025-07-09 19:23:13.1621 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:23:13.1621 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.2065 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.2065 INFO Извлечение данных
+2025-07-09 19:23:13.2065 INFO Данные получены
+2025-07-09 19:23:13.2065 INFO Корректные данные для считывания
+2025-07-09 19:23:13.2065 INFO Успешная десериализация данных
+2025-07-09 19:23:13.2246 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:23:13.2246 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.2656 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.2656 INFO Извлечение данных
+2025-07-09 19:23:13.2656 INFO Данные получены
+2025-07-09 19:23:13.2656 INFO Корректные данные для считывания
+2025-07-09 19:23:13.2656 INFO Успешная десериализация данных
+2025-07-09 19:23:13.2857 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.2857 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.3292 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.3292 INFO Извлечение данных
+2025-07-09 19:23:13.3292 INFO Данные получены
+2025-07-09 19:23:13.3292 INFO Корректные данные для считывания
+2025-07-09 19:23:13.3325 INFO Успешная десериализация данных
+2025-07-09 19:23:13.3459 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.3459 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.3789 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.3789 INFO Извлечение данных
+2025-07-09 19:23:13.3789 INFO Данные получены
+2025-07-09 19:23:13.3789 INFO Корректные данные для считывания
+2025-07-09 19:23:13.3789 INFO Успешная десериализация данных
+2025-07-09 19:23:13.4018 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.4018 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.4392 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.4392 INFO Извлечение данных
+2025-07-09 19:23:13.4392 INFO Данные получены
+2025-07-09 19:23:13.4464 INFO Корректные данные для считывания
+2025-07-09 19:23:13.4464 INFO Успешная десериализация данных
+2025-07-09 19:23:13.4595 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.4595 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.4989 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.4989 INFO Извлечение данных
+2025-07-09 19:23:13.5026 INFO Данные получены
+2025-07-09 19:23:13.5026 INFO Корректные данные для считывания
+2025-07-09 19:23:13.5026 INFO Успешная десериализация данных
+2025-07-09 19:23:13.5180 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.5180 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.5517 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.5517 INFO Извлечение данных
+2025-07-09 19:23:13.5517 INFO Данные получены
+2025-07-09 19:23:13.5517 INFO Корректные данные для считывания
+2025-07-09 19:23:13.5517 INFO Успешная десериализация данных
+2025-07-09 19:23:13.5726 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:23:13.5726 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:23:13.6205 INFO Подключение прошло успешно.
+2025-07-09 19:23:13.6205 INFO Извлечение данных
+2025-07-09 19:23:13.6205 INFO Данные получены
+2025-07-09 19:23:13.6205 INFO Корректные данные для считывания
+2025-07-09 19:23:13.6205 INFO Успешная десериализация данных
+2025-07-09 19:23:13.6359 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:23:13.6359 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:23:13.6359 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:23:13.6359 INFO Данные записаны.
+2025-07-09 19:23:13.6464 INFO Добавление полученных данных в БД
+2025-07-09 19:23:13.6464 INFO Подключение к БД прошло успешно
+2025-07-09 19:23:13.7137 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 19:23:13.7137 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:23:13.7572 INFO Процедура выполнена
+2025-07-09 19:23:13.7572 INFO Приложение завершило работу
+2025-07-09 19:31:04.8401 INFO Приложение запущено
+2025-07-09 19:31:05.0110 INFO Отправка данных на сервер
+2025-07-09 19:31:05.5273 INFO Получение данных из файла Address.csv
+2025-07-09 19:31:05.5273 INFO Получение данных из файла Client.csv
+2025-07-09 19:31:09.8150 INFO Данные адресов добавлены в БД
+2025-07-09 19:31:09.9170 INFO Данные клиентов добавлены в БД
+2025-07-09 19:31:09.9170 INFO Данные успешно отправлены на сервер
+2025-07-09 19:31:09.9326 INFO Процесс получения курса валют запущен
+2025-07-09 19:31:09.9326 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:31:10.4217 INFO Подключение прошло успешно. OK
+2025-07-09 19:31:10.4860 INFO Извлечение данных
+2025-07-09 19:31:10.4984 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:31:10.4984 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:31:10.5025 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:31:10.5025 INFO Добавление полученных данных в БД
+2025-07-09 19:31:10.5025 INFO Подключение к БД прошло успешно
+2025-07-09 19:31:10.8567 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:31:10.8567 INFO Данные успешно отправлены на сервер
+2025-07-09 19:31:10.8637 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:31:10.8637 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:31:10.8637 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:31:10.9197 INFO Данные о портфелях добавлены
+2025-07-09 19:31:10.9637 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 19:31:10.9917 INFO Данные о долях клиентов добавлены
+2025-07-09 19:31:10.9917 INFO Запущен процесс получения акций
+2025-07-09 19:31:10.9917 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:31:11.2069 INFO Извлечение данных
+2025-07-09 19:31:11.2069 INFO Данные получены
+2025-07-09 19:31:11.2069 INFO Корректные данные для считывания
+2025-07-09 19:31:11.2389 INFO Успешная десериализация данных
+2025-07-09 19:31:11.2389 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:31:11.2389 INFO Данные записаны: 18 акций
+2025-07-09 19:31:11.2389 INFO Добавление полученных данных в БД
+2025-07-09 19:31:11.2527 INFO Подключение к БД прошло успешно
+2025-07-09 19:31:11.3766 INFO Обработано акций: 18 (добавлено: 0, обновлено: 18)
+2025-07-09 19:31:11.3831 INFO Запущен процесс получения облигаций
+2025-07-09 19:31:11.3831 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:11.9707 INFO Подключение прошло успешно.
+2025-07-09 19:31:11.9707 INFO Извлечение данных
+2025-07-09 19:31:11.9891 INFO Данные получены
+2025-07-09 19:31:11.9891 INFO Корректные данные для считывания
+2025-07-09 19:31:12.0255 INFO Успешная десериализация данных
+2025-07-09 19:31:13.2539 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:31:13.2539 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:13.4911 INFO Подключение прошло успешно.
+2025-07-09 19:31:13.4911 INFO Извлечение данных
+2025-07-09 19:31:13.5140 INFO Данные получены
+2025-07-09 19:31:13.5229 INFO Корректные данные для считывания
+2025-07-09 19:31:13.5229 INFO Успешная десериализация данных
+2025-07-09 19:31:15.2266 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:31:15.2266 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.2708 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.2708 INFO Извлечение данных
+2025-07-09 19:31:15.2708 INFO Данные получены
+2025-07-09 19:31:15.2708 INFO Корректные данные для считывания
+2025-07-09 19:31:15.2708 INFO Успешная десериализация данных
+2025-07-09 19:31:15.3004 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:15.3004 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.3538 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.3538 INFO Извлечение данных
+2025-07-09 19:31:15.3538 INFO Данные получены
+2025-07-09 19:31:15.3538 INFO Корректные данные для считывания
+2025-07-09 19:31:15.3538 INFO Успешная десериализация данных
+2025-07-09 19:31:15.3846 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:31:15.3846 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.4305 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.4305 INFO Извлечение данных
+2025-07-09 19:31:15.4305 INFO Данные получены
+2025-07-09 19:31:15.4305 INFO Корректные данные для считывания
+2025-07-09 19:31:15.4305 INFO Успешная десериализация данных
+2025-07-09 19:31:15.4425 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:31:15.4425 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.4862 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.4872 INFO Извлечение данных
+2025-07-09 19:31:15.4872 INFO Данные получены
+2025-07-09 19:31:15.4872 INFO Корректные данные для считывания
+2025-07-09 19:31:15.4872 INFO Успешная десериализация данных
+2025-07-09 19:31:15.5201 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:31:15.5201 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.5641 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.5651 INFO Извлечение данных
+2025-07-09 19:31:15.5651 INFO Данные получены
+2025-07-09 19:31:15.5651 INFO Корректные данные для считывания
+2025-07-09 19:31:15.5651 INFO Успешная десериализация данных
+2025-07-09 19:31:15.5927 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:31:15.5927 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.6388 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.6388 INFO Извлечение данных
+2025-07-09 19:31:15.6388 INFO Данные получены
+2025-07-09 19:31:15.6388 INFO Корректные данные для считывания
+2025-07-09 19:31:15.6434 INFO Успешная десериализация данных
+2025-07-09 19:31:15.6859 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:31:15.6859 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.7280 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.7280 INFO Извлечение данных
+2025-07-09 19:31:15.7280 INFO Данные получены
+2025-07-09 19:31:15.7280 INFO Корректные данные для считывания
+2025-07-09 19:31:15.7280 INFO Успешная десериализация данных
+2025-07-09 19:31:15.7468 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:31:15.7468 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.7897 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.7897 INFO Извлечение данных
+2025-07-09 19:31:15.7897 INFO Данные получены
+2025-07-09 19:31:15.7897 INFO Корректные данные для считывания
+2025-07-09 19:31:15.7897 INFO Успешная десериализация данных
+2025-07-09 19:31:15.8025 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:31:15.8025 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.8461 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.8461 INFO Извлечение данных
+2025-07-09 19:31:15.8461 INFO Данные получены
+2025-07-09 19:31:15.8461 INFO Корректные данные для считывания
+2025-07-09 19:31:15.8461 INFO Успешная десериализация данных
+2025-07-09 19:31:15.8980 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:31:15.8980 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.9365 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.9365 INFO Извлечение данных
+2025-07-09 19:31:15.9365 INFO Данные получены
+2025-07-09 19:31:15.9395 INFO Корректные данные для считывания
+2025-07-09 19:31:15.9395 INFO Успешная десериализация данных
+2025-07-09 19:31:15.9554 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:31:15.9554 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:15.9981 INFO Подключение прошло успешно.
+2025-07-09 19:31:15.9981 INFO Извлечение данных
+2025-07-09 19:31:15.9981 INFO Данные получены
+2025-07-09 19:31:15.9981 INFO Корректные данные для считывания
+2025-07-09 19:31:16.0029 INFO Успешная десериализация данных
+2025-07-09 19:31:16.0250 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:31:16.0250 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.0689 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.0689 INFO Извлечение данных
+2025-07-09 19:31:16.0689 INFO Данные получены
+2025-07-09 19:31:16.0689 INFO Корректные данные для считывания
+2025-07-09 19:31:16.0689 INFO Успешная десериализация данных
+2025-07-09 19:31:16.1045 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:31:16.1045 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.1502 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.1502 INFO Извлечение данных
+2025-07-09 19:31:16.1502 INFO Данные получены
+2025-07-09 19:31:16.1502 INFO Корректные данные для считывания
+2025-07-09 19:31:16.1502 INFO Успешная десериализация данных
+2025-07-09 19:31:16.1753 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.1753 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.2242 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.2242 INFO Извлечение данных
+2025-07-09 19:31:16.2242 INFO Данные получены
+2025-07-09 19:31:16.2242 INFO Корректные данные для считывания
+2025-07-09 19:31:16.2242 INFO Успешная десериализация данных
+2025-07-09 19:31:16.3234 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:31:16.3234 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.3727 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.3727 INFO Извлечение данных
+2025-07-09 19:31:16.3727 INFO Данные получены
+2025-07-09 19:31:16.3772 INFO Корректные данные для считывания
+2025-07-09 19:31:16.3772 INFO Успешная десериализация данных
+2025-07-09 19:31:16.3931 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:31:16.3931 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.4408 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.4408 INFO Извлечение данных
+2025-07-09 19:31:16.4408 INFO Данные получены
+2025-07-09 19:31:16.4408 INFO Корректные данные для считывания
+2025-07-09 19:31:16.4408 INFO Успешная десериализация данных
+2025-07-09 19:31:16.4597 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.4597 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.5065 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.5065 INFO Извлечение данных
+2025-07-09 19:31:16.5065 INFO Данные получены
+2025-07-09 19:31:16.5065 INFO Корректные данные для считывания
+2025-07-09 19:31:16.5065 INFO Успешная десериализация данных
+2025-07-09 19:31:16.5255 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.5255 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.5627 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.5627 INFO Извлечение данных
+2025-07-09 19:31:16.5627 INFO Данные получены
+2025-07-09 19:31:16.5650 INFO Корректные данные для считывания
+2025-07-09 19:31:16.5650 INFO Успешная десериализация данных
+2025-07-09 19:31:16.5650 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.5808 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.6209 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.6209 INFO Извлечение данных
+2025-07-09 19:31:16.6209 INFO Данные получены
+2025-07-09 19:31:16.6209 INFO Корректные данные для считывания
+2025-07-09 19:31:16.6209 INFO Успешная десериализация данных
+2025-07-09 19:31:16.6395 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.6395 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.6823 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.6823 INFO Извлечение данных
+2025-07-09 19:31:16.6823 INFO Данные получены
+2025-07-09 19:31:16.6823 INFO Корректные данные для считывания
+2025-07-09 19:31:16.6823 INFO Успешная десериализация данных
+2025-07-09 19:31:16.6984 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.6984 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.7390 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.7390 INFO Извлечение данных
+2025-07-09 19:31:16.7390 INFO Данные получены
+2025-07-09 19:31:16.7390 INFO Корректные данные для считывания
+2025-07-09 19:31:16.7390 INFO Успешная десериализация данных
+2025-07-09 19:31:16.7555 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:31:16.7555 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:31:16.7982 INFO Подключение прошло успешно.
+2025-07-09 19:31:16.7997 INFO Извлечение данных
+2025-07-09 19:31:16.7997 INFO Данные получены
+2025-07-09 19:31:16.7997 INFO Корректные данные для считывания
+2025-07-09 19:31:16.7997 INFO Успешная десериализация данных
+2025-07-09 19:31:16.8146 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:31:16.8146 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:31:16.8146 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:31:16.8146 INFO Данные записаны.
+2025-07-09 19:31:16.8146 INFO Добавление полученных данных в БД
+2025-07-09 19:31:16.8146 INFO Подключение к БД прошло успешно
+2025-07-09 19:31:16.8963 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 19:31:16.8963 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:31:16.9108 INFO Процедура выполнена
+2025-07-09 19:31:16.9108 INFO Приложение завершило работу
+2025-07-09 19:32:58.2539 INFO Приложение запущено
+2025-07-09 19:32:58.3551 INFO Отправка данных на сервер
+2025-07-09 19:32:58.8090 INFO Получение данных из файла Address.csv
+2025-07-09 19:32:58.8145 INFO Получение данных из файла Client.csv
+2025-07-09 19:33:03.0156 INFO Данные адресов добавлены в БД
+2025-07-09 19:33:03.1172 INFO Данные клиентов добавлены в БД
+2025-07-09 19:33:03.1172 INFO Данные успешно отправлены на сервер
+2025-07-09 19:33:03.1341 INFO Процесс получения курса валют запущен
+2025-07-09 19:33:03.1341 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:33:03.4856 INFO Подключение прошло успешно. OK
+2025-07-09 19:33:03.5593 INFO Извлечение данных
+2025-07-09 19:33:03.5673 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:33:03.5673 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:33:03.5673 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:33:03.5857 INFO Добавление полученных данных в БД
+2025-07-09 19:33:03.5857 INFO Подключение к БД прошло успешно
+2025-07-09 19:33:03.9389 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:33:03.9389 INFO Данные успешно отправлены на сервер
+2025-07-09 19:33:03.9430 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:33:03.9430 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:33:03.9430 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:33:03.9883 INFO Данные о портфелях добавлены
+2025-07-09 19:33:04.0252 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 19:33:04.0573 INFO Данные о долях клиентов добавлены
+2025-07-09 19:33:04.0573 INFO Запущен процесс получения акций
+2025-07-09 19:33:04.0573 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:33:04.1930 INFO Извлечение данных
+2025-07-09 19:33:04.2099 INFO Данные получены
+2025-07-09 19:33:04.2099 INFO Корректные данные для считывания
+2025-07-09 19:33:04.2267 INFO Успешная десериализация данных
+2025-07-09 19:33:04.2267 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:33:04.2267 INFO Данные записаны: 18 акций
+2025-07-09 19:33:04.2446 INFO Добавление полученных данных в БД
+2025-07-09 19:33:04.2446 INFO Подключение к БД прошло успешно
+2025-07-09 19:33:04.3346 INFO Обработано акций: 18 (добавлено: 0, обновлено: 18)
+2025-07-09 19:33:04.3529 INFO Запущен процесс получения облигаций
+2025-07-09 19:33:04.3529 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:04.5924 INFO Подключение прошло успешно.
+2025-07-09 19:33:04.6028 INFO Извлечение данных
+2025-07-09 19:33:04.6164 INFO Данные получены
+2025-07-09 19:33:04.6164 INFO Корректные данные для считывания
+2025-07-09 19:33:04.6501 INFO Успешная десериализация данных
+2025-07-09 19:33:05.9324 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:33:05.9324 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:06.1812 INFO Подключение прошло успешно.
+2025-07-09 19:33:06.1812 INFO Извлечение данных
+2025-07-09 19:33:06.2066 INFO Данные получены
+2025-07-09 19:33:06.2066 INFO Корректные данные для считывания
+2025-07-09 19:33:06.2254 INFO Успешная десериализация данных
+2025-07-09 19:33:07.9187 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:33:07.9187 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:07.9571 INFO Подключение прошло успешно.
+2025-07-09 19:33:07.9571 INFO Извлечение данных
+2025-07-09 19:33:07.9571 INFO Данные получены
+2025-07-09 19:33:07.9571 INFO Корректные данные для считывания
+2025-07-09 19:33:07.9571 INFO Успешная десериализация данных
+2025-07-09 19:33:07.9904 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:07.9904 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.0341 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.0341 INFO Извлечение данных
+2025-07-09 19:33:08.0341 INFO Данные получены
+2025-07-09 19:33:08.0341 INFO Корректные данные для считывания
+2025-07-09 19:33:08.0341 INFO Успешная десериализация данных
+2025-07-09 19:33:08.0720 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:33:08.0720 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.1069 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.1227 INFO Извлечение данных
+2025-07-09 19:33:08.1227 INFO Данные получены
+2025-07-09 19:33:08.1227 INFO Корректные данные для считывания
+2025-07-09 19:33:08.1227 INFO Успешная десериализация данных
+2025-07-09 19:33:08.1329 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:33:08.1329 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.1797 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.1797 INFO Извлечение данных
+2025-07-09 19:33:08.1797 INFO Данные получены
+2025-07-09 19:33:08.1797 INFO Корректные данные для считывания
+2025-07-09 19:33:08.1797 INFO Успешная десериализация данных
+2025-07-09 19:33:08.2099 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:33:08.2099 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.2658 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.2658 INFO Извлечение данных
+2025-07-09 19:33:08.2658 INFO Данные получены
+2025-07-09 19:33:08.2658 INFO Корректные данные для считывания
+2025-07-09 19:33:08.2658 INFO Успешная десериализация данных
+2025-07-09 19:33:08.2979 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:33:08.2979 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.3456 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.3456 INFO Извлечение данных
+2025-07-09 19:33:08.3456 INFO Данные получены
+2025-07-09 19:33:08.3456 INFO Корректные данные для считывания
+2025-07-09 19:33:08.3456 INFO Успешная десериализация данных
+2025-07-09 19:33:08.4094 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:33:08.4094 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.4493 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.4493 INFO Извлечение данных
+2025-07-09 19:33:08.4493 INFO Данные получены
+2025-07-09 19:33:08.4555 INFO Корректные данные для считывания
+2025-07-09 19:33:08.4555 INFO Успешная десериализация данных
+2025-07-09 19:33:08.4728 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:33:08.4728 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.5117 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.5117 INFO Извлечение данных
+2025-07-09 19:33:08.5117 INFO Данные получены
+2025-07-09 19:33:08.5117 INFO Корректные данные для считывания
+2025-07-09 19:33:08.5182 INFO Успешная десериализация данных
+2025-07-09 19:33:08.5182 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:33:08.5182 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.5796 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.5813 INFO Извлечение данных
+2025-07-09 19:33:08.5813 INFO Данные получены
+2025-07-09 19:33:08.5813 INFO Корректные данные для считывания
+2025-07-09 19:33:08.5813 INFO Успешная десериализация данных
+2025-07-09 19:33:08.6307 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:33:08.6307 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.6761 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.6761 INFO Извлечение данных
+2025-07-09 19:33:08.6761 INFO Данные получены
+2025-07-09 19:33:08.6761 INFO Корректные данные для считывания
+2025-07-09 19:33:08.6761 INFO Успешная десериализация данных
+2025-07-09 19:33:08.6925 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:33:08.6925 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:08.7404 INFO Подключение прошло успешно.
+2025-07-09 19:33:08.7404 INFO Извлечение данных
+2025-07-09 19:33:08.7404 INFO Данные получены
+2025-07-09 19:33:08.7404 INFO Корректные данные для считывания
+2025-07-09 19:33:08.7404 INFO Успешная десериализация данных
+2025-07-09 19:33:08.7608 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:33:08.7608 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.0219 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.0219 INFO Извлечение данных
+2025-07-09 19:33:09.0219 INFO Данные получены
+2025-07-09 19:33:09.0219 INFO Корректные данные для считывания
+2025-07-09 19:33:09.0219 INFO Успешная десериализация данных
+2025-07-09 19:33:09.0539 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:33:09.0539 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.1002 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.1002 INFO Извлечение данных
+2025-07-09 19:33:09.1002 INFO Данные получены
+2025-07-09 19:33:09.1002 INFO Корректные данные для считывания
+2025-07-09 19:33:09.1002 INFO Успешная десериализация данных
+2025-07-09 19:33:09.1165 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.1165 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.1646 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.1646 INFO Извлечение данных
+2025-07-09 19:33:09.1646 INFO Данные получены
+2025-07-09 19:33:09.1646 INFO Корректные данные для считывания
+2025-07-09 19:33:09.1646 INFO Успешная десериализация данных
+2025-07-09 19:33:09.2533 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:33:09.2533 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.2993 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.2993 INFO Извлечение данных
+2025-07-09 19:33:09.2993 INFO Данные получены
+2025-07-09 19:33:09.2993 INFO Корректные данные для считывания
+2025-07-09 19:33:09.2993 INFO Успешная десериализация данных
+2025-07-09 19:33:09.3161 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:33:09.3161 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.3620 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.3620 INFO Извлечение данных
+2025-07-09 19:33:09.3620 INFO Данные получены
+2025-07-09 19:33:09.3620 INFO Корректные данные для считывания
+2025-07-09 19:33:09.3620 INFO Успешная десериализация данных
+2025-07-09 19:33:09.3781 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.3781 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.4101 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.4101 INFO Извлечение данных
+2025-07-09 19:33:09.4101 INFO Данные получены
+2025-07-09 19:33:09.4257 INFO Корректные данные для считывания
+2025-07-09 19:33:09.4257 INFO Успешная десериализация данных
+2025-07-09 19:33:09.4398 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.4398 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.4742 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.4742 INFO Извлечение данных
+2025-07-09 19:33:09.4742 INFO Данные получены
+2025-07-09 19:33:09.4742 INFO Корректные данные для считывания
+2025-07-09 19:33:09.4742 INFO Успешная десериализация данных
+2025-07-09 19:33:09.4970 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.4970 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.5317 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.5317 INFO Извлечение данных
+2025-07-09 19:33:09.5317 INFO Данные получены
+2025-07-09 19:33:09.5317 INFO Корректные данные для считывания
+2025-07-09 19:33:09.5317 INFO Успешная десериализация данных
+2025-07-09 19:33:09.5549 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.5549 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.5940 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.5994 INFO Извлечение данных
+2025-07-09 19:33:09.5994 INFO Данные получены
+2025-07-09 19:33:09.5994 INFO Корректные данные для считывания
+2025-07-09 19:33:09.5994 INFO Успешная десериализация данных
+2025-07-09 19:33:09.6155 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.6155 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.6419 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.6511 INFO Извлечение данных
+2025-07-09 19:33:09.6511 INFO Данные получены
+2025-07-09 19:33:09.6511 INFO Корректные данные для считывания
+2025-07-09 19:33:09.6511 INFO Успешная десериализация данных
+2025-07-09 19:33:09.6677 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:33:09.6677 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:33:09.7041 INFO Подключение прошло успешно.
+2025-07-09 19:33:09.7041 INFO Извлечение данных
+2025-07-09 19:33:09.7041 INFO Данные получены
+2025-07-09 19:33:09.7041 INFO Корректные данные для считывания
+2025-07-09 19:33:09.7202 INFO Успешная десериализация данных
+2025-07-09 19:33:09.7366 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:33:09.7366 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:33:09.7366 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:33:09.7366 INFO Данные записаны.
+2025-07-09 19:33:09.7366 INFO Добавление полученных данных в БД
+2025-07-09 19:33:09.7526 INFO Подключение к БД прошло успешно
+2025-07-09 19:33:09.8361 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 19:33:09.8361 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:33:09.8565 INFO Процедура выполнена
+2025-07-09 19:33:09.8565 INFO Приложение завершило работу
+2025-07-09 19:34:01.5615 INFO Приложение запущено
+2025-07-09 19:34:01.7503 INFO Отправка данных на сервер
+2025-07-09 19:34:02.1580 INFO Получение данных из файла Address.csv
+2025-07-09 19:34:02.1583 INFO Получение данных из файла Client.csv
+2025-07-09 19:34:06.2112 INFO Данные адресов добавлены в БД
+2025-07-09 19:34:06.3145 INFO Данные клиентов добавлены в БД
+2025-07-09 19:34:06.3145 INFO Данные успешно отправлены на сервер
+2025-07-09 19:34:06.3430 INFO Процесс получения курса валют запущен
+2025-07-09 19:34:06.3471 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 19:34:06.6901 INFO Подключение прошло успешно. OK
+2025-07-09 19:34:06.7589 INFO Извлечение данных
+2025-07-09 19:34:06.7722 INFO Данные успешно получены. Количество: 43
+2025-07-09 19:34:06.7722 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 19:34:06.7722 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 19:34:06.7947 INFO Добавление полученных данных в БД
+2025-07-09 19:34:06.7947 INFO Подключение к БД прошло успешно
+2025-07-09 19:34:07.1112 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 19:34:07.1112 INFO Данные успешно отправлены на сервер
+2025-07-09 19:34:07.1234 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 19:34:07.1234 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 19:34:07.1234 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 19:34:07.1687 INFO Данные о портфелях добавлены
+2025-07-09 19:34:07.2071 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 19:34:07.2424 INFO Данные о долях клиентов добавлены
+2025-07-09 19:34:07.2424 INFO Запущен процесс получения акций
+2025-07-09 19:34:07.2424 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 19:34:07.3786 INFO Извлечение данных
+2025-07-09 19:34:07.3786 INFO Данные получены
+2025-07-09 19:34:07.3945 INFO Корректные данные для считывания
+2025-07-09 19:34:07.4116 INFO Успешная десериализация данных
+2025-07-09 19:34:07.4116 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 19:34:07.4116 INFO Данные записаны: 18 акций
+2025-07-09 19:34:07.4264 INFO Добавление полученных данных в БД
+2025-07-09 19:34:07.4264 INFO Подключение к БД прошло успешно
+2025-07-09 19:34:07.5369 INFO Обработано акций: 18 (добавлено: 0, обновлено: 18)
+2025-07-09 19:34:07.5369 INFO Запущен процесс получения облигаций
+2025-07-09 19:34:07.5369 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:07.9648 INFO Подключение прошло успешно.
+2025-07-09 19:34:07.9762 INFO Извлечение данных
+2025-07-09 19:34:07.9878 INFO Данные получены
+2025-07-09 19:34:07.9878 INFO Корректные данные для считывания
+2025-07-09 19:34:08.0165 INFO Успешная десериализация данных
+2025-07-09 19:34:09.2892 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 19:34:09.2892 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:09.5107 INFO Подключение прошло успешно.
+2025-07-09 19:34:09.5107 INFO Извлечение данных
+2025-07-09 19:34:09.5283 INFO Данные получены
+2025-07-09 19:34:09.5283 INFO Корректные данные для считывания
+2025-07-09 19:34:09.5398 INFO Успешная десериализация данных
+2025-07-09 19:34:11.1987 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 19:34:11.1987 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.2413 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.2413 INFO Извлечение данных
+2025-07-09 19:34:11.2413 INFO Данные получены
+2025-07-09 19:34:11.2413 INFO Корректные данные для считывания
+2025-07-09 19:34:11.2413 INFO Успешная десериализация данных
+2025-07-09 19:34:11.2696 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:11.2696 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.3186 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.3186 INFO Извлечение данных
+2025-07-09 19:34:11.3186 INFO Данные получены
+2025-07-09 19:34:11.3186 INFO Корректные данные для считывания
+2025-07-09 19:34:11.3186 INFO Успешная десериализация данных
+2025-07-09 19:34:11.3489 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 19:34:11.3489 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.3785 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.3933 INFO Извлечение данных
+2025-07-09 19:34:11.3933 INFO Данные получены
+2025-07-09 19:34:11.3933 INFO Корректные данные для считывания
+2025-07-09 19:34:11.3933 INFO Успешная десериализация данных
+2025-07-09 19:34:11.3933 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 19:34:11.3933 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.4482 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.4482 INFO Извлечение данных
+2025-07-09 19:34:11.4482 INFO Данные получены
+2025-07-09 19:34:11.4482 INFO Корректные данные для считывания
+2025-07-09 19:34:11.4552 INFO Успешная десериализация данных
+2025-07-09 19:34:11.4813 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 19:34:11.4813 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.5213 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.5213 INFO Извлечение данных
+2025-07-09 19:34:11.5213 INFO Данные получены
+2025-07-09 19:34:11.5213 INFO Корректные данные для считывания
+2025-07-09 19:34:11.5213 INFO Успешная десериализация данных
+2025-07-09 19:34:11.5534 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 19:34:11.5534 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.5980 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.5980 INFO Извлечение данных
+2025-07-09 19:34:11.5980 INFO Данные получены
+2025-07-09 19:34:11.5980 INFO Корректные данные для считывания
+2025-07-09 19:34:11.5980 INFO Успешная десериализация данных
+2025-07-09 19:34:11.6525 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 19:34:11.6525 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.6976 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.6976 INFO Извлечение данных
+2025-07-09 19:34:11.6976 INFO Данные получены
+2025-07-09 19:34:11.6976 INFO Корректные данные для считывания
+2025-07-09 19:34:11.6976 INFO Успешная десериализация данных
+2025-07-09 19:34:11.7119 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 19:34:11.7119 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.7555 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.7555 INFO Извлечение данных
+2025-07-09 19:34:11.7555 INFO Данные получены
+2025-07-09 19:34:11.7555 INFO Корректные данные для считывания
+2025-07-09 19:34:11.7555 INFO Успешная десериализация данных
+2025-07-09 19:34:11.7676 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 19:34:11.7676 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.8114 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.8114 INFO Извлечение данных
+2025-07-09 19:34:11.8155 INFO Данные получены
+2025-07-09 19:34:11.8155 INFO Корректные данные для считывания
+2025-07-09 19:34:11.8155 INFO Успешная десериализация данных
+2025-07-09 19:34:11.8628 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 19:34:11.8628 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.9037 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.9037 INFO Извлечение данных
+2025-07-09 19:34:11.9037 INFO Данные получены
+2025-07-09 19:34:11.9037 INFO Корректные данные для считывания
+2025-07-09 19:34:11.9037 INFO Успешная десериализация данных
+2025-07-09 19:34:11.9197 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 19:34:11.9197 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:11.9614 INFO Подключение прошло успешно.
+2025-07-09 19:34:11.9614 INFO Извлечение данных
+2025-07-09 19:34:11.9614 INFO Данные получены
+2025-07-09 19:34:11.9614 INFO Корректные данные для считывания
+2025-07-09 19:34:11.9614 INFO Успешная десериализация данных
+2025-07-09 19:34:11.9867 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 19:34:11.9867 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.0243 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.0243 INFO Извлечение данных
+2025-07-09 19:34:12.0243 INFO Данные получены
+2025-07-09 19:34:12.0342 INFO Корректные данные для считывания
+2025-07-09 19:34:12.0342 INFO Успешная десериализация данных
+2025-07-09 19:34:12.0626 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 19:34:12.0626 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.1039 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.1039 INFO Извлечение данных
+2025-07-09 19:34:12.1039 INFO Данные получены
+2025-07-09 19:34:12.1039 INFO Корректные данные для считывания
+2025-07-09 19:34:12.1039 INFO Успешная десериализация данных
+2025-07-09 19:34:12.1228 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.1228 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.1693 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.1693 INFO Извлечение данных
+2025-07-09 19:34:12.1693 INFO Данные получены
+2025-07-09 19:34:12.1745 INFO Корректные данные для считывания
+2025-07-09 19:34:12.1745 INFO Успешная десериализация данных
+2025-07-09 19:34:12.2640 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 19:34:12.2640 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.3110 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.3110 INFO Извлечение данных
+2025-07-09 19:34:12.3110 INFO Данные получены
+2025-07-09 19:34:12.3110 INFO Корректные данные для считывания
+2025-07-09 19:34:12.3164 INFO Успешная десериализация данных
+2025-07-09 19:34:12.3164 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 19:34:12.3305 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.3723 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.3723 INFO Извлечение данных
+2025-07-09 19:34:12.3723 INFO Данные получены
+2025-07-09 19:34:12.3723 INFO Корректные данные для считывания
+2025-07-09 19:34:12.3772 INFO Успешная десериализация данных
+2025-07-09 19:34:12.3772 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.3772 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.4320 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.4502 INFO Извлечение данных
+2025-07-09 19:34:12.4571 INFO Данные получены
+2025-07-09 19:34:12.4571 INFO Корректные данные для считывания
+2025-07-09 19:34:12.4571 INFO Успешная десериализация данных
+2025-07-09 19:34:12.4571 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.4571 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.5073 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.5073 INFO Извлечение данных
+2025-07-09 19:34:12.5073 INFO Данные получены
+2025-07-09 19:34:12.5073 INFO Корректные данные для считывания
+2025-07-09 19:34:12.5073 INFO Успешная десериализация данных
+2025-07-09 19:34:12.5259 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.5259 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.5573 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.5573 INFO Извлечение данных
+2025-07-09 19:34:12.5573 INFO Данные получены
+2025-07-09 19:34:12.5573 INFO Корректные данные для считывания
+2025-07-09 19:34:12.5573 INFO Успешная десериализация данных
+2025-07-09 19:34:12.5813 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.5813 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.6230 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.6230 INFO Извлечение данных
+2025-07-09 19:34:12.6230 INFO Данные получены
+2025-07-09 19:34:12.6230 INFO Корректные данные для считывания
+2025-07-09 19:34:12.6230 INFO Успешная десериализация данных
+2025-07-09 19:34:12.6413 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.6413 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.6676 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.6676 INFO Извлечение данных
+2025-07-09 19:34:12.6676 INFO Данные получены
+2025-07-09 19:34:12.6824 INFO Корректные данные для считывания
+2025-07-09 19:34:12.6824 INFO Успешная десериализация данных
+2025-07-09 19:34:12.6957 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 19:34:12.6957 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 19:34:12.7322 INFO Подключение прошло успешно.
+2025-07-09 19:34:12.7322 INFO Извлечение данных
+2025-07-09 19:34:12.7322 INFO Данные получены
+2025-07-09 19:34:12.7322 INFO Корректные данные для считывания
+2025-07-09 19:34:12.7322 INFO Успешная десериализация данных
+2025-07-09 19:34:12.7504 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 19:34:12.7524 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 19:34:12.7524 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 19:34:12.7524 INFO Данные записаны.
+2025-07-09 19:34:12.7524 INFO Добавление полученных данных в БД
+2025-07-09 19:34:12.7524 INFO Подключение к БД прошло успешно
+2025-07-09 19:34:12.8205 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 19:34:12.8205 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 19:34:12.8553 INFO Процедура выполнена
+2025-07-09 19:34:12.8553 INFO Приложение завершило работу
+2025-07-09 21:13:49.0549 INFO Приложение запущено
+2025-07-09 21:13:49.1968 INFO Отправка данных на сервер
+2025-07-09 21:13:49.7586 INFO Получение данных из файла Address.csv
+2025-07-09 21:13:49.7586 INFO Получение данных из файла Client.csv
+2025-07-09 21:13:54.2989 INFO Данные адресов добавлены в БД
+2025-07-09 21:13:54.4086 INFO Данные клиентов добавлены в БД
+2025-07-09 21:13:54.4086 INFO Данные успешно отправлены на сервер
+2025-07-09 21:13:54.4260 INFO Процесс получения курса валют запущен
+2025-07-09 21:13:54.4260 INFO Подключение к данным по адресу: https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=09.07.2025
+2025-07-09 21:13:54.8198 INFO Подключение прошло успешно. OK
+2025-07-09 21:13:54.8906 INFO Извлечение данных
+2025-07-09 21:13:54.9028 INFO Данные успешно получены. Количество: 43
+2025-07-09 21:13:54.9028 INFO Запись в файл по пути: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\CentralBank\Rate_09.07.2025.csv
+2025-07-09 21:13:54.9209 INFO Данные записаны в файл. Количество 43 из 43
+2025-07-09 21:13:54.9284 INFO Добавление полученных данных в БД
+2025-07-09 21:13:54.9665 INFO Подключение к БД прошло успешно
+2025-07-09 21:13:55.3389 INFO Обработано валют: 42 (добавлено: 0, обновлено: 42)
+2025-07-09 21:13:55.3389 INFO Данные успешно отправлены на сервер
+2025-07-09 21:13:55.3389 INFO Получение данных из файла SecurityPortfolio.csv
+2025-07-09 21:13:55.3480 INFO Получение данных из файла Portfolio_Currency.csv
+2025-07-09 21:13:55.3480 INFO Получение данных из файла ClientPortfolioShares.csv
+2025-07-09 21:13:55.3868 INFO Данные о портфелях добавлены
+2025-07-09 21:13:55.4215 INFO Данные о связях между портфелями и валютами добавлены
+2025-07-09 21:13:55.4499 INFO Данные о долях клиентов добавлены
+2025-07-09 21:13:55.4499 INFO Запущен процесс получения акций
+2025-07-09 21:13:55.4499 INFO Подключение к данным по адресу: https://iss.moex.com/iss/engines/stock/markets/shares/boards/tqbr/securities.json?iss.only=marketdata&iss.meta=off&iss.json=extended&marketdata.columns=SECID%2CLAST%2CLASTTOPREVPRICE&sort_column=VALTODAY&sort_order=desc&first=18
+2025-07-09 21:13:55.6163 INFO Извлечение данных
+2025-07-09 21:13:55.6481 INFO Данные получены
+2025-07-09 21:13:55.6481 INFO Корректные данные для считывания
+2025-07-09 21:13:55.6608 INFO Успешная десериализация данных
+2025-07-09 21:13:55.6608 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Stocks\Stock_09.07.2025.csv
+2025-07-09 21:13:55.6608 INFO Данные записаны: 18 акций
+2025-07-09 21:13:55.6797 INFO Добавление полученных данных в БД
+2025-07-09 21:13:55.6797 INFO Подключение к БД прошло успешно
+2025-07-09 21:13:55.8087 INFO Обработано акций: 18 (добавлено: 0, обновлено: 18)
+2025-07-09 21:13:55.8087 INFO Запущен процесс получения облигаций
+2025-07-09 21:13:55.8155 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/484/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:13:56.5079 INFO Подключение прошло успешно.
+2025-07-09 21:13:56.5079 INFO Извлечение данных
+2025-07-09 21:13:56.5242 INFO Данные получены
+2025-07-09 21:13:56.5242 INFO Корректные данные для считывания
+2025-07-09 21:13:56.5546 INFO Успешная десериализация данных
+2025-07-09 21:13:57.7761 INFO Добавлено 362 биржевых облигаций и акций Сбербанк из 368 других облигаций
+2025-07-09 21:13:57.7761 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/269/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:13:58.0786 INFO Подключение прошло успешно.
+2025-07-09 21:13:58.0843 INFO Извлечение данных
+2025-07-09 21:13:58.0843 INFO Данные получены
+2025-07-09 21:13:58.1042 INFO Корректные данные для считывания
+2025-07-09 21:13:58.1114 INFO Успешная десериализация данных
+2025-07-09 21:13:59.8168 INFO Добавлено 58 биржевых облигаций и акций ВТБ ао из 519 других облигаций
+2025-07-09 21:13:59.8168 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3588/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:13:59.8579 INFO Подключение прошло успешно.
+2025-07-09 21:13:59.8579 INFO Извлечение данных
+2025-07-09 21:13:59.8579 INFO Данные получены
+2025-07-09 21:13:59.8643 INFO Корректные данные для считывания
+2025-07-09 21:13:59.8643 INFO Успешная десериализация данных
+2025-07-09 21:13:59.8900 ERROR Ошибка при получении SecPortfolioId для UGLD: Акция  не найдена в таблице Stocks
+2025-07-09 21:13:59.8900 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/711/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:13:59.9376 INFO Подключение прошло успешно.
+2025-07-09 21:13:59.9376 INFO Извлечение данных
+2025-07-09 21:13:59.9410 INFO Данные получены
+2025-07-09 21:13:59.9410 INFO Корректные данные для считывания
+2025-07-09 21:13:59.9410 INFO Успешная десериализация данных
+2025-07-09 21:13:59.9770 INFO Добавлено 5 биржевых облигаций и акций ГАЗПРОМ ао из 7 других облигаций
+2025-07-09 21:13:59.9770 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10763/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.0168 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.0168 INFO Извлечение данных
+2025-07-09 21:14:00.0251 INFO Данные получены
+2025-07-09 21:14:00.0251 INFO Корректные данные для считывания
+2025-07-09 21:14:00.0251 INFO Успешная десериализация данных
+2025-07-09 21:14:00.0351 INFO Добавлено 0 биржевых облигаций и акций Т-Техно ао из 2 других облигаций
+2025-07-09 21:14:00.0351 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/770/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.0792 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.0921 INFO Извлечение данных
+2025-07-09 21:14:00.0921 INFO Данные получены
+2025-07-09 21:14:00.0921 INFO Корректные данные для считывания
+2025-07-09 21:14:00.0969 INFO Успешная десериализация данных
+2025-07-09 21:14:00.1206 INFO Добавлено 0 биржевых облигаций и акций ЛУКОЙЛ из 7 других облигаций
+2025-07-09 21:14:00.1206 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1074/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.1741 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.1741 INFO Извлечение данных
+2025-07-09 21:14:00.1741 INFO Данные получены
+2025-07-09 21:14:00.1741 INFO Корректные данные для считывания
+2025-07-09 21:14:00.1741 INFO Успешная десериализация данных
+2025-07-09 21:14:00.2140 INFO Добавлено 4 биржевых облигаций и акций Новатэк ао из 7 других облигаций
+2025-07-09 21:14:00.2140 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/9848/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.2578 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.2578 INFO Извлечение данных
+2025-07-09 21:14:00.2578 INFO Данные получены
+2025-07-09 21:14:00.2578 INFO Корректные данные для считывания
+2025-07-09 21:14:00.2578 INFO Успешная десериализация данных
+2025-07-09 21:14:00.3046 INFO Добавлено 10 биржевых облигаций и акций Самолет ао из 13 других облигаций
+2025-07-09 21:14:00.3046 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/739/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.3573 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.3573 INFO Извлечение данных
+2025-07-09 21:14:00.3573 INFO Данные получены
+2025-07-09 21:14:00.3573 INFO Корректные данные для считывания
+2025-07-09 21:14:00.3626 INFO Успешная десериализация данных
+2025-07-09 21:14:00.3626 INFO Добавлено 1 биржевых облигаций и акций ПИК ао из 4 других облигаций
+2025-07-09 21:14:00.3787 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10712/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.4213 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.4259 INFO Извлечение данных
+2025-07-09 21:14:00.4259 INFO Данные получены
+2025-07-09 21:14:00.4259 INFO Корректные данные для считывания
+2025-07-09 21:14:00.4259 INFO Успешная десериализация данных
+2025-07-09 21:14:00.4259 INFO Добавлено 0 биржевых облигаций и акций КЦ ИКС 5 из 2 других облигаций
+2025-07-09 21:14:00.4259 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1399/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.4714 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.4714 INFO Извлечение данных
+2025-07-09 21:14:00.4714 INFO Данные получены
+2025-07-09 21:14:00.4714 INFO Корректные данные для считывания
+2025-07-09 21:14:00.4714 INFO Успешная десериализация данных
+2025-07-09 21:14:00.5336 INFO Добавлено 11 биржевых облигаций и акций ГМКНорНик из 15 других облигаций
+2025-07-09 21:14:00.5336 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15523/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.5735 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.5735 INFO Извлечение данных
+2025-07-09 21:14:00.5735 INFO Данные получены
+2025-07-09 21:14:00.5735 INFO Корректные данные для считывания
+2025-07-09 21:14:00.5735 INFO Успешная десериализация данных
+2025-07-09 21:14:00.5873 INFO Добавлено 1 биржевых облигаций и акций ЯНДЕКС из 3 других облигаций
+2025-07-09 21:14:00.5873 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/12604/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.6445 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.6445 INFO Извлечение данных
+2025-07-09 21:14:00.6445 INFO Данные получены
+2025-07-09 21:14:00.6445 INFO Корректные данные для считывания
+2025-07-09 21:14:00.6445 INFO Успешная десериализация данных
+2025-07-09 21:14:00.6701 INFO Добавлено 3 биржевых облигаций и акций iПозитив из 5 других облигаций
+2025-07-09 21:14:00.6701 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1158/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.7066 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.7216 INFO Извлечение данных
+2025-07-09 21:14:00.7216 INFO Данные получены
+2025-07-09 21:14:00.7216 INFO Корректные данные для считывания
+2025-07-09 21:14:00.7216 INFO Успешная десериализация данных
+2025-07-09 21:14:00.7533 INFO Добавлено 4 биржевых облигаций и акций Полюс из 8 других облигаций
+2025-07-09 21:14:00.7533 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/886/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.7910 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.8032 INFO Извлечение данных
+2025-07-09 21:14:00.8032 INFO Данные получены
+2025-07-09 21:14:00.8032 INFO Корректные данные для считывания
+2025-07-09 21:14:00.8032 INFO Успешная десериализация данных
+2025-07-09 21:14:00.8215 ERROR Ошибка при получении SecPortfolioId для MGNT: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:00.8215 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/651/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:00.8760 INFO Подключение прошло успешно.
+2025-07-09 21:14:00.8760 INFO Извлечение данных
+2025-07-09 21:14:00.8760 INFO Данные получены
+2025-07-09 21:14:00.8760 INFO Корректные данные для считывания
+2025-07-09 21:14:00.8760 INFO Успешная десериализация данных
+2025-07-09 21:14:00.9646 INFO Добавлено 25 биржевых облигаций и акций Роснефть из 28 других облигаций
+2025-07-09 21:14:00.9646 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/10761/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.0083 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.0083 INFO Извлечение данных
+2025-07-09 21:14:01.0083 INFO Данные получены
+2025-07-09 21:14:01.0083 INFO Корректные данные для считывания
+2025-07-09 21:14:01.0083 INFO Успешная десериализация данных
+2025-07-09 21:14:01.0288 INFO Добавлено 0 биржевых облигаций и акций МКПАО "ВК" из 3 других облигаций
+2025-07-09 21:14:01.0288 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1242/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.0718 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.0718 INFO Извлечение данных
+2025-07-09 21:14:01.0814 INFO Данные получены
+2025-07-09 21:14:01.0814 INFO Корректные данные для считывания
+2025-07-09 21:14:01.0814 INFO Успешная десериализация данных
+2025-07-09 21:14:01.0968 ERROR Ошибка при получении SecPortfolioId для AFLT: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.0968 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/6291/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.1358 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.1358 INFO Извлечение данных
+2025-07-09 21:14:01.1358 INFO Данные получены
+2025-07-09 21:14:01.1358 INFO Корректные данные для считывания
+2025-07-09 21:14:01.1358 INFO Успешная десериализация данных
+2025-07-09 21:14:01.1607 ERROR Ошибка при получении SecPortfolioId для SPBE: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.1607 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/15750/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.1989 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.1989 INFO Извлечение данных
+2025-07-09 21:14:01.2055 INFO Данные получены
+2025-07-09 21:14:01.2055 INFO Корректные данные для считывания
+2025-07-09 21:14:01.2055 INFO Успешная десериализация данных
+2025-07-09 21:14:01.2216 ERROR Ошибка при получении SecPortfolioId для OZPH: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.2216 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/1264/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.2646 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.2646 INFO Извлечение данных
+2025-07-09 21:14:01.2686 INFO Данные получены
+2025-07-09 21:14:01.2686 INFO Корректные данные для считывания
+2025-07-09 21:14:01.2686 INFO Успешная десериализация данных
+2025-07-09 21:14:01.2858 ERROR Ошибка при получении SecPortfolioId для RNFT: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.2858 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/716/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.3256 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.3347 INFO Извлечение данных
+2025-07-09 21:14:01.3347 INFO Данные получены
+2025-07-09 21:14:01.3347 INFO Корректные данные для считывания
+2025-07-09 21:14:01.3347 INFO Успешная десериализация данных
+2025-07-09 21:14:01.3533 ERROR Ошибка при получении SecPortfolioId для MTLR: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.3533 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/4330/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.3871 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.3871 INFO Извлечение данных
+2025-07-09 21:14:01.3871 INFO Данные получены
+2025-07-09 21:14:01.3871 INFO Корректные данные для считывания
+2025-07-09 21:14:01.3871 INFO Успешная десериализация данных
+2025-07-09 21:14:01.4041 ERROR Ошибка при получении SecPortfolioId для RAGR: Акция  не найдена в таблице Stocks
+2025-07-09 21:14:01.4095 INFO Подключение к данным по адресу: https://iss.moex.com/iss/emitters/3455/securities.jsonp?iss.meta=off&iss.json=extended&callback=JSON_CALLBACK&lang=ru
+2025-07-09 21:14:01.4478 INFO Подключение прошло успешно.
+2025-07-09 21:14:01.4478 INFO Извлечение данных
+2025-07-09 21:14:01.4478 INFO Данные получены
+2025-07-09 21:14:01.4559 INFO Корректные данные для считывания
+2025-07-09 21:14:01.4559 INFO Успешная десериализация данных
+2025-07-09 21:14:01.4559 INFO Добавлено 0 биржевых облигаций и акций МосБиржа из 2 других облигаций
+2025-07-09 21:14:01.4559 INFO Все данные успешно считаны. 484 биржевых облигаций и акций из 993 разных типов облигаций
+2025-07-09 21:14:01.4719 INFO Запись в файл: C:\Users\Алексей\Desktop\Учеба\github\ExchangeParsing_DB\ExchangeParsing\ExchangeParsing\bin\Debug\MoscowExchange\Bonds\Bond_09.07.2025.csv
+2025-07-09 21:14:01.4719 INFO Данные записаны.
+2025-07-09 21:14:01.4719 INFO Добавление полученных данных в БД
+2025-07-09 21:14:01.4719 INFO Подключение к БД прошло успешно
+2025-07-09 21:14:01.5476 ERROR The 'FaceValue' property on 'Bond' could not be set to a 'System.Int32' value. You must set this property to a non-null value of type 'System.String'. 
+2025-07-09 21:14:01.5476 INFO Выполнение процедуры пересчета позиций день-клиент-портфель
+2025-07-09 21:14:01.5628 INFO Процедура выполнена
+2025-07-09 21:14:01.5648 INFO Приложение завершило работу

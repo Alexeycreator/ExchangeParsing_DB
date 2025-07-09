@@ -13,12 +13,14 @@ namespace ExchangeParsing.DataBase
     private readonly string csvFilePath_Address = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "Address.csv");
     private readonly string csvFilePath_SecurityPortfolio = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "SecurityPortfolio.csv");
     private readonly string csvFilePath_PortfolioCurrency = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "Portfolio_Currency.csv");
+    private readonly string csvFilePath_ClientPortfolioShares = Path.Combine(Directory.GetCurrentDirectory(), "DataTable", "ClientPortfolioShares.csv");
     private DB_Connect _dbContext = new DB_Connect();
     private Logger _logger = LogManager.GetCurrentClassLogger();
     private List<Client> clients = new List<Client>();
     private List<Address> addresses = new List<Address>();
     private List<SecurityPortfolio> securityPortfolios = new List<SecurityPortfolio>();
     private List<Portfolio_Currency> portfolio_Currencies = new List<Portfolio_Currency>();
+    private List<ClientPortfolioShares> clientPortfolioShares = new List<ClientPortfolioShares>();
     private int countPortfolio = 0;
 
     private void CheckInsert(string _typeExchange)
@@ -69,7 +71,8 @@ namespace ExchangeParsing.DataBase
           foreach (var secPort in securityPortfolios)
           {
             _countPort++;
-            var existingSecPortfolio = _dbContext.SecurityPortfolios.FirstOrDefault(sp => sp.Name == secPort.Name && sp.Client_Id == secPort.Client_Id);
+            var existingSecPortfolio = _dbContext.SecurityPortfolios.FirstOrDefault(sp => sp.Name == secPort.Name && sp.Price == secPort.Price &&
+                                        sp.Currency == secPort.Currency && sp.TotalShares == secPort.TotalShares);
             if(existingSecPortfolio != null)
             {
               continue;
@@ -85,7 +88,7 @@ namespace ExchangeParsing.DataBase
 
           foreach(var portCurr in portfolio_Currencies)
           {
-            var existingPortCurr = _dbContext.Portfolio_Currencies.FirstOrDefault(pc => pc.Portfolio_Id == portCurr.Portfolio_Id && pc.Currency_Id == portCurr.Currency_Id && pc.Amount == portCurr.Amount);
+            var existingPortCurr = _dbContext.Portfolio_Currencies.FirstOrDefault(pc => pc.Portfolio_Id == portCurr.Portfolio_Id && pc.Currency_Id == portCurr.Currency_Id);
             if (existingPortCurr != null)
             {
               continue;
@@ -97,6 +100,21 @@ namespace ExchangeParsing.DataBase
           }
           _dbContext.SaveChanges();
           _logger.Info("Данные о связях между портфелями и валютами добавлены");
+
+          foreach(var sharesClient in clientPortfolioShares)
+          {
+            var existingSharesClient = _dbContext.ClientPortfolioShares.FirstOrDefault(sc => sc.Client_Id == sharesClient.Client_Id && sc.Portfolio_Id == sharesClient.Portfolio_Id && sc.SharesOwned == sharesClient.SharesOwned);
+            if(existingSharesClient != null)
+            {
+              continue;
+            }
+            else
+            {
+              _dbContext.ClientPortfolioShares.Add(sharesClient);
+            }
+          }
+          _dbContext.SaveChanges();
+          _logger.Info("Данные о долях клиентов добавлены");
           break;
         default: break;
       }
@@ -184,7 +202,9 @@ namespace ExchangeParsing.DataBase
               SecurityPortfolio secPortfolio = new SecurityPortfolio
               {
                 Name = values[0],
-                Client_Id = Convert.ToInt32(values[1])
+                Price = Convert.ToInt32(values[1]),
+                Currency = values[2],
+                TotalShares = Convert.ToInt32(values[3])
               };
               securityPortfolios.Add(secPortfolio);
             }
@@ -210,10 +230,37 @@ namespace ExchangeParsing.DataBase
               Portfolio_Currency portfolio_Cur = new Portfolio_Currency
               {
                 Portfolio_Id = Convert.ToInt32(values[0]),
-                Currency_Id = Convert.ToInt32(values[1]),
-                Amount = Convert.ToInt32(values[2])
+                Currency_Id = Convert.ToInt32(values[1])
               };
               portfolio_Currencies.Add(portfolio_Cur);
+            }
+            catch (Exception ex)
+            {
+              _logger.Error($"Ошибка при обработке строки: {line}. {ex.Message}");
+            }
+          }
+
+          #endregion
+
+
+          #region StreamReader_ClientPortfolioShares
+
+          StreamReader readerClientPortfolioShares = new StreamReader(csvFilePath_ClientPortfolioShares);
+          readerClientPortfolioShares.ReadLine();
+          _logger.Info($"Получение данных из файла {Path.GetFileName(csvFilePath_ClientPortfolioShares)}");
+          while (!readerClientPortfolioShares.EndOfStream)
+          {
+            var line = readerClientPortfolioShares.ReadLine();
+            var values = line.Split(';');
+            try
+            {
+              ClientPortfolioShares sharesClient = new ClientPortfolioShares
+              {
+                Client_Id = Convert.ToInt32(values[0]),
+                Portfolio_Id = Convert.ToInt32(values[1]),
+                SharesOwned = Convert.ToInt32(values[2])
+              };
+              clientPortfolioShares.Add(sharesClient);
             }
             catch (Exception ex)
             {
@@ -257,6 +304,10 @@ namespace ExchangeParsing.DataBase
             else if (portfolio_Currencies == null)
             {
               throw new FormatException("Данные связи между портфелем и валютой пустые");
+            }
+            else if (securityPortfolios == null)
+            {
+              throw new FormatException("Данные долях клиентов пустые");
             }
             else
             {

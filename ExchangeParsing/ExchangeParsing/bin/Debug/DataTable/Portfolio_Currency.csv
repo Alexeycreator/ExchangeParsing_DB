@@ -1,2 +1,6 @@
-Portfolio_Id;Currency_Id;Amount
-1;2;12
+Portfolio_Id;Currency_Id
+1;2
+2;2
+3;3
+4;5
+5;6

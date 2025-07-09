@@ -17,12 +17,21 @@ namespace ExchangeParsing.DataBase.Tables
     [Column("Name")]
     public string Name { get; set; }
 
-    [Column("Client_Id")]
-    public int Client_Id { get; set; }
+    [Column("Price")]
+    public int Price { get; set; }
 
-    [ForeignKey("Client_Id")]
-    [JsonIgnore]
-    public virtual Client Client { get; set; }
+    [Column("Currency")]
+    public string Currency { get; set; }
+
+    [Column("TotalShares")]
+    public int TotalShares { get; set; }
+
+    //[Column("Client_Id")]
+    //public int Client_Id { get; set; }
+
+    //[ForeignKey("Client_Id")]
+    //[JsonIgnore]
+    //public virtual Client Client { get; set; }
 
     [JsonIgnore]
     public virtual ICollection<Bond> Bonds { get; set; }
@@ -35,5 +44,8 @@ namespace ExchangeParsing.DataBase.Tables
 
     [JsonIgnore]
     public virtual ICollection<HistoryPortfolio> HistoryPortfolios { get; set; }
+
+    [JsonIgnore]
+    public virtual ICollection<ClientPortfolioShares> ClientPortfolioShares { get; set; }
   }
 }

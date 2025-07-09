@@ -25,6 +25,8 @@ namespace ExchangeParsing.DataBase
 
     public DbSet<SecurityPortfolio> SecurityPortfolios { get; set; }
 
+    public DbSet<ClientPortfolioShares> ClientPortfolioShares { get; set; }
+
     public DB_Connect()
     {
       string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;

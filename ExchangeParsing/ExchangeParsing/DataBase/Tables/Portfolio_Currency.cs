@@ -17,8 +17,8 @@ namespace ExchangeParsing.DataBase.Tables
 
     public int Currency_Id { get; set; }
 
-    [Column("Amount")]
-    public int Amount { get; set; }
+    //[Column("Amount")]
+    //public int Amount { get; set; }
 
     [ForeignKey("Portfolio_Id")]
     [JsonIgnore]

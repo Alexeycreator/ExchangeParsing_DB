@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ExchangeParsing.CentralBank.CurrencyCentralBank_Parser">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAIAQBAAAQAAIAAAAAQAAAAACIAEAAA=</HashCode>
+      <FileName>CentralBank\CurrencyCentralBank_Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.CentralBank.CurrencyModel" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCACgAAEAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>CentralBank\CurrencyModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.CsvWriter" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CsvWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.Program">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.AddDataParsing">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAIAAEAIAAAAIAAAAAAAAAACAA=</HashCode>
+      <FileName>DataBase\AddDataParsing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.DB_Connect">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBgAAAAAAAAAAAACAAAAAAgBABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DataBase\DB_Connect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.ExecProcSQL">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBase\ExecProcSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.InsertDataTables">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABQAAAQAACAAIAAAAAAAAgYEAAgAEEAAAAABAAGBA=</HashCode>
+      <FileName>DataBase\InsertDataTables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.StocksEnum">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ExchangeParsing.DataBase.StocksEnum.StockEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DataBase\StocksEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBase\StocksEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.Tables.Address">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIACAAAAAAAAAAAAAAAAIAQAAAAAA=</HashCode>
+      <FileName>DataBase\Tables\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.Tables.Client">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAEgAAAAAAAAAAEAEAAAAAAAAAAACAAAAAACAAAE=</HashCode>
+      <FileName>DataBase\Tables\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.Tables.HistoryPortfolio">
+    <Position X="9.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DataBase\Tables\HistoryPortfolio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.Tables.Portfolio_Currency">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>DataBase\Tables\Portfolio_Currency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.DataBase.Tables.SecurityPortfolio">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCgAAAAQAAAAAAAAAAAAQAiBADAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBase\Tables\SecurityPortfolio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.Models.Bond">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAIAEAAIAAAAAABAAAAQABAIAAAQAQAAAAAgA=</HashCode>
+      <FileName>MoscowExchange\Models\Bond\Bond.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.Models.BondModel">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoscowExchange\Models\Bond\BondModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.Models.CursorBond">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MoscowExchange\Models\Bond\CursorBond.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.Models.Stock">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAABAQAAAAAAAAAAAAQCAAAAAA=</HashCode>
+      <FileName>MoscowExchange\Models\Stock\Stock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.StockModel">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>MoscowExchange\Models\Stock\StockModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExchangeParsing.MoscowExchange.Stock_Bonds_Parser">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAAAQgAQACAAAMAAAAAAKQQACCAEAAAAAIQEAAY=</HashCode>
+      <FileName>MoscowExchange\Stock_Bonds_Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
